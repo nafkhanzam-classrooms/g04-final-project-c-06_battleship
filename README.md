@@ -2,10 +2,10 @@
 # Network Programming - Final Project [G04]
 
 ## Anggota Kelompok
-| Nama           | NRP        | Kelas     |
-| ---            | ---        | ----------|
-|                |            |           |
-|                |            |           |
+| Nama | NRP | Kelas |
+| --------------------------------| -----------| ------- |
+| Alfianz Rizqia Ilahi Loven Kary | 5025241164 | Kelas C |
+| Aqil Syafiq Dzaky               | 5025241200 | Kelas C |
 
 ## Link Youtube (Unlisted)
 Link ditaruh di bawah ini
