@@ -16,9 +16,6 @@ Link ditaruh di bawah ini
 ## Penjelasan Program
 ### Struktur Directory
 ```
-# Struktur Direktori Proyek
-
-```text
 Project/
 ├── client/
 │   ├── app.py
@@ -100,8 +97,6 @@ Project/
 └── tests/
     ├── load_test.py
     └── protocol_test.py
-```
-
 ```
 
 ## Screenshot Hasil
