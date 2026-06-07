@@ -14,5 +14,16 @@ Link ditaruh di bawah ini
 ```
 
 ## Penjelasan Program
+### Struktur Folder
+project-root ├── src │ ├── controller │ ├── views │ └── model ├── public │ ├── css │ ├── images │ └── js └── README.md
+```
+battleship-network
+├──
+├──
+├──
+├──
+├──
+├──
+```
 
 ## Screenshot Hasil
