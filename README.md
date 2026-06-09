@@ -81,7 +81,7 @@ Project/
 │       ├── room_handler.py
 │       └── __init__.py
 │
-├── shared/
+├── shared
 │   ├── constants.py
 │   ├── message_type.py
 │   └── serializer.py
@@ -105,10 +105,13 @@ Folder `server/` berisi komponen utama server yang mengelola koneksi, autentikas
 
 Folder `shared/` berisi modul yang digunakan bersama oleh server maupun klien, seperti konstanta permainan, tipe pesan, dan serializer.
 
-Folder `data/` menyimpan database SQLite dan file JSON replay pertandingan. Folder `logs/` menyimpan log aktivitas server. Folder `tests/` berisi skrip pengujian protokol dan uji beban.
+Folder `data/` menyimpan database SQLite dan file JSON replay pertandingan. 
+
+Folder `logs/` menyimpan log aktivitas server. 
+
+Folder `tests/` berisi skrip pengujian protokol dan uji beban.
 
 ### Folder client/
-
 #### Penjelasan app.py
 
 #### Penejelasan assets.py
@@ -128,6 +131,59 @@ Folder `data/` menyimpan database SQLite dan file JSON replay pertandingan. Fold
 #### Penejelasan screens.py
 
 #### Penejelasan state.py
+
+
+### Folder Server/
+#### Penejelasan auth_service.py
+
+#### Penejelasan client_handler.py
+
+#### Penejelasan config.py
+
+#### Penejelasan database.py
+
+#### Penejelasan game_room.py
+
+#### Penejelasan logger.py
+
+#### Penejelasan main.py
+
+#### Penejelasan matchmaking.py
+
+#### Penejelasan ranking_service.py
+
+#### Penejelasan replay_service.py
+
+#### Penejelasan response_builder.py
+
+#### Penejelasan room_manager.py
+
+#### Penejelasan socket_server.py
+
+
+### Folder server/handlers
+#### Penjelasan auth_handler.py
+
+#### Penjelasan game_handler.py
+
+#### Penjelasan leaderboard_handler.py
+
+#### Penjelasan matchmaking_handler.py
+
+#### Penjelasan placement_handler.py
+
+#### Penjelasan replay_handler.py
+
+#### Penjelasan room_handler.py
+
+#### Penjelasan __init__.py
+
+### Folder shared/
+#### Penjelasan constants.py
+
+#### Penjelasan message_type.py
+
+#### Penjelasan serializer.py
 
 
 
