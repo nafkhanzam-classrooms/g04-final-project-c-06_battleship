@@ -99,4 +99,12 @@ Project/
     └── protocol_test.py
 ```
 
+Folder `client/` berisi seluruh komponen antarmuka dan logika sisi klien yang berjalan di mesin pemain. Subfolder `assets/` menyimpan seluruh aset non-kode seperti gambar kapal, font, dan file musik. Subfolder `ui/` berisi modul pendukung tampilan.
+
+Folder `server/` berisi komponen utama server yang mengelola koneksi, autentikasi, pertandingan, dan penyimpanan data. Subfolder `handlers/` berisi handler spesifik untuk setiap jenis pesan yang diterima dari klien.
+
+Folder `shared/` berisi modul yang digunakan bersama oleh server maupun klien, seperti konstanta permainan, tipe pesan, dan serializer.
+
+Folder `data/` menyimpan database SQLite dan file JSON replay pertandingan. Folder `logs/` menyimpan log aktivitas server. Folder `tests/` berisi skrip pengujian protokol dan uji beban.
+
 ## Screenshot Hasil
