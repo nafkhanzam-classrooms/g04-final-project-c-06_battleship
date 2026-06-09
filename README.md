@@ -27,7 +27,7 @@ Link ditaruh di bawah ini
   * [Penejelasan main.py](#penejelasan-mainpy)
   * [Penejelasan network_client.py](#penejelasan-network_clientpy) 
   * [Penejelasan message_handler.py](#penejelasan-message_handlerpy)
-  * [Penejelasan screens.py](#penejelasan-screenspy) belom
+  * [Penejelasan screens.py](#penejelasan-screenspy) 
   * [Penejelasan state.py](#penejelasan-statepy)
 
 * [Folder Server/](#folder-server)
