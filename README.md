@@ -17,7 +17,7 @@ Link ditaruh di bawah ini
   
 - [Folder client/](#folder-client)
   
-    - [Penjelasan app.py](#penjelasan-assetspy)
+    - [Penjelasan app.py](#penjelasan-apppy)
     - [Penjelasan assets.py]()
     - [Penejelasan audio.py]()
     - [Penejelasan event_handler.py]()
