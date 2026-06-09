@@ -13,7 +13,7 @@ Link ditaruh di bawah ini
 
 ```
 ---
-- [Struktur Directory]()
+- [Struktur Directory](#struktur-directory)
   
 - [Folder client/]()
   
