@@ -185,6 +185,33 @@ Bagian ini digunakan untuk menghubungkan klien ke server, menetapkan callback pe
 
 ---
 #### Penejelasan assets.py
+File `assets.py` pada folder `client/` berfungsi sebagai modul pemuat aset visual yang digunakan oleh antarmuka permainan.
+
+---
+
+##### Fungsi load_font dan load_ship_images
+
+```
+def load_font(path, size, fallback="arial"):
+    try:
+        return pygame.font.Font(path, size)
+    except FileNotFoundError:
+        return pygame.font.SysFont(fallback, size)
+
+def load_ship_images():
+    images = {}
+    for ship in SHIPS:
+        images[ship["name"]] = pygame.image.load(image_path).convert_alpha()
+    return images
+```
+
+Fungsi `load_font` digunakan untuk memuat font kustom dari file TTF dengan fallback ke font sistem apabila file tidak ditemukan. Fungsi `load_ship_images` digunakan untuk memuat semua gambar kapal dari path yang didefinisikan di `constants.py` dengan penanganan error apabila file tidak tersedia.
+
+---
+
+##### Ringkasan
+
+`assets.py` pada folder `client/` berfungsi sebagai modul pemuat aset yang menangani inisialisasi font dan gambar kapal dengan mekanisme fallback agar program tetap berjalan meski aset tidak lengkap.
 
 #### Penejelasan audio.py
 
