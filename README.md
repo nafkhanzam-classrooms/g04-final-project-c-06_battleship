@@ -414,7 +414,97 @@ Bagian ini digunakan untuk menjalankan klien dengan mengimpor `client.app` yang 
 ---
 
 #### Penejelasan message_handler.py 
-(Belom)
+File `message_handler.py` berfungsi sebagai modul pemroses pesan dari server yang memperbarui state klien berdasarkan tipe pesan, baik untuk autentikasi, room, permainan, spectator, replay, leaderboard, maupun error.
+
+---
+
+##### Fungsi handle_server_message
+
+```python
+def handle_server_message(message):
+    if message["type"] == LOGIN_SUCCESS:
+        session_id = message["session_id"]
+        username = message["payload"]["username"]
+        status_text = "Login success"
+        screen_state = "MAIN_MENU"
+    elif message["type"] == ROOM_LIST_DATA:
+        available_rooms = message["payload"].get("rooms", [])
+        room_browser_status = f"Loaded {len(available_rooms)} room(s)"
+        screen_state = "ROOM_BROWSER"
+    elif message["type"] == PLACEMENT_START:
+        reset_game_state()
+        status_text = f"Place ship: {SHIPS[current_ship_index]['name']}"
+        screen_state = "PLACEMENT"
+    elif message["type"] == FIRE_RESULT:
+        if payload["result"] == "HIT":
+            enemy_board[y][x] = CELL_HIT
+        else:
+            enemy_board[y][x] = CELL_MISS
+    elif message["type"] == GAME_OVER:
+        winner_session_id = message["payload"]["winner_session_id"]
+        status_text = message["payload"].get("message", "Game over")
+        screen_state = "GAME_OVER"
+```
+
+Fungsi `handle_server_message` digunakan untuk membaca setiap pesan yang diterima klien dari server dan menyesuaikan state aplikasi berdasarkan nilai `type` pada pesan tersebut. Fungsi ini menangani alur autentikasi, pembuatan dan masuk room, pembaruan status room, awal placement, hasil pengiriman kapal, awal permainan, update spectator, hasil tembakan, pergantian giliran, replay, leaderboard, latency check melalui `PONG`, hingga penanganan pesan error.
+
+---
+
+##### Bagian penanganan room dan spectator
+
+```python
+elif message["type"] == ROOM_UPDATED:
+    room = message["payload"]["room"]
+    current_spectator_count = room.get("spectator_count", current_spectator_count)
+    players = room.get("players", [])
+
+elif message["type"] == SPECTATOR_JOINED:
+    is_spectator = True
+    spectator_player_1 = message["payload"]["player_1"]
+    spectator_player_2 = message["payload"]["player_2"]
+    spectator_board_1 = message["payload"]["player_1_board"]
+    spectator_board_2 = message["payload"]["player_2_board"]
+
+elif message["type"] == SPECTATOR_UPDATE:
+    spectator_board_1 = message["payload"]["player_1_board"]
+    spectator_board_2 = message["payload"]["player_2_board"]
+    if message["payload"].get("winner_session_id"):
+        open_replay_for_current_room("SPECTATOR_RESULT")
+```
+
+Bagian ini digunakan untuk memperbarui informasi room dan spectator secara dinamis. Ketika komposisi room berubah, klien menyesuaikan informasi lawan, jumlah spectator, dan tampilan layar. Ketika spectator bergabung atau menerima update pertandingan, klien memperbarui data papan kedua pemain, status pertandingan, dan dapat langsung membuka alur replay jika permainan telah selesai.
+
+---
+
+##### Bagian penanganan replay dan leaderboard
+
+```python
+elif message["type"] == REPLAY_LIST_DATA:
+    replay_list = message["payload"]["replays"]
+    screen_state = "REPLAY_LIST"
+
+elif message["type"] == REPLAY_DETAIL_DATA:
+    selected_replay = message["payload"]["replay"]
+    if replay_source_state == "GAME_OVER":
+        replay_step_index = 0
+        screen_state = "REPLAY_VIEWER"
+    elif replay_source_state == "SPECTATOR_RESULT":
+        screen_state = "SPECTATOR_RESULT"
+
+elif message["type"] == LEADERBOARD_DATA:
+    leaderboard_data = message["payload"]["leaderboard"]
+    screen_state = "LEADERBOARD"
+```
+
+Bagian ini digunakan untuk memuat data replay dan leaderboard dari server ke state klien. Data replay dapat diarahkan ke tampilan detail atau viewer tergantung asal navigasi, sedangkan data leaderboard digunakan untuk membuka halaman peringkat pemain pada antarmuka klien.
+
+---
+
+##### Ringkasan
+
+`message_handler.py` berfungsi sebagai pusat sinkronisasi state klien terhadap respons server dengan memetakan setiap tipe pesan ke pembaruan data, perubahan layar, dan status permainan yang sesuai.
+
+---
 
 #### Penejelasan network_client.py
 File `network_client.py` pada folder `client/` berfungsi sebagai modul koneksi jaringan sisi klien yang menangani pengiriman dan penerimaan pesan dari server melalui TCP.
