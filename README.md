@@ -495,20 +495,424 @@ Fungsi ini digunakan untuk menghasilkan papan kosong berukuran `BOARD_SIZE` x `B
 
 ### Folder Server/
 #### Penejelasan auth_service.py
+File `auth_service.py` pada folder `server/` berfungsi untuk menangani logika bisnis autentikasi pengguna, meliputi registrasi dan login dengan validasi serta hashing password.
+
+---
+
+#### Fungsi hash_password
+
+```python
+def hash_password(password):
+    return hashlib.sha256(password.encode("utf-8")).hexdigest()
+```
+
+Fungsi ini digunakan untuk mengubah password plaintext menjadi hash SHA-256 sebelum disimpan ke database, sehingga password tidak tersimpan dalam bentuk teks biasa.
+
+---
+
+#### Fungsi register_user
+
+```
+def register_user(username, password):
+    username = username.strip()
+
+    if not username:
+        return False, "Username wajib diisi"
+    if len(username) < 3:
+        return False, "Username minimal 3 karakter"
+    if len(password) < 4:
+        return False, "Password minimal 4 karakter"
+
+    # ... cek duplikasi lalu INSERT ke database
+    ensure_player(username)
+    return True, "Register berhasil"
+```
+
+Fungsi ini digunakan untuk memvalidasi input registrasi, memeriksa apakah username sudah digunakan, lalu menyimpan akun baru ke tabel `users` sekaligus menginisialisasi data statistik pemain melalui `ensure_player`.
+
+---
+
+##### Fungsi login_user
+
+```
+def login_user(username, password):
+    # ... ambil password_hash dari database
+    if stored_password_hash != hash_password(password):
+        return False, "Password salah"
+
+    ensure_player(username)
+    return True, "Login berhasil"
+```
+
+Fungsi ini digunakan untuk memverifikasi kredensial login dengan membandingkan hash password yang dimasukkan terhadap hash yang tersimpan di database, lalu mengembalikan status berhasil atau pesan error yang sesuai.
+
+---
+
+##### Ringkasan
+
+`auth_service.py` pada folder `server/` berfungsi sebagai lapisan logika autentikasi yang mengelola registrasi dan login pengguna dengan validasi input dan keamanan penyimpanan password berbasis SHA-256.
+
+---
 
 #### Penejelasan client_handler.py
+File `client_handler.py` pada folder `server/` berfungsi sebagai handler utama per koneksi klien yang membaca pesan masuk, memetakannya ke handler yang tepat, dan mengelola siklus hidup sesi klien.
+
+---
+
+##### Constructor dan Variabel Kelas
+
+```python
+class ClientHandler:
+    active_usernames = {}
+    active_lock = threading.Lock()
+
+    def __init__(self, client_socket, address, logger, matchmaking):
+        self.buffer = ""
+        self.username = None
+        self.session_id = None
+        self.room_id = None
+```
+
+Variabel kelas `active_usernames` digunakan sebagai registry bersama untuk mencegah login ganda dari username yang sama, dilindungi oleh `active_lock`. Variabel instance menyimpan state sesi klien saat ini.
+
+---
+
+##### Fungsi handle
+
+```
+def handle(self):
+    self.client_socket.settimeout(300)
+
+    try:
+        while True:
+            data = self.client_socket.recv(4096)
+            self.buffer += data.decode("utf-8")
+
+            while "\n" in self.buffer:
+                raw_message, self.buffer = self.buffer.split("\n", 1)
+                self.process_message(raw_message)
+
+    finally:
+        if self.room_id:
+            room_handler.handle_leave_room(self)
+        auth_handler.unregister_active_user(self)
+        self.client_socket.close()
+```
+
+Fungsi ini digunakan untuk membaca data dari socket secara terus-menerus menggunakan teknik buffering berbasis delimiter newline, memisahkan pesan-pesan yang masuk, dan memastikan klien dikeluarkan dari room serta dideregistrasi apabila koneksi terputus.
+
+---
+
+##### Fungsi process_message
+
+```
+def process_message(self, raw_message):
+    message = decode_message(raw_message)
+    message_type = message.get("type")
+
+    if message_type == LOGIN:
+        auth_handler.handle_login(self, message)
+    elif message_type == MATCHMAKE:
+        matchmaking_handler.handle_matchmake(self)
+    elif message_type == FIRE:
+        game_handler.handle_fire(self, message)
+    # ... dan seterusnya untuk semua tipe pesan
+```
+
+Fungsi ini digunakan sebagai router pesan yang mendekode JSON masuk dan mendelegasikannya ke handler yang sesuai berdasarkan field `type`, sehingga logika setiap fitur terpisah dalam modul handler masing-masing.
+
+---
+
+##### Fungsi handle_rematch_request
+
+```
+def handle_rematch_request(self):
+    room = self.matchmaking.room_manager.get_room(self.room_id)
+
+    if room.status in ["IN_GAME", "WAITING_PLACEMENT"]:
+        self.send_error("Cannot rematch before game over")
+        return
+
+    success, info = room.reset_for_rematch_request(self.session_id)
+    # ... kirim notifikasi REMATCH_WAITING ke pemain
+```
+
+Fungsi ini digunakan untuk menangani permintaan rematch setelah pertandingan selesai, dengan memeriksa status room dan mereset state room agar pemain lawan dapat bergabung kembali.
+
+---
+
+##### Ringkasan
+
+`client_handler.py` pada folder `server/` berfungsi sebagai handler sesi per klien yang mengelola pembacaan pesan, routing ke handler fitur, dan pembersihan sesi saat klien terputus.
+
+---
 
 #### Penejelasan config.py
+File `config.py` pada folder `server/` berfungsi sebagai penyimpan konfigurasi jaringan sisi server.
+
+---
+
+##### Konfigurasi Server
+
+```
+HOST = "0.0.0.0"
+PORT = 5000
+BUFFER_SIZE = 4096
+```
+
+Bagian ini digunakan untuk mendefinisikan alamat binding server di semua antarmuka jaringan, port yang digunakan, serta ukuran buffer penerimaan data per paket.
+
+---
+
+##### Ringkasan
+
+`config.py` pada folder `server/` berfungsi sebagai titik konfigurasi terpusat untuk parameter jaringan server.
+
+---
+
 
 #### Penejelasan database.py
+File `database.py` pada folder `server/` berfungsi untuk mengelola koneksi dan inisialisasi database SQLite yang menyimpan data pengguna dan statistik pemain.
+
+---
+
+##### Fungsi get_connection dan init_database
+
+```
+def get_connection():
+    os.makedirs("data", exist_ok=True)
+    return sqlite3.connect(DB_PATH)
+
+def init_database():
+    conn = get_connection()
+    cursor = conn.cursor()
+
+    cursor.execute("""
+        CREATE TABLE IF NOT EXISTS users (
+            username TEXT PRIMARY KEY,
+            password_hash TEXT NOT NULL,
+            created_at TEXT DEFAULT CURRENT_TIMESTAMP
+        )
+    """)
+
+    cursor.execute("""
+        CREATE TABLE IF NOT EXISTS players (
+            username TEXT PRIMARY KEY,
+            total_match INTEGER DEFAULT 0,
+            win INTEGER DEFAULT 0,
+            lose INTEGER DEFAULT 0,
+            hit_count INTEGER DEFAULT 0,
+            miss_count INTEGER DEFAULT 0
+        )
+    """)
+
+    conn.commit()
+    conn.close()
+```
+
+Fungsi `get_connection` digunakan untuk membuka koneksi ke file database SQLite di path `data/battleship.db`, sekaligus memastikan folder `data/` telah tersedia. Fungsi `init_database` digunakan untuk membuat dua tabel yaitu `users` untuk menyimpan kredensial akun dan `players` untuk menyimpan statistik pertandingan, dengan opsi `CREATE TABLE IF NOT EXISTS` agar tidak menimpa data yang sudah ada.
+
+---
+
+##### Ringkasan
+
+`database.py` pada folder `server/` berfungsi sebagai lapisan akses data yang menyediakan koneksi dan skema awal database SQLite untuk sistem autentikasi dan peringkat pemain.
+
+---
 
 #### Penejelasan game_room.py
+File `game_room.py` pada folder `server/` berfungsi sebagai representasi satu room pertandingan yang menyimpan seluruh state permainan, termasuk papan, giliran, status, dan logika tembak-menembak.
+
+---
+
+##### Constructor
+
+```
+def __init__(self, room_id, player_1, player_2=None, room_name=None, password=""):
+    self.room_id = room_id
+    self.players = [player_1]
+    self.spectators = []
+    self.status = "WAITING_OPPONENT" if player_2 is None else "WAITING_PLACEMENT"
+    self.boards = {player_1["session_id"]: self.create_empty_board()}
+    self.shots = {player_1["session_id"]: self.create_empty_board()}
+    self.ready_players = set()
+    self.current_turn = None
+    self.winner = None
+    self.turn_number = 0
+    self.ship_layouts = {}
+```
+
+Bagian ini digunakan untuk menginisialisasi room dengan data pemain, papan kosong untuk setiap pemain, serta status awal yang bergantung pada apakah pemain kedua sudah ada atau belum.
+
+---
+
+##### Fungsi place_ships
+
+```
+def place_ships(self, session_id, ships):
+    board = self.create_empty_board()
+
+    for ship in ships:
+        cells = ship.get("cells", [])
+        for cell in cells:
+            if not self.is_inside_board(x, y):
+                return False, "Ship cell is outside board"
+            if board[y][x] == CELL_SHIP:
+                return False, "Ships overlap"
+        # tandai sel sebagai CELL_SHIP
+    self.boards[session_id] = board
+    self.ship_layouts[session_id] = ships
+    return True, "Ships placed successfully"
+```
+
+Fungsi ini digunakan untuk memvalidasi dan menyimpan penempatan kapal dari seorang pemain ke papannya, dengan pengecekan batas papan dan tumpang tindih antar kapal.
+
+---
+
+##### Fungsi fire
+
+```
+def fire(self, shooter_session_id, x, y):
+    if shooter_session_id != self.current_turn:
+        return False, "Not your turn", None
+
+    opponent_board = self.boards[opponent_session_id]
+
+    if opponent_board[y][x] == CELL_SHIP:
+        result = "HIT"
+        opponent_board[y][x] = CELL_HIT
+    else:
+        result = "MISS"
+        shooter_shots[y][x] = CELL_MISS
+
+    if self.is_all_ships_destroyed(opponent_session_id):
+        self.status = "FINISHED"
+        self.winner = shooter_session_id
+
+    self.current_turn = opponent_session_id
+    self.turn_number += 1
+    return True, "Fire processed", fire_data
+```
+
+Fungsi ini digunakan untuk memproses tembakan dari pemain yang sedang bergiliran, memvalidasi koordinat dan giliran, memperbarui papan lawan, serta menentukan apakah permainan berakhir apabila semua kapal lawan telah hancur.
+
+---
+
+#### Fungsi set_ready dan reset_for_rematch_request
+
+```
+def set_ready(self, session_id):
+    self.ready_players.add(session_id)
+    if len(self.ready_players) == 2:
+        self.status = "IN_GAME"
+        self.current_turn = self.players[0]["session_id"]
+        return True
+    return False
+
+def reset_for_rematch_request(self, session_id):
+    # reset papan, giliran, ready_players untuk main ulang
+    self.status = "WAITING_OPPONENT"
+    return True, "Waiting for rematch opponent"
+```
+
+Fungsi `set_ready` digunakan untuk menandai pemain siap bermain dan secara otomatis memulai permainan apabila kedua pemain sudah siap. Fungsi `reset_for_rematch_request` digunakan untuk mengatur ulang seluruh state room sehingga siap menerima permintaan rematch.
+
+---
+
+##### Ringkasan
+
+`game_room.py` pada folder `server/` berfungsi sebagai inti logika permainan yang menyimpan dan memproses seluruh state satu sesi pertandingan battleship dari fase penempatan hingga selesai.
+
+---
 
 #### Penejelasan logger.py
+File `logger.py` pada folder `server/` berfungsi untuk menginisialisasi sistem pencatatan log aktivitas server ke dalam file.
+
+---
+
+##### Fungsi setup_logger
+
+```
+def setup_logger():
+    os.makedirs("logs", exist_ok=True)
+
+    logging.basicConfig(
+        filename="logs/server.log",
+        level=logging.INFO,
+        format="%(asctime)s [%(levelname)s] %(message)s"
+    )
+
+    return logging.getLogger("battleship-server")
+```
+
+Fungsi ini digunakan untuk membuat folder `logs/` apabila belum ada, mengatur format log yang menyertakan waktu dan level, serta mengembalikan instance logger yang siap dipakai oleh komponen server lainnya.
+
+---
+
+##### Ringkasan
+
+`logger.py` pada folder `server/` berfungsi sebagai penyedia logger terpusat yang mencatat seluruh aktivitas server ke file `logs/server.log`.
+
+---
 
 #### Penejelasan main.py
+File `main.py` pada folder `server/` berfungsi sebagai titik masuk eksekusi server.
+
+---
+
+##### Entry Point
+
+```
+from server.socket_server import SocketServer
+
+if __name__ == "__main__":
+    server = SocketServer()
+    server.start()
+```
+
+Bagian ini digunakan untuk menginisialisasi dan menjalankan server. Program dijalankan dengan perintah `python -m server.main` dari direktori root proyek.
+
+---
+
+##### Ringkasan
+
+`main.py` pada folder `server/` berfungsi sebagai titik awal program yang menginisialisasi dan menjalankan `SocketServer`.
+
+---
 
 #### Penejelasan matchmaking.py
+File `matchmaking.py` pada folder `server/` berfungsi untuk mengelola logika antrian matchmaking otomatis antar pemain yang mencari pertandingan.
+
+---
+
+##### Fungsi join_queue
+
+```
+def join_queue(self, player):
+    waiting_room = self.room_manager.get_waiting_room()
+
+    if waiting_room is None:
+        room = self.room_manager.create_waiting_room(player)
+        return room, False
+
+    success, info = waiting_room.add_player(player)
+
+    if not success:
+        room = self.room_manager.create_waiting_room(player)
+        return room, False
+
+    return waiting_room, True
+```
+
+Fungsi ini digunakan untuk memasukkan pemain ke dalam antrian matchmaking dengan memeriksa apakah sudah ada room yang sedang menunggu lawan. Apabila ada, pemain langsung digabungkan sehingga pertandingan dimulai dan fungsi mengembalikan flag `True`. Apabila belum ada, room baru dibuat dan pemain menunggu dengan flag `False`.
+
+---
+
+##### Ringkasan
+
+`matchmaking.py` pada folder `server/` berfungsi sebagai logika antrian otomatis yang mencocokkan dua pemain ke dalam satu room pertandingan secara efisien.
+
+---
 
 #### Penejelasan ranking_service.py
 
