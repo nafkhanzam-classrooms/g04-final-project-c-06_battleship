@@ -107,4 +107,29 @@ Folder `shared/` berisi modul yang digunakan bersama oleh server maupun klien, s
 
 Folder `data/` menyimpan database SQLite dan file JSON replay pertandingan. Folder `logs/` menyimpan log aktivitas server. Folder `tests/` berisi skrip pengujian protokol dan uji beban.
 
+### Folder client/
+
+#### Penjelasan app.py
+
+#### Penejelasan assets.py
+
+#### Penejelasan audio.py
+
+#### Penejelasan event_handler.py
+
+#### Penejelasan game_logic.py
+
+#### Penejelasan main.py
+
+#### Penejelasan message_handler.py
+
+#### Penejelasan network_client.py
+
+#### Penejelasan screens.py
+
+#### Penejelasan state.py
+
+
+
+
 ## Screenshot Hasil
