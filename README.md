@@ -191,7 +191,7 @@ Bagian ini digunakan untuk menyuntikkan semua fungsi dari modul-modul klien ke d
 
 ##### Inisialisasi State dan UI
 
-```
+```python
 screen_state = "TITLE"
 placed_ships = []
 local_board = [[CELL_EMPTY ...]]
