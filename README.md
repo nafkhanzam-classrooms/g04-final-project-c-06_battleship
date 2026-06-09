@@ -22,7 +22,7 @@ Link ditaruh di bawah ini
   * [Penjelasan app.py](#penjelasan-apppy)
   * [Penejelasan assets.py](#penejelasan-assetspy)
   * [Penejelasan audio.py](#penejelasan-audiopy)
-  * [Penejelasan event_handler.py](#penejelasan-event_handlerpy) belom
+  * [Penejelasan event_handler.py](#penejelasan-event_handlerpy) 
   * [Penejelasan game_logic.py](#penejelasan-game_logicpy)
   * [Penejelasan main.py](#penejelasan-mainpy)
   * [Penejelasan network_client.py](#penejelasan-network_clientpy) 
@@ -171,7 +171,7 @@ File `app.py` pada folder `client/` berfungsi sebagai pusat aplikasi klien yang 
 
 ##### Mekanisme bind_module_functions
 
-```
+```python
 def bind_module_functions(module):
     for name in dir(module):
         value = getattr(module, name)
@@ -191,7 +191,7 @@ Bagian ini digunakan untuk menyuntikkan semua fungsi dari modul-modul klien ke d
 
 ##### Inisialisasi State dan UI
 
-```
+```python
 screen_state = "TITLE"
 placed_ships = []
 local_board = [[CELL_EMPTY ...]]
@@ -213,7 +213,7 @@ Bagian ini digunakan untuk mendefinisikan seluruh variabel state permainan seper
 
 ##### Inisialisasi dan Koneksi
 
-```
+```python
 client = NetworkClient()
 client.on_message = handle_server_message
 
@@ -243,7 +243,7 @@ File `assets.py` pada folder `client/` berfungsi sebagai modul pemuat aset visua
 
 ##### Fungsi load_font dan load_ship_images
 
-```
+```python
 def load_font(path, size, fallback="arial"):
     try:
         return pygame.font.Font(path, size)
@@ -272,7 +272,7 @@ File `audio.py` pada folder `client/` berfungsi untuk mengelola pemutaran musik 
 
 ##### Fungsi switch_music_if_needed dan get_music_type_for_state
 
-```
+```python
 def get_music_type_for_state(state):
     battle_states = ["GAME", "GAME_OVER", "SPECTATOR", "SPECTATOR_RESULT", "REPLAY_VIEWER"]
     if state in battle_states:
@@ -294,7 +294,7 @@ Fungsi `get_music_type_for_state` digunakan untuk menentukan jenis musik yang se
 
 #### Fungsi handle_easter_key dan trigger_easter_code
 
-```
+```python
 def handle_easter_key(event):
     easter_code_buffer = (easter_code_buffer + char.upper())[-7:]
     if easter_code_buffer == "HESOYAM":
@@ -323,7 +323,7 @@ File `event_handler.py` berfungsi sebagai modul pengendali event utama pada sisi
 
 ##### Fungsi run_loop
 
-```
+```python
 def run_loop():
     running = True
     while running:
@@ -379,7 +379,7 @@ File `game_logic.py` pada folder `client/` berfungsi untuk menyimpan seluruh log
 
 ##### Fungsi place_ship_at_grid dan can_place_ship
 
-```
+```python
 def can_place_ship(cells):
     for cell in cells:
         if x < 0 or x >= BOARD_SIZE or y < 0 or y >= BOARD_SIZE:
@@ -402,7 +402,7 @@ Fungsi `can_place_ship` digunakan untuk memvalidasi apakah kapal dapat ditempatk
 
 ##### Fungsi reset_game_state dan send_login_from_auth
 
-```
+```python
 def reset_game_state():
     placed_ships = []
     local_board = [[CELL_EMPTY ...]]
@@ -421,7 +421,7 @@ Fungsi `reset_game_state` digunakan untuk mengatur ulang semua variabel state pe
 
 #### Fungsi build_replay_board dan apply_replay_events
 
-```
+```python
 def apply_replay_events(board_1, board_2, replay, step_index):
     for event in events[:step_index]:
         target_board = board_2 if shooter == player_1 else board_1
@@ -452,7 +452,7 @@ File `main.py` pada folder `client/` berfungsi sebagai titik masuk eksekusi apli
 
 ##### Entry Point
 
-```
+```python
 import client.app  # noqa: F401
 ```
 
@@ -566,7 +566,7 @@ File `network_client.py` pada folder `client/` berfungsi sebagai modul koneksi j
 
 ##### Fungsi connect dan listen
 
-```
+```python
 def connect(self):
     self.socket.connect((self.host, self.port))
     self.connected = True
@@ -591,7 +591,7 @@ Fungsi `connect` digunakan untuk membuka koneksi TCP ke server dan menjalankan l
 
 ##### Fungsi send dan close
 
-```
+```python
 def send(self, message):
     self.socket.sendall(encode_message(message))
 
@@ -611,7 +611,822 @@ Fungsi `send` digunakan untuk mengirimkan pesan dictionary ke server dalam forma
 ---
 
 #### Penejelasan screens.py
-(Belom)
+File `screens.py` berfungsi sebagai modul rendering antarmuka klien yang menangani seluruh tampilan visual permainan, mulai dari layar pembuka, autentikasi, menu utama, room, placement kapal, permainan aktif, spectator, replay, hingga leaderboard. Seluruh fungsi di file ini berorientasi pada proses gambar (`draw`) dan penyusunan elemen UI di atas `pygame` surface.
+
+---
+
+##### Fungsi Dasar Rendering Teks dan Papan
+
+###### Fungsi `draw_text`
+
+```python
+def draw_text(text, x, y, font_obj=None, color=(255, 255, 255)):
+    if font_obj is None:
+        font_obj = font
+
+    surface = font_obj.render(str(text), True, color)
+    screen.blit(surface, (x, y))
+```
+
+Fungsi `draw_text` digunakan untuk merender teks biasa pada koordinat tertentu di permukaan `screen`. Fungsi ini menjadi utilitas dasar yang dipakai hampir di seluruh tampilan antarmuka.
+
+
+##### Fungsi `draw_right_text`
+
+```python
+def draw_right_text(text, right_x, y, font_obj=None, color=(255, 255, 255)):
+    if font_obj is None:
+        font_obj = font
+
+    surface = font_obj.render(str(text), True, color)
+    rect = surface.get_rect(topright=(right_x, y))
+    screen.blit(surface, rect)
+```
+
+Fungsi `draw_right_text` digunakan untuk merender teks dengan perataan ke sisi kanan berdasarkan `right_x`. Fungsi ini berguna untuk judul atau label yang perlu disejajarkan terhadap tepi kanan area tampilan.
+
+
+##### Fungsi `draw_grid`
+
+```python
+def draw_grid(board, start_x, start_y, show_ships=True):
+    for y in range(BOARD_SIZE):
+        for x in range(BOARD_SIZE):
+            rect = pygame.Rect(
+                start_x + x * CELL_SIZE,
+                start_y + y * CELL_SIZE,
+                CELL_SIZE,
+                CELL_SIZE
+    ...
+```
+
+Fungsi `draw_grid` digunakan untuk menggambar seluruh sel papan permainan berdasarkan isi matriks board. Warna setiap sel dibedakan menurut statusnya, seperti kapal, tembakan kena, tembakan meleset, atau sel kosong.
+
+
+##### Fungsi `draw_grid_with_labels`
+
+```python
+def draw_grid_with_labels(board, start_x, start_y, show_ships=True):
+    letters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"]
+
+    for x in range(BOARD_SIZE):
+        label_x = start_x + x * CELL_SIZE + 14
+        label_y = start_y - 30
+        draw_text(letters[x], label_x, label_y, small_font, COLORS["text_muted"])
+
+    ...
+```
+
+Fungsi `draw_grid_with_labels` digunakan untuk menambahkan label huruf pada kolom dan angka pada baris, lalu memanggil `draw_grid` untuk menggambar isi papan. Dengan begitu papan lebih mudah dibaca sebagai koordinat permainan.
+
+
+##### Fungsi `draw_grid_lines`
+
+```python
+def draw_grid_lines(start_x, start_y):
+    for y in range(BOARD_SIZE):
+        for x in range(BOARD_SIZE):
+            rect = pygame.Rect(
+                start_x + x * CELL_SIZE,
+                start_y + y * CELL_SIZE,
+                CELL_SIZE,
+                CELL_SIZE
+    ...
+```
+
+Fungsi `draw_grid_lines` digunakan untuk menggambar garis batas setiap sel papan. Fungsi ini dipakai sebagai lapisan akhir agar board terlihat rapi dan tersegmentasi jelas.
+
+
+##### Fungsi `draw_board_base_water`
+
+```python
+def draw_board_base_water(start_x, start_y):
+    for y in range(BOARD_SIZE):
+        for x in range(BOARD_SIZE):
+            rect = pygame.Rect(
+                start_x + x * CELL_SIZE,
+                start_y + y * CELL_SIZE,
+                CELL_SIZE,
+                CELL_SIZE
+    ...
+```
+
+Fungsi `draw_board_base_water` digunakan untuk mengisi latar dasar papan dengan warna laut sebelum aset kapal dan penanda hit/miss digambar di atasnya.
+
+
+##### Fungsi `draw_hit_miss_overlay`
+
+```python
+def draw_hit_miss_overlay(board, start_x, start_y):
+    for y in range(BOARD_SIZE):
+        for x in range(BOARD_SIZE):
+            cell = board[y][x]
+
+            center_x_pos = start_x + x * CELL_SIZE + CELL_SIZE // 2
+            center_y_pos = start_y + y * CELL_SIZE + CELL_SIZE // 2
+
+    ...
+```
+
+Fungsi `draw_hit_miss_overlay` digunakan untuk menggambar lingkaran indikator hit dan miss pada papan. Fungsi ini memisahkan logika tampilan hasil tembakan dari logika gambar dasar board.
+
+
+##### Fungsi `draw_board_labels`
+
+```python
+def draw_board_labels(start_x, start_y):
+    letters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"]
+
+    for x in range(BOARD_SIZE):
+        label_x = start_x + x * CELL_SIZE + 14
+        label_y = start_y - 30
+        draw_text(letters[x], label_x, label_y, small_font, COLORS["text_muted"])
+
+    ...
+```
+
+Fungsi `draw_board_labels` digunakan untuk menggambar label koordinat papan tanpa menggambar isi board. Fungsi ini dipakai ulang oleh beberapa tampilan seperti game, spectator, dan replay.
+
+
+---
+
+#### Fungsi Aset Kapal dan Placement
+
+##### Fungsi `draw_ship_asset`
+
+```python
+def draw_ship_asset(ship_name, cells, orient="H", alpha=255, board_x=None, board_y=None):
+    if board_x is None:
+        board_x = PLACEMENT_BOARD_X
+
+    if board_y is None:
+        board_y = PLACEMENT_BOARD_Y
+
+    image = ship_images.get(ship_name)
+    ...
+```
+
+Fungsi `draw_ship_asset` digunakan untuk menggambar gambar kapal berdasarkan nama, kumpulan sel, dan orientasi kapal. Fungsi ini juga menangani rotasi, skala gambar, transparansi, dan posisi render pada board tertentu.
+
+
+##### Fungsi `draw_placed_ship_assets`
+
+```python
+def draw_placed_ship_assets():
+    for placed_ship in placed_ships:
+        draw_ship_asset(
+            placed_ship["name"],
+            placed_ship["cells"],
+            placed_ship.get("orientation", "H"),
+            alpha=255
+        )
+```
+
+Fungsi `draw_placed_ship_assets` digunakan untuk menggambar seluruh kapal yang sudah ditempatkan pemain selama fase placement dengan memanfaatkan `draw_ship_asset`.
+
+
+##### Fungsi `draw_ship_ghost`
+
+```python
+def draw_ship_ghost():
+    if screen_state != "PLACEMENT":
+        return
+
+    if placement_confirm_open:
+        return
+
+    if current_ship_index >= len(SHIPS):
+    ...
+```
+
+Fungsi `draw_ship_ghost` digunakan untuk menampilkan pratinjau kapal transparan saat pemain mengarahkan mouse pada papan placement. Warna pratinjau akan membedakan penempatan valid dan tidak valid.
+
+
+##### Fungsi `draw_placement_confirm_popup`
+
+```python
+def draw_placement_confirm_popup():
+    if not placement_confirm_open:
+        return
+
+    popup_width = 520
+    popup_height = 240
+    popup_x = (WIDTH - popup_width) // 2
+    popup_y = (HEIGHT - popup_height) // 2
+    ...
+```
+
+Fungsi `draw_placement_confirm_popup` digunakan untuk menampilkan popup konfirmasi saat pemain ingin mengunci penempatan kapal. Popup ini juga mengatur ulang posisi tombol Yes dan No sebelum digambar.
+
+
+##### Fungsi `draw_placement`
+
+```python
+def draw_placement():
+    draw_background(screen, BACKGROUND_IMAGE)
+
+    draw_panel(
+        screen,
+        PLACEMENT_PANEL_X,
+        PLACEMENT_PANEL_Y,
+        PLACEMENT_PANEL_WIDTH,
+    ...
+```
+
+Fungsi `draw_placement` digunakan untuk merender seluruh layar penempatan kapal, termasuk panel utama, papan placement, aset kapal yang sudah dipasang, ghost preview, informasi kapal aktif, kontrol, status, dan popup konfirmasi.
+
+
+---
+
+#### Fungsi Tampilan Permainan Utama
+
+##### Fungsi `draw_own_game_board`
+
+```python
+def draw_own_game_board():
+    draw_board_labels(GAME_MY_BOARD_X, GAME_MY_BOARD_Y)
+    draw_board_base_water(GAME_MY_BOARD_X, GAME_MY_BOARD_Y)
+
+    for placed_ship in placed_ships:
+        draw_ship_asset(
+            placed_ship["name"],
+            placed_ship["cells"],
+    ...
+```
+
+Fungsi `draw_own_game_board` digunakan untuk menggambar papan milik pemain lengkap dengan label, dasar laut, kapal yang sudah ditempatkan, overlay hasil serangan lawan, dan grid garis.
+
+
+##### Fungsi `draw_enemy_target_hover`
+
+```python
+def draw_enemy_target_hover():
+    if current_turn_session_id != session_id:
+        return
+
+    if game_paused:
+        return
+
+    mouse_x, mouse_y = pygame.mouse.get_pos()
+    ...
+```
+
+Fungsi `draw_enemy_target_hover` digunakan untuk menampilkan highlight target pada papan lawan ketika giliran pemain aktif. Fungsi ini tidak menggambar apa pun bila bukan giliran pemain atau game sedang pause.
+
+
+##### Fungsi `draw_enemy_game_board`
+
+```python
+def draw_enemy_game_board():
+    draw_board_labels(GAME_ENEMY_BOARD_X, GAME_ENEMY_BOARD_Y)
+    draw_board_base_water(GAME_ENEMY_BOARD_X, GAME_ENEMY_BOARD_Y)
+    draw_enemy_target_hover()
+    draw_hit_miss_overlay(enemy_board, GAME_ENEMY_BOARD_X, GAME_ENEMY_BOARD_Y)
+    draw_grid_lines(GAME_ENEMY_BOARD_X, GAME_ENEMY_BOARD_Y)
+```
+
+Fungsi `draw_enemy_game_board` digunakan untuk menggambar papan lawan, termasuk label, dasar laut, hover target, overlay hit/miss, dan grid garis.
+
+
+##### Fungsi `draw_game_info_box`
+
+```python
+def draw_game_info_box():
+    box_width = 520
+    box_height = 78
+    box_x = GAME_PANEL_X + (GAME_PANEL_WIDTH - box_width) // 2
+    box_y = GAME_PANEL_Y + 20
+
+    pygame.draw.rect(
+        screen,
+    ...
+```
+
+Fungsi `draw_game_info_box` digunakan untuk menampilkan kotak informasi ringkas berisi nama pemain, lawan, room ID, dan indikator latency di bagian atas layar permainan.
+
+
+##### Fungsi `draw_game_side_panel`
+
+```python
+def draw_game_side_panel():
+    panel_x = GAME_PANEL_X + 505
+    panel_y = GAME_PANEL_Y + 160
+    panel_w = 150
+    panel_h = 400
+
+    pygame.draw.rect(
+        screen,
+    ...
+```
+
+Fungsi `draw_game_side_panel` digunakan untuk menampilkan panel samping yang memuat status giliran, statistik hit/miss kedua pihak, dan petunjuk singkat tindakan yang tersedia. Di dalamnya juga terdapat fungsi lokal `draw_center_in_panel` untuk merapikan perataan teks pada panel.
+
+
+##### Fungsi `draw_pause_overlay_background`
+
+```python
+def draw_pause_overlay_background():
+    overlay = pygame.Surface((WIDTH, HEIGHT), pygame.SRCALPHA)
+    overlay.fill((0, 0, 0, 120))
+    screen.blit(overlay, (0, 0))
+```
+
+Fungsi `draw_pause_overlay_background` digunakan untuk menggambar lapisan gelap transparan di atas layar saat menu pause dibuka.
+
+
+##### Fungsi `draw_game_pause_menu`
+
+```python
+def draw_game_pause_menu():
+    draw_pause_overlay_background()
+
+    panel_width = 420
+    panel_height = 360
+    panel_x = (WIDTH - panel_width) // 2
+    panel_y = (HEIGHT - panel_height) // 2
+
+    ...
+```
+
+Fungsi `draw_game_pause_menu` digunakan untuk menggambar menu pause di dalam pertandingan yang berisi tombol resume, settings, dan forfeit, beserta keterangan risiko forfeit.
+
+
+##### Fungsi `draw_game_pause_settings`
+
+```python
+def draw_game_pause_settings():
+    draw_pause_overlay_background()
+
+    panel_width = 420
+    panel_height = 420
+    panel_x = center_x(panel_width)
+    panel_y = 130
+
+    ...
+```
+
+Fungsi `draw_game_pause_settings` digunakan untuk menggambar tampilan settings yang muncul dari menu pause dalam pertandingan. Fungsi ini juga memperbarui label tombol terkait sound, fullscreen, dan volume.
+
+
+##### Fungsi `draw_game_pause_overlay`
+
+```python
+def draw_game_pause_overlay():
+    if not game_paused:
+        return
+
+    if game_pause_screen == "SETTINGS":
+        draw_game_pause_settings()
+    else:
+        draw_game_pause_menu()
+```
+
+Fungsi `draw_game_pause_overlay` digunakan sebagai pengendali overlay pause pada mode game. Jika `game_paused` aktif, fungsi ini memilih apakah yang digambar adalah menu pause biasa atau settings pause.
+
+
+##### Fungsi `draw_game`
+
+```python
+def draw_game():
+    draw_background(screen, BACKGROUND_IMAGE)
+
+    draw_panel(
+        screen,
+        GAME_PANEL_X,
+        GAME_PANEL_Y,
+        GAME_PANEL_WIDTH,
+    ...
+```
+
+Fungsi `draw_game` digunakan untuk merender keseluruhan tampilan permainan utama, mulai dari panel layar, info pemain, kedua board, panel samping, instruksi giliran, jumlah spectator, tombol pause, hingga overlay pause.
+
+
+---
+
+#### Fungsi Tampilan Spectator dan Replay
+
+##### Fungsi `draw_replay_board`
+
+```python
+def draw_replay_board(board, ships, start_x, start_y):
+    draw_board_labels(start_x, start_y)
+    draw_board_base_water(start_x, start_y)
+
+    for ship in ships:
+        draw_ship_asset(
+            ship["name"],
+            ship["cells"],
+    ...
+```
+
+Fungsi `draw_replay_board` digunakan untuk menggambar papan replay berdasarkan data kapal awal dan hasil event hingga langkah tertentu. Jika data aset kapal tidak tersedia, fungsi ini menyediakan fallback dengan menggambar blok kapal biasa.
+
+
+##### Fungsi `draw_spectator_waiting`
+
+```python
+def draw_spectator_waiting():
+    draw_background(screen, BACKGROUND_IMAGE)
+
+    panel_width = 560
+    panel_height = 430
+    panel_x = center_x(panel_width)
+    panel_y = 120
+
+    ...
+```
+
+Fungsi `draw_spectator_waiting` digunakan untuk menampilkan layar tunggu spectator sebelum pertandingan dimulai atau saat pemain masih menempatkan kapal.
+
+
+##### Fungsi `draw_spectator_board`
+
+```python
+def draw_spectator_board(board, ships, start_x, start_y):
+    draw_board_labels(start_x, start_y)
+    draw_board_base_water(start_x, start_y)
+
+    for ship in ships:
+        draw_ship_asset(
+            ship["name"],
+            ship["cells"],
+    ...
+```
+
+Fungsi `draw_spectator_board` digunakan untuk menggambar papan dari sudut pandang spectator. Struktur gambarnya serupa dengan replay board, termasuk fallback bila aset kapal belum tersedia.
+
+
+##### Fungsi `draw_spectator_pause_menu`
+
+```python
+def draw_spectator_pause_menu():
+    draw_pause_overlay_background()
+
+    panel_width = 420
+    panel_height = 360
+    panel_x = (WIDTH - panel_width) // 2
+    panel_y = (HEIGHT - panel_height) // 2
+
+    ...
+```
+
+Fungsi `draw_spectator_pause_menu` digunakan untuk menampilkan menu pause pada mode spectator dengan opsi resume, settings, dan kembali ke main menu.
+
+
+##### Fungsi `draw_spectator_pause_settings`
+
+```python
+def draw_spectator_pause_settings():
+    draw_pause_overlay_background()
+
+    panel_width = 420
+    panel_height = 420
+    panel_x = center_x(panel_width)
+    panel_y = 130
+
+    ...
+```
+
+Fungsi `draw_spectator_pause_settings` digunakan untuk menggambar menu pengaturan pada saat spectator membuka pause settings.
+
+
+##### Fungsi `draw_spectator_pause_overlay`
+
+```python
+def draw_spectator_pause_overlay():
+    if not spectator_paused:
+        return
+
+    if spectator_pause_screen == "SETTINGS":
+        draw_spectator_pause_settings()
+    else:
+        draw_spectator_pause_menu()
+```
+
+Fungsi `draw_spectator_pause_overlay` digunakan untuk menentukan overlay apa yang perlu digambar ketika mode spectator sedang dipause.
+
+
+##### Fungsi `draw_spectator`
+
+```python
+def draw_spectator():
+    draw_background(screen, BACKGROUND_IMAGE)
+
+    draw_panel(
+        screen,
+        GAME_PANEL_X,
+        GAME_PANEL_Y,
+        GAME_PANEL_WIDTH,
+    ...
+```
+
+Fungsi `draw_spectator` digunakan untuk merender keseluruhan layar spectator, termasuk dua papan pemain, nama pemain, status pertandingan, tombol pause, dan overlay pause spectator.
+
+
+##### Fungsi `draw_game_over`
+
+```python
+def draw_game_over():
+    draw_background(screen, BACKGROUND_IMAGE)
+
+    panel_width = 440
+    panel_height = 390
+    panel_x = center_x(panel_width)
+    panel_y = 150
+
+    ...
+```
+
+Fungsi `draw_game_over` digunakan untuk menampilkan layar akhir permainan bagi pemain, termasuk hasil menang/kalah dan tombol rematch, replay, serta kembali ke menu utama.
+
+
+##### Fungsi `draw_spectator_result`
+
+```python
+def draw_spectator_result():
+    draw_background(screen, BACKGROUND_IMAGE)
+
+    panel_width = 460
+    panel_height = 390
+    panel_x = center_x(panel_width)
+    panel_y = 150
+
+    ...
+```
+
+Fungsi `draw_spectator_result` digunakan untuk menampilkan hasil akhir pertandingan dari sudut pandang spectator, serta menyediakan tombol lanjut, replay, dan kembali ke menu utama.
+
+
+##### Fungsi `draw_replay_viewer`
+
+```python
+def draw_replay_viewer():
+    draw_background(screen, BACKGROUND_IMAGE)
+
+    draw_panel(
+        screen,
+        GAME_PANEL_X,
+        GAME_PANEL_Y,
+        GAME_PANEL_WIDTH,
+    ...
+```
+
+Fungsi `draw_replay_viewer` digunakan untuk merender viewer replay lengkap dengan dua board hasil rekonstruksi, penghitung langkah replay, dan tombol navigasi prev, next, serta exit.
+
+
+##### Fungsi `draw_replay_list`
+
+```python
+def draw_replay_list():
+    draw_background(screen, BACKGROUND_IMAGE)
+
+    panel_width = 900
+    panel_height = 540
+    panel_x = center_x(panel_width)
+    panel_y = 80
+
+    ...
+```
+
+Fungsi `draw_replay_list` digunakan untuk menampilkan daftar replay yang tersedia beserta informasi room, pemain, pemenang, dan jumlah event.
+
+
+##### Fungsi `draw_replay_detail`
+
+```python
+def draw_replay_detail():
+    draw_background(screen, BACKGROUND_IMAGE)
+
+    panel_width = 900
+    panel_height = 540
+    panel_x = center_x(panel_width)
+    panel_y = 80
+
+    ...
+```
+
+Fungsi `draw_replay_detail` digunakan untuk menampilkan detail satu replay terpilih, termasuk pemain yang bertanding, pemenang, dan sebagian daftar event yang terjadi.
+
+
+---
+
+#### Fungsi Layar Menu, Room, dan Settings
+
+##### Fungsi `draw_easter_popup`
+
+```python
+def draw_easter_popup():
+    if not easter_popup_open:
+        return
+
+    overlay = pygame.Surface((WIDTH, HEIGHT), pygame.SRCALPHA)
+    overlay.fill((0, 0, 0, 120))
+    screen.blit(overlay, (0, 0))
+
+    ...
+```
+
+Fungsi `draw_easter_popup` digunakan untuk menampilkan popup easter egg di atas layar utama ketika kondisi pemicunya aktif.
+
+
+##### Fungsi `draw_title_screen`
+
+```python
+def draw_title_screen():
+    draw_background(screen, BACKGROUND_IMAGE)
+
+    panel_width = 480
+    panel_height = 300
+    panel_x = (WIDTH - panel_width) // 2
+    panel_y = 170
+
+    ...
+```
+
+Fungsi `draw_title_screen` digunakan untuk menampilkan layar pembuka permainan yang berisi judul utama dan instruksi klik untuk mulai.
+
+
+##### Fungsi `draw_auth_screen`
+
+```python
+def draw_auth_screen():
+    draw_background(screen, BACKGROUND_IMAGE)
+
+    draw_panel(
+        screen,
+        AUTH_PANEL_X,
+        AUTH_PANEL_Y,
+        AUTH_PANEL_WIDTH,
+    ...
+```
+
+Fungsi `draw_auth_screen` digunakan untuk menampilkan form login dan register, lengkap dengan input username, password, tombol aksi, dan status pesan.
+
+
+##### Fungsi `draw_main_menu`
+
+```python
+def draw_main_menu():
+    draw_background(screen, BACKGROUND_IMAGE)
+
+    panel_width = 430
+    panel_height = 490
+    panel_x = center_x(panel_width)
+    panel_y = 95
+
+    ...
+```
+
+Fungsi `draw_main_menu` digunakan untuk menampilkan menu utama setelah login, termasuk tombol quick play, play, leaderboard, settings, exit, serta status dan popup easter egg.
+
+
+##### Fungsi `draw_room_waiting`
+
+```python
+def draw_room_waiting():
+    draw_background(screen, BACKGROUND_IMAGE)
+
+    panel_width = 560
+    panel_height = 520
+    panel_x = center_x(panel_width)
+    panel_y = 90
+
+    ...
+```
+
+Fungsi `draw_room_waiting` digunakan untuk menampilkan status room sebelum pertandingan dimulai, seperti room ID, username pemain, lawan, latency, status, dan tombol start/spectate.
+
+
+##### Fungsi `draw_room_browser`
+
+```python
+def draw_room_browser():
+    global join_room_buttons
+
+    draw_background(screen, BACKGROUND_IMAGE)
+
+    panel_width = 980
+    panel_height = 610
+    panel_x = (WIDTH - panel_width) // 2
+    ...
+```
+
+Fungsi `draw_room_browser` digunakan untuk merender daftar room yang tersedia, kolom informasi room, daftar tombol join, status browser, serta tombol refresh, create room, dan back.
+
+
+##### Fungsi `draw_room_join_popup`
+
+```python
+def draw_room_join_popup():
+    if selected_room_index is None:
+        return
+
+    visible_rooms = filter_rooms()
+
+    if selected_room_index >= len(visible_rooms):
+        return
+    ...
+```
+
+Fungsi `draw_room_join_popup` digunakan untuk menampilkan popup detail room terpilih sebelum pengguna bergabung sebagai player atau spectator. Jika room terkunci, fungsi ini juga menampilkan input password.
+
+
+##### Fungsi `draw_create_room`
+
+```python
+def draw_create_room():
+    draw_background(screen, BACKGROUND_IMAGE)
+
+    panel_width = 520
+    panel_height = 380
+    panel_x = (WIDTH - panel_width) // 2
+    panel_y = 150
+
+    ...
+```
+
+Fungsi `draw_create_room` digunakan untuk menampilkan form pembuatan room, meliputi input nama room, password opsional, tombol submit, tombol cancel, dan status pesan.
+
+
+##### Fungsi `draw_settings`
+
+```python
+def draw_settings():
+    draw_background(screen, BACKGROUND_IMAGE)
+
+    panel_width = 420
+    panel_height = 420
+    panel_x = center_x(panel_width)
+    panel_y = 130
+
+    ...
+```
+
+Fungsi `draw_settings` digunakan untuk menampilkan halaman settings utama di luar pertandingan, termasuk kontrol sound, volume, fullscreen/windowed, dan tombol kembali.
+
+
+---
+
+#### Fungsi Leaderboard
+
+##### Fungsi `draw_leaderboard_row`
+
+```python
+def draw_leaderboard_row(rank, player, x, y, row_width, highlight=False):
+    row_rect = pygame.Rect(x, y, row_width, 42)
+
+    if highlight:
+        row_color = (70, 95, 125)
+    elif rank % 2 == 0:
+        row_color = (36, 58, 82)
+    else:
+    ...
+```
+
+Fungsi `draw_leaderboard_row` digunakan untuk menggambar satu baris data leaderboard dengan informasi rank, username, win, lose, total match, dan win rate. Warna baris dapat dibedakan untuk efek zebra atau highlight pemain aktif.
+
+
+##### Fungsi `draw_my_stat_card`
+
+```python
+def draw_my_stat_card(player, panel_x, panel_y):
+    card_w = 560
+    card_h = 270
+    card_x = panel_x + 130
+    card_y = panel_y + 150
+
+    pygame.draw.rect(screen, COLORS["panel_light"], pygame.Rect(card_x, card_y, card_w, card_h), border_radius=18)
+    pygame.draw.rect(screen, COLORS["input_border"], pygame.Rect(card_x, card_y, card_w, card_h), 2, border_radius=18)
+    ...
+```
+
+Fungsi `draw_my_stat_card` digunakan untuk menggambar kartu statistik pribadi pemain, seperti total match, win, lose, hit, miss, dan win rate.
+
+
+##### Fungsi `draw_leaderboard`
+
+```python
+def draw_leaderboard():
+    draw_background(screen, BACKGROUND_IMAGE)
+
+    panel_width = 900
+    panel_height = 570
+    panel_x = center_x(panel_width)
+    panel_y = 65
+
+    ...
+```
+
+Fungsi `draw_leaderboard` digunakan untuk merender halaman leaderboard secara penuh. Fungsi ini dapat beralih antara mode statistik pribadi dan peringkat top 10, termasuk pengaturan tombol, header, scroll informasi, serta highlight user aktif.
+
+
+---
+
+##### Ringkasan
+
+Secara keseluruhan, `screens.py` menjadi pusat penyusunan antarmuka visual pada sisi klien. File ini tidak menangani logika jaringan atau perubahan state utama secara langsung, tetapi berperan penting dalam menerjemahkan data state permainan menjadi tampilan yang dapat dilihat dan dipahami pengguna pada setiap layar aplikasi.
+
+---
 
 #### Penejelasan state.py
 File `state.py` pada folder `client/` berfungsi sebagai modul helper untuk inisialisasi state papan permainan.
@@ -620,7 +1435,7 @@ File `state.py` pada folder `client/` berfungsi sebagai modul helper untuk inisi
 
 ##### Fungsi create_empty_board
 
-```
+```python
 def create_empty_board():
     return [[CELL_EMPTY for _ in range(BOARD_SIZE)] for _ in range(BOARD_SIZE)]
 ```
@@ -654,7 +1469,7 @@ Fungsi ini digunakan untuk mengubah password plaintext menjadi hash SHA-256 sebe
 
 #### Fungsi register_user
 
-```
+```python
 def register_user(username, password):
     username = username.strip()
 
@@ -676,7 +1491,7 @@ Fungsi ini digunakan untuk memvalidasi input registrasi, memeriksa apakah userna
 
 ##### Fungsi login_user
 
-```
+```python
 def login_user(username, password):
     # ... ambil password_hash dari database
     if stored_password_hash != hash_password(password):
@@ -721,7 +1536,7 @@ Variabel kelas `active_usernames` digunakan sebagai registry bersama untuk mence
 
 ##### Fungsi handle
 
-```
+```python
 def handle(self):
     self.client_socket.settimeout(300)
 
@@ -747,7 +1562,7 @@ Fungsi ini digunakan untuk membaca data dari socket secara terus-menerus menggun
 
 ##### Fungsi process_message
 
-```
+```python
 def process_message(self, raw_message):
     message = decode_message(raw_message)
     message_type = message.get("type")
@@ -767,7 +1582,7 @@ Fungsi ini digunakan sebagai router pesan yang mendekode JSON masuk dan mendeleg
 
 ##### Fungsi handle_rematch_request
 
-```
+```python
 def handle_rematch_request(self):
     room = self.matchmaking.room_manager.get_room(self.room_id)
 
@@ -796,7 +1611,7 @@ File `config.py` pada folder `server/` berfungsi sebagai penyimpan konfigurasi j
 
 ##### Konfigurasi Server
 
-```
+```python
 HOST = "0.0.0.0"
 PORT = 5000
 BUFFER_SIZE = 4096
@@ -820,7 +1635,7 @@ File `database.py` pada folder `server/` berfungsi untuk mengelola koneksi dan i
 
 ##### Fungsi get_connection dan init_database
 
-```
+```python
 def get_connection():
     os.makedirs("data", exist_ok=True)
     return sqlite3.connect(DB_PATH)
@@ -869,7 +1684,7 @@ File `game_room.py` pada folder `server/` berfungsi sebagai representasi satu ro
 
 ##### Constructor
 
-```
+```python
 def __init__(self, room_id, player_1, player_2=None, room_name=None, password=""):
     self.room_id = room_id
     self.players = [player_1]
@@ -890,7 +1705,7 @@ Bagian ini digunakan untuk menginisialisasi room dengan data pemain, papan koson
 
 ##### Fungsi place_ships
 
-```
+```python
 def place_ships(self, session_id, ships):
     board = self.create_empty_board()
 
@@ -913,7 +1728,7 @@ Fungsi ini digunakan untuk memvalidasi dan menyimpan penempatan kapal dari seora
 
 ##### Fungsi fire
 
-```
+```python
 def fire(self, shooter_session_id, x, y):
     if shooter_session_id != self.current_turn:
         return False, "Not your turn", None
@@ -942,7 +1757,7 @@ Fungsi ini digunakan untuk memproses tembakan dari pemain yang sedang bergiliran
 
 #### Fungsi set_ready dan reset_for_rematch_request
 
-```
+```python
 def set_ready(self, session_id):
     self.ready_players.add(session_id)
     if len(self.ready_players) == 2:
@@ -974,7 +1789,7 @@ File `logger.py` pada folder `server/` berfungsi untuk menginisialisasi sistem p
 
 ##### Fungsi setup_logger
 
-```
+```python
 def setup_logger():
     os.makedirs("logs", exist_ok=True)
 
@@ -1004,7 +1819,7 @@ File `main.py` pada folder `server/` berfungsi sebagai titik masuk eksekusi serv
 
 ##### Entry Point
 
-```
+```python
 from server.socket_server import SocketServer
 
 if __name__ == "__main__":
@@ -1029,7 +1844,7 @@ File `matchmaking.py` pada folder `server/` berfungsi untuk mengelola logika ant
 
 ##### Fungsi join_queue
 
-```
+```python
 def join_queue(self, player):
     waiting_room = self.room_manager.get_waiting_room()
 
@@ -1077,7 +1892,7 @@ Fungsi ini digunakan untuk memastikan data pemain sudah ada di tabel `players`, 
 
 ##### Fungsi record_match_result
 
-```
+```python
 def record_match_result(winner_username, loser_username):
     # UPDATE players SET total_match+1, win+1 WHERE username = winner
     # UPDATE players SET total_match+1, lose+1 WHERE username = loser
@@ -1089,7 +1904,7 @@ Fungsi ini digunakan untuk mencatat hasil akhir pertandingan dengan menambahkan 
 
 ##### Fungsi record_shot
 
-```
+```python
 def record_shot(username, result):
     if result == "HIT":
         # UPDATE hit_count + 1
@@ -1103,7 +1918,7 @@ Fungsi ini digunakan untuk mencatat setiap tembakan yang dilakukan pemain sehing
 
 ##### Fungsi get_leaderboard
 
-```
+```python
 def get_leaderboard(limit=10):
     cursor.execute("""
         SELECT username, total_match, win, lose, hit_count, miss_count
@@ -1130,7 +1945,7 @@ File `replay_service.py` pada folder `server/` berfungsi untuk mengelola pencata
 
 ##### Fungsi create_replay
 
-```
+```python
 def create_replay(room_id, player_1, player_2):
     replay = {
         "room_id": room_id,
@@ -1153,7 +1968,7 @@ Fungsi ini digunakan untuk membuat objek replay baru saat pertandingan dimulai, 
 
 ##### Fungsi add_fire_event dan add_forfeit_event
 
-```
+```python
 def add_fire_event(room_id, shooter, x, y, result, turn_number):
     replay["events"].append({
         "turn": turn_number,
@@ -1177,7 +1992,7 @@ Fungsi `add_fire_event` digunakan untuk mencatat setiap tembakan beserta koordin
 
 ##### Fungsi finish_replay dan get_replay_list
 
-```
+```python
 def finish_replay(room_id, winner):
     replay["winner"] = winner
     replay["finished_at"] = datetime.now().isoformat()
@@ -1205,7 +2020,7 @@ File `response_builder.py` pada folder `server/` berfungsi sebagai factory funct
 
 ##### Fungsi ok, failed, dan error
 
-```
+```python
 def ok(message_type, payload=None, room_id=None, session_id=None):
     return {
         "type": message_type,
@@ -1234,7 +2049,7 @@ Fungsi `ok` digunakan untuk membangun respons sukses dengan tipe pesan dan paylo
 
 ##### Fungsi room_payload
 
-```
+```python
 def room_payload(message_type, room, message="", room_id=None):
     return ok(
         message_type,
@@ -1263,7 +2078,7 @@ File `room_manager.py` pada folder `server/` berfungsi untuk mengelola seluruh s
 
 ##### Fungsi create_waiting_room dan create_manual_room
 
-```
+```python
 def create_waiting_room(self, player_1):
     room_id = str(uuid.uuid4())[:8]
     room = GameRoom(room_id=room_id, player_1=player_1, ...)
@@ -1280,7 +2095,7 @@ Fungsi `create_waiting_room` digunakan untuk membuat room baru dengan ID acak 8 
 
 ##### Fungsi join_room_as_player dan join_room_as_spectator
 
-```
+```python
 def join_room_as_player(self, room_id, player, password=""):
     room = self.get_room(room_id)
     if not room.is_password_valid(password):
@@ -1299,7 +2114,7 @@ Fungsi `join_room_as_player` digunakan untuk memproses permintaan bergabung seba
 
 ##### Fungsi get_room_list dan remove_user_from_room
 
-```
+```python
 def get_room_list(self):
     return [
         room.get_public_info()
@@ -1333,7 +2148,7 @@ File `socket_server.py` pada folder `server/` berfungsi sebagai titik masuk utam
 
 ##### Constructor
 
-```
+```python
 def __init__(self):
     init_database()
     self.logger = setup_logger()
@@ -1348,7 +2163,7 @@ Bagian ini digunakan untuk menginisialisasi database, logger, socket server, ser
 
 ##### Fungsi start
 
-```
+```python
 def start(self):
     self.server_socket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
     self.server_socket.bind((HOST, PORT))
@@ -1387,7 +2202,7 @@ File `auth_handler.py` pada folder `server/handlers/` berfungsi untuk menangani 
 
 ##### Fungsi handle_login
 
-```
+```python
 def handle_login(handler, message):
     username = message.get("payload", {}).get("username", "").strip()
     password = message.get("payload", {}).get("password", "")
@@ -1412,7 +2227,7 @@ Fungsi ini digunakan untuk memproses login dengan memanggil `login_user` dari `a
 
 ##### Fungsi handle_register dan unregister_active_user
 
-```
+```python
 def handle_register(handler, message):
     success, info = register_user(username, password)
     handler.send(ok(REGISTER_SUCCESS, ...))
@@ -1440,7 +2255,7 @@ File `game_handler.py` pada folder `server/handlers/` berfungsi untuk menangani 
 
 ##### Fungsi handle_fire
 
-```
+```python
 def handle_fire(handler, message):
     x, y = payload.get("x"), payload.get("y")
     success, info, fire_data = room.fire(handler.session_id, x, y)
@@ -1465,7 +2280,7 @@ Fungsi ini digunakan untuk memproses tembakan pemain dengan memvalidasinya melal
 
 ##### Fungsi handle_forfeit
 
-```
+```python
 def handle_forfeit(handler):
     winner_player = opponent
     loser_player = get_current_player_data(handler, room)
@@ -1496,7 +2311,7 @@ File `leaderboard_handler.py` pada folder `server/handlers/` berfungsi untuk men
 
 ##### Fungsi handle_get_leaderboard
 
-```
+```python
 def handle_get_leaderboard(handler):
     leaderboard = get_leaderboard()
 
@@ -1521,7 +2336,7 @@ File `matchmaking_handler.py` pada folder `server/handlers/` berfungsi untuk men
 
 ##### Fungsi handle_matchmake
 
-```
+```python
 def handle_matchmake(handler):
     if not handler.session_id:
         handler.send_error("You must login first")
@@ -1568,7 +2383,7 @@ File `placement_handler.py` pada folder `server/handlers/` berfungsi untuk menan
 
 ##### Fungsi handle_start_placement
 
-```
+```python
 def handle_start_placement(handler):
     room.status = "WAITING_PLACEMENT"
     send_placement_start_to_room(handler, room)
@@ -1580,7 +2395,7 @@ Fungsi ini digunakan untuk memulai fase penempatan kapal dengan mengubah status 
 
 ##### Fungsi handle_place_ships
 
-```
+```python
 def handle_place_ships(handler, message):
     ships = message.get("payload", {}).get("ships", [])
     success, info = room.place_ships(handler.session_id, ships)
@@ -1594,7 +2409,7 @@ Fungsi ini digunakan untuk menerima data penempatan kapal dari klien, meneruskan
 
 ##### Fungsi handle_ready
 
-```
+```python
 def handle_ready(handler, message):
     game_started = room.set_ready(handler.session_id)
 
@@ -1626,7 +2441,7 @@ File `replay_handler.py` pada folder `server/handlers/` berfungsi untuk menangan
 
 ##### Fungsi handle_get_replay_list dan handle_get_replay_detail
 
-```
+```python
 def handle_get_replay_list(handler):
     handler.send(ok(
         REPLAY_LIST_DATA,
@@ -1660,7 +2475,7 @@ File `room_handler.py` pada folder `server/handlers/` berfungsi untuk menangani 
 
 ##### Fungsi handle_create_room
 
-```
+```python
 def handle_create_room(handler, message):
     room_name = payload.get("room_name", "").strip()
     password = payload.get("password", "")
@@ -1679,7 +2494,7 @@ Fungsi ini digunakan untuk membuat room manual dengan nama dan password opsional
 
 ##### Fungsi handle_join_room
 
-```
+```python
 def handle_join_room(handler, message):
     mode = payload.get("mode", "PLAYER")
 
@@ -1702,7 +2517,7 @@ Fungsi ini digunakan untuk menangani permintaan bergabung ke room berdasarkan mo
 
 ##### Fungsi notify_room_updated dan handle_leave_room
 
-```
+```python
 def notify_room_updated(handler, room):
     for player in room.players:
         player["handler"].send({"type": ROOM_UPDATED, ...})
@@ -1734,7 +2549,7 @@ File `constants.py` pada folder `shared/` berfungsi sebagai tempat penyimpanan k
 
 ##### Konfigurasi Jaringan dan Papan
 
-```
+```python
 HOST = "127.0.0.1"
 PORT = 5000
 
@@ -1752,7 +2567,7 @@ Bagian ini digunakan untuk mendefinisikan alamat dan port koneksi klien ke serve
 
 ##### Konfigurasi Data Kapal
 
-```
+```python
 SHIPS = [
     {"name": "Wooden Boat", "width": 1, "height": 2, ...},
     {"name": "Pirate Boat", "width": 2, "height": 2, ...},
@@ -1779,7 +2594,7 @@ File `message_type.py` pada folder `shared/` berfungsi sebagai kamus tipe pesan 
 
 ##### Definisi Tipe Pesan
 
-```
+```python
 LOGIN = "LOGIN"
 LOGIN_SUCCESS = "LOGIN_SUCCESS"
 LOGIN_FAILED = "LOGIN_FAILED"
@@ -1812,7 +2627,7 @@ File `serializer.py` pada folder `shared/` berfungsi sebagai modul encoder dan d
 
 ##### Fungsi encode_message dan decode_message
 
-```
+```python
 def encode_message(message: dict) -> bytes:
     return (json.dumps(message) + "\n").encode("utf-8")
 
