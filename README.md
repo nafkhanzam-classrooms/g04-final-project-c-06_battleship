@@ -15,7 +15,7 @@ Link ditaruh di bawah ini
 ---
 - [Struktur Directory](#struktur-directory)
   
-- [Folder client/](#folder-client/)
+- [Folder client/](#folder-client)
   
     - [Penjelasan app.py]()
     - [Penjelasan assets.py]()
