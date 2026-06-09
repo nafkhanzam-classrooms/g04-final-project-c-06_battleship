@@ -13,53 +13,58 @@ Link ditaruh di bawah ini
 
 ```
 ---
-- [Struktur Directory](#struktur-directory)
-  
-- [Folder client/](#folder-client)
-  
-    - [Penjelasan app.py](#penjelasan-apppy)
-    - [Penjelasan assets.py](#penjelasan-assetspy)
-    - [Penejelasan audio.py](#penjelasan-audiopy)
-    - [Penejelasan event_handler.py](#penjelasan-eventpy)
-    - [Penejelasan game_logic.py](#penjelasan-game-logicpy)
-    - [Penejelasan main.py](#penjelasan-mainpu)
-    - [Penejelasan message_handler.py](#penjelasan-message_handlerpy)
-    - [Penejelasan network_client.py](#penjelasan-network_clientpy)
-    - [Penejelasan screens.py](#penjelasan-screenspy)
-    - [Penejelasan state.py](#penjelasan-statepy)
-      
-- [Folder Server/](#folder-server)
+## Daftar Isi
 
-    - [Penejelasan auth_service.py](#penjelasan-auth_servicepy)
-    - [Penejelasan client_handler.py](#penjelasan-client_handlerpy)
-    - [Penejelasan config.py](#penjelasan-configpy)
-    - [Penejelasan database.py](#penjelasan-databasepy)
-    - [Penejelasan game_room.py](#penjelasan-game_roompy)
-    - [Penejelasan logger.py](#penjelasan-loggerpy)
-    - [Penejelasan main.py](#penjelasan-mainpy)
-    - [Penejelasan matchmaking.py](#penjelasan-matchmakingpy)
-    - [Penejelasan ranking_service.py](#penjelasan-rangking_servicepy)
-    - [Penejelasan replay_service.py](#penjelasan-replay_servicepy)
-    - [Penejelasan response_builder.py](#penjelasan-response_builder)
-    - [Penejelasan room_manager.py](#penjelasan-room_managerpy)
-    - [Penejelasan socket_server.py](#penjelasan-scoker_serverpy)
-    
-- Folder server/handlers
+* [Struktur Directory](#struktur-directory)
 
-    - Penjelasan auth_handler.py
-    - Penjelasan game_handler.py
-    - Penjelasan leaderboard_handler.py
-    - Penjelasan matchmaking_handler.py
-    - Penjelasan placement_handler.py
-    - Penjelasan replay_handler.py
-    - Penjelasan room_handler.py
-    - Penjelasan __init__.py
-    
-- Folder shared/
+* [Folder client/](#folder-client)
 
-    - Penjelasan constants.py
-    - Penjelasan message_type.py
-    - Penjelasan serializer.py
+  * [Penjelasan app.py](#penjelasan-apppy)
+  * [Penejelasan assets.py](#penejelasan-assetspy)
+  * [Penejelasan audio.py](#penejelasan-audiopy)
+  * [Penejelasan event_handler.py](#penejelasan-event_handlerpy)
+  * [Penejelasan game_logic.py](#penejelasan-game_logicpy)
+  * [Penejelasan main.py](#penejelasan-mainpy)
+  * [Penejelasan message_handler.py](#penejelasan-message_handlerpy)
+  * [Penejelasan network_client.py](#penejelasan-network_clientpy)
+  * [Penejelasan screens.py](#penejelasan-screenspy)
+  * [Penejelasan state.py](#penejelasan-statepy)
+
+* [Folder Server/](#folder-server)
+
+  * [Penejelasan auth_service.py](#penejelasan-auth_servicepy)
+  * [Penejelasan client_handler.py](#penejelasan-client_handlerpy)
+  * [Penejelasan config.py](#penejelasan-configpy)
+  * [Penejelasan database.py](#penejelasan-databasepy)
+  * [Penejelasan game_room.py](#penejelasan-game_roompy)
+  * [Penejelasan logger.py](#penejelasan-loggerpy)
+  * [Penejelasan main.py](#penejelasan-mainpy-1)
+  * [Penejelasan matchmaking.py](#penejelasan-matchmakingpy)
+  * [Penejelasan ranking_service.py](#penejelasan-ranking_servicepy)
+  * [Penejelasan replay_service.py](#penejelasan-replay_servicepy)
+  * [Penejelasan response_builder.py](#penejelasan-response_builderpy)
+  * [Penejelasan room_manager.py](#penejelasan-room_managerpy)
+  * [Penejelasan socket_server.py](#penejelasan-socket_serverpy)
+
+* [Folder server/handlers](#folder-serverhandlers)
+
+  * [Penjelasan auth_handler.py](#penjelasan-auth_handlerpy)
+  * [Penjelasan game_handler.py](#penjelasan-game_handlerpy)
+  * [Penjelasan leaderboard_handler.py](#penjelasan-leaderboard_handlerpy)
+  * [Penjelasan matchmaking_handler.py](#penjelasan-matchmaking_handlerpy)
+  * [Penjelasan placement_handler.py](#penjelasan-placement_handlerpy)
+  * [Penjelasan replay_handler.py](#penjelasan-replay_handlerpy)
+  * [Penjelasan room_handler.py](#penjelasan-room_handlerpy)
+  * [Penjelasan **init**.py](#penjelasan-__init__py)
+
+* [Folder shared/](#folder-shared)
+
+  * [Penjelasan constants.py](#penjelasan-constantspy)
+  * [Penjelasan message_type.py](#penjelasan-message_typepy)
+  * [Penjelasan serializer.py](#penjelasan-serializerpy)
+
+* [Screenshot Hasil](#screenshot-hasil)
+
 ---
 ## Penjelasan Program
 ### Struktur Directory
