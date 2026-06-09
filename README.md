@@ -13,7 +13,7 @@ Link ditaruh di bawah ini
 
 ```
 ---
-- [Struktur Directory](#struktur-driectory)
+- [Struktur Directory]()
 - [Folder client/]()
     - [Penjelasan app.py]()
     - [Penjelasan assets.py]()
