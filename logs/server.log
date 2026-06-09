@@ -1,0 +1,1256 @@
+2026-06-05 13:46:23,825 [INFO] Server started on 127.0.0.1:5000
+2026-06-05 13:47:59,962 [INFO] Server started on 127.0.0.1:5000
+2026-06-05 13:48:03,455 [INFO] Client connected from ('127.0.0.1', 40495)
+2026-06-05 13:48:03,457 [INFO] User logged in: player1 from ('127.0.0.1', 40495)
+2026-06-05 13:49:05,763 [WARNING] Connection reset: ('127.0.0.1', 40495)
+2026-06-05 13:52:00,929 [INFO] Server started on 127.0.0.1:5000
+2026-06-05 13:52:08,350 [INFO] Client connected from ('127.0.0.1', 63837)
+2026-06-05 13:52:08,351 [INFO] User logged in: player328 from ('127.0.0.1', 63837)
+2026-06-05 13:52:42,757 [INFO] Client connected from ('127.0.0.1', 63856)
+2026-06-05 13:52:42,758 [INFO] User logged in: player362 from ('127.0.0.1', 63856)
+2026-06-05 13:52:58,164 [INFO] Room created: aea7cdff | player362 vs player328
+2026-06-05 13:53:19,276 [WARNING] Connection reset: ('127.0.0.1', 63837)
+2026-06-05 13:53:23,348 [WARNING] Connection reset: ('127.0.0.1', 63856)
+2026-06-05 13:59:44,315 [INFO] Server started on 127.0.0.1:5000
+2026-06-05 13:59:49,862 [INFO] Client connected from ('127.0.0.1', 64913)
+2026-06-05 13:59:49,863 [INFO] User logged in: player789 from ('127.0.0.1', 64913)
+2026-06-05 13:59:52,266 [INFO] Client connected from ('127.0.0.1', 64914)
+2026-06-05 13:59:52,268 [INFO] User logged in: player792 from ('127.0.0.1', 64914)
+2026-06-05 14:00:06,195 [INFO] Room created: c30cb1dd | player792 vs player789
+2026-06-05 14:00:51,487 [INFO] player792 placed ships in room c30cb1dd
+2026-06-05 14:00:53,010 [INFO] player789 placed ships in room c30cb1dd
+2026-06-05 14:00:55,932 [INFO] Game started in room c30cb1dd
+2026-06-05 14:04:22,566 [WARNING] Connection reset: ('127.0.0.1', 64913)
+2026-06-05 14:04:25,617 [WARNING] Connection reset: ('127.0.0.1', 64914)
+2026-06-05 14:04:34,852 [INFO] Client connected from ('127.0.0.1', 53352)
+2026-06-05 14:04:34,860 [INFO] User logged in: player74 from ('127.0.0.1', 53352)
+2026-06-05 14:04:39,607 [INFO] Client connected from ('127.0.0.1', 53353)
+2026-06-05 14:04:39,610 [INFO] User logged in: player79 from ('127.0.0.1', 53353)
+2026-06-05 14:04:40,419 [INFO] Room created: ac4cf1cb | player74 vs player79
+2026-06-05 14:04:45,593 [INFO] player79 placed ships in room ac4cf1cb
+2026-06-05 14:04:53,518 [INFO] player74 placed ships in room ac4cf1cb
+2026-06-05 14:04:53,902 [INFO] Game started in room ac4cf1cb
+2026-06-05 14:07:23,148 [INFO] Server started on 127.0.0.1:5000
+2026-06-05 14:07:26,095 [INFO] Client connected from ('127.0.0.1', 41575)
+2026-06-05 14:07:26,097 [INFO] User logged in: player246 from ('127.0.0.1', 41575)
+2026-06-05 14:07:28,239 [INFO] Client connected from ('127.0.0.1', 41576)
+2026-06-05 14:07:28,240 [INFO] User logged in: player248 from ('127.0.0.1', 41576)
+2026-06-05 14:07:34,560 [INFO] Room created: 8d243c6d | player246 vs player248
+2026-06-05 14:07:40,823 [INFO] player246 placed ships in room 8d243c6d
+2026-06-05 14:07:50,193 [INFO] player248 placed ships in room 8d243c6d
+2026-06-05 14:07:50,656 [INFO] Game started in room 8d243c6d
+2026-06-05 14:07:54,857 [INFO] Room 8d243c6d: player246 fired at (4, 2) = MISS
+2026-06-05 14:08:04,133 [INFO] Room 8d243c6d: player248 fired at (3, 3) = HIT
+2026-06-05 14:08:11,647 [INFO] Room 8d243c6d: player246 fired at (2, 0) = HIT
+2026-06-05 14:08:52,977 [INFO] Room 8d243c6d: player248 fired at (2, 3) = HIT
+2026-06-05 14:08:55,590 [INFO] Room 8d243c6d: player246 fired at (1, 0) = HIT
+2026-06-05 14:08:57,547 [INFO] Room 8d243c6d: player248 fired at (1, 3) = HIT
+2026-06-05 14:09:02,667 [INFO] Room 8d243c6d: player246 fired at (3, 0) = HIT
+2026-06-05 14:09:06,481 [INFO] Room 8d243c6d: player248 fired at (2, 2) = HIT
+2026-06-05 14:09:08,410 [INFO] Room 8d243c6d: player246 fired at (4, 0) = HIT
+2026-06-05 14:09:09,742 [INFO] Room 8d243c6d: player248 fired at (3, 2) = HIT
+2026-06-05 14:09:12,258 [INFO] Room 8d243c6d: player246 fired at (5, 3) = HIT
+2026-06-05 14:09:13,462 [INFO] Room 8d243c6d: player248 fired at (4, 2) = HIT
+2026-06-05 14:09:15,832 [INFO] Room 8d243c6d: player246 fired at (4, 3) = HIT
+2026-06-05 14:09:17,489 [INFO] Room 8d243c6d: player248 fired at (5, 2) = HIT
+2026-06-05 14:09:19,527 [INFO] Room 8d243c6d: player246 fired at (6, 3) = HIT
+2026-06-05 14:09:22,299 [INFO] Room 8d243c6d: player248 fired at (6, 2) = HIT
+2026-06-05 14:09:25,116 [INFO] Room 8d243c6d: player246 fired at (7, 3) = HIT
+2026-06-05 14:09:27,515 [INFO] Room 8d243c6d: player248 fired at (3, 5) = HIT
+2026-06-05 14:09:29,605 [INFO] Room 8d243c6d: player246 fired at (8, 3) = HIT
+2026-06-05 14:09:31,893 [INFO] Room 8d243c6d: player248 fired at (4, 5) = HIT
+2026-06-05 14:09:33,909 [INFO] Room 8d243c6d: player246 fired at (3, 5) = MISS
+2026-06-05 14:09:35,862 [INFO] Room 8d243c6d: player248 fired at (5, 5) = HIT
+2026-06-05 14:09:37,913 [INFO] Room 8d243c6d: player246 fired at (3, 6) = HIT
+2026-06-05 14:09:39,561 [INFO] Room 8d243c6d: player248 fired at (6, 5) = HIT
+2026-06-05 14:09:41,391 [INFO] Room 8d243c6d: player246 fired at (4, 5) = HIT
+2026-06-05 14:09:43,259 [INFO] Room 8d243c6d: player248 fired at (6, 7) = HIT
+2026-06-05 14:09:45,821 [INFO] Room 8d243c6d: player246 fired at (5, 5) = HIT
+2026-06-05 14:09:47,759 [INFO] Room 8d243c6d: player248 fired at (7, 7) = HIT
+2026-06-05 14:09:50,299 [INFO] Room 8d243c6d: player246 fired at (6, 5) = HIT
+2026-06-05 14:09:52,536 [INFO] Room 8d243c6d: player248 fired at (2, 9) = HIT
+2026-06-05 14:09:54,473 [INFO] Room 8d243c6d: player246 fired at (2, 6) = HIT
+2026-06-05 14:09:56,392 [INFO] Room 8d243c6d: player248 fired at (3, 9) = HIT
+2026-06-05 14:09:58,335 [INFO] Room 8d243c6d: player246 fired at (1, 6) = HIT
+2026-06-05 14:10:00,339 [INFO] Room 8d243c6d: player248 fired at (4, 9) = HIT
+2026-06-05 14:10:00,339 [INFO] Game over in room 8d243c6d. Winner: f9cd80b2-e2b8-4e83-8d0f-79465f938d02
+2026-06-05 14:10:12,603 [WARNING] Connection reset: ('127.0.0.1', 41575)
+2026-06-05 14:10:14,750 [WARNING] Connection reset: ('127.0.0.1', 41576)
+2026-06-05 14:18:26,774 [INFO] Server started on 127.0.0.1:5000
+2026-06-05 14:18:30,074 [INFO] Client connected from ('127.0.0.1', 17874)
+2026-06-05 14:18:30,076 [INFO] User logged in: player910 from ('127.0.0.1', 17874)
+2026-06-05 14:18:32,399 [INFO] Client connected from ('127.0.0.1', 17875)
+2026-06-05 14:18:32,400 [INFO] User logged in: player912 from ('127.0.0.1', 17875)
+2026-06-05 14:19:16,141 [WARNING] Connection reset: ('127.0.0.1', 17875)
+2026-06-05 14:19:17,235 [WARNING] Connection reset: ('127.0.0.1', 17874)
+2026-06-05 14:19:18,499 [INFO] Client connected from ('127.0.0.1', 7378)
+2026-06-05 14:19:18,499 [INFO] User logged in: player958 from ('127.0.0.1', 7378)
+2026-06-05 14:23:07,969 [WARNING] Connection reset: ('127.0.0.1', 7378)
+2026-06-05 14:23:10,599 [INFO] Client connected from ('127.0.0.1', 59252)
+2026-06-05 14:23:10,601 [INFO] User logged in: player190 from ('127.0.0.1', 59252)
+2026-06-05 14:23:13,379 [INFO] Client connected from ('127.0.0.1', 59253)
+2026-06-05 14:23:13,380 [INFO] User logged in: player193 from ('127.0.0.1', 59253)
+2026-06-05 14:23:21,695 [INFO] Room created: a00e871e | player193 vs player190
+2026-06-05 14:24:03,601 [INFO] Client connected from ('127.0.0.1', 59285)
+2026-06-05 14:24:03,619 [INFO] User logged in: player243 from ('127.0.0.1', 59285)
+2026-06-05 14:24:26,435 [INFO] player190 placed ships in room a00e871e
+2026-06-05 14:24:39,220 [INFO] player193 placed ships in room a00e871e
+2026-06-05 14:24:39,452 [INFO] Game started in room a00e871e
+2026-06-05 14:24:45,436 [INFO] player243 joined room a00e871e as spectator
+2026-06-05 14:25:05,906 [INFO] Room a00e871e: player193 fired at (3, 3) = MISS
+2026-06-05 14:25:10,019 [INFO] Room a00e871e: player190 fired at (5, 1) = HIT
+2026-06-05 14:25:13,116 [INFO] Room a00e871e: player193 fired at (2, 2) = HIT
+2026-06-05 14:25:15,301 [INFO] Room a00e871e: player190 fired at (6, 1) = HIT
+2026-06-05 14:26:06,314 [INFO] Room a00e871e: player193 fired at (3, 2) = HIT
+2026-06-05 14:47:17,339 [INFO] Server started on 127.0.0.1:5000
+2026-06-05 14:47:21,406 [INFO] Client connected from ('127.0.0.1', 37402)
+2026-06-05 14:47:21,408 [INFO] User logged in: player641 from ('127.0.0.1', 37402)
+2026-06-05 14:47:24,777 [INFO] Client connected from ('127.0.0.1', 37415)
+2026-06-05 14:47:24,778 [INFO] User logged in: player644 from ('127.0.0.1', 37415)
+2026-06-05 14:47:46,253 [WARNING] Connection reset: ('127.0.0.1', 37415)
+2026-06-05 14:47:47,426 [WARNING] Connection reset: ('127.0.0.1', 37402)
+2026-06-05 14:48:29,123 [INFO] Client connected from ('127.0.0.1', 55197)
+2026-06-05 14:48:29,124 [INFO] User logged in: player709 from ('127.0.0.1', 55197)
+2026-06-05 14:48:31,441 [INFO] Client connected from ('127.0.0.1', 55206)
+2026-06-05 14:48:31,441 [INFO] User logged in: player711 from ('127.0.0.1', 55206)
+2026-06-05 14:49:23,281 [INFO] Room created: bbbc6da6 | player711 vs player709
+2026-06-05 14:50:38,093 [INFO] player711 placed ships in room bbbc6da6
+2026-06-05 14:50:46,149 [INFO] player709 placed ships in room bbbc6da6
+2026-06-05 14:50:46,399 [INFO] Game started in room bbbc6da6
+2026-06-05 14:51:50,025 [INFO] Room bbbc6da6: player711 fired at (4, 1) = HIT
+2026-06-05 14:51:54,241 [INFO] Room bbbc6da6: player709 fired at (2, 3) = MISS
+2026-06-05 14:51:55,888 [INFO] Room bbbc6da6: player711 fired at (3, 1) = HIT
+2026-06-05 14:51:58,639 [INFO] Room bbbc6da6: player709 fired at (2, 4) = HIT
+2026-06-05 14:52:01,972 [INFO] Room bbbc6da6: player711 fired at (8, 1) = HIT
+2026-06-05 14:52:04,548 [INFO] Room bbbc6da6: player709 fired at (3, 4) = HIT
+2026-06-05 14:52:06,336 [INFO] Room bbbc6da6: player711 fired at (6, 1) = HIT
+2026-06-05 14:52:07,845 [INFO] Room bbbc6da6: player709 fired at (4, 4) = HIT
+2026-06-05 14:52:09,884 [INFO] Room bbbc6da6: player711 fired at (7, 1) = HIT
+2026-06-05 14:52:12,103 [INFO] Room bbbc6da6: player709 fired at (1, 6) = MISS
+2026-06-05 14:52:15,195 [INFO] Room bbbc6da6: player711 fired at (1, 3) = HIT
+2026-06-05 14:52:19,420 [INFO] Room bbbc6da6: player709 fired at (1, 7) = HIT
+2026-06-05 14:52:21,177 [INFO] Room bbbc6da6: player711 fired at (1, 2) = HIT
+2026-06-05 14:52:22,965 [INFO] Room bbbc6da6: player709 fired at (2, 7) = HIT
+2026-06-05 14:52:24,869 [INFO] Room bbbc6da6: player711 fired at (1, 4) = HIT
+2026-06-05 14:52:28,693 [INFO] Room bbbc6da6: player709 fired at (3, 7) = HIT
+2026-06-05 14:52:30,334 [INFO] Room bbbc6da6: player711 fired at (1, 5) = HIT
+2026-06-05 14:52:49,802 [INFO] Room bbbc6da6: player709 fired at (4, 7) = HIT
+2026-06-05 14:52:52,503 [INFO] Room bbbc6da6: player711 fired at (5, 4) = HIT
+2026-06-05 14:52:59,172 [INFO] Room bbbc6da6: player709 fired at (8, 6) = HIT
+2026-06-05 14:53:01,334 [INFO] Room bbbc6da6: player711 fired at (5, 5) = HIT
+2026-06-05 14:53:03,354 [INFO] Room bbbc6da6: player709 fired at (9, 6) = HIT
+2026-06-05 14:53:05,800 [INFO] Room bbbc6da6: player711 fired at (5, 6) = HIT
+2026-06-05 14:53:07,437 [INFO] Room bbbc6da6: player709 fired at (7, 6) = HIT
+2026-06-05 14:53:09,344 [INFO] Room bbbc6da6: player711 fired at (5, 7) = HIT
+2026-06-05 14:53:10,835 [INFO] Room bbbc6da6: player709 fired at (8, 5) = HIT
+2026-06-05 14:53:13,032 [INFO] Room bbbc6da6: player711 fired at (5, 8) = HIT
+2026-06-05 14:53:16,299 [INFO] Room bbbc6da6: player709 fired at (8, 4) = HIT
+2026-06-05 14:53:18,457 [INFO] Room bbbc6da6: player711 fired at (8, 3) = HIT
+2026-06-05 14:53:22,102 [INFO] Room bbbc6da6: player709 fired at (7, 2) = HIT
+2026-06-05 14:53:24,688 [INFO] Room bbbc6da6: player711 fired at (8, 4) = HIT
+2026-06-05 14:53:26,232 [INFO] Room bbbc6da6: player709 fired at (6, 2) = HIT
+2026-06-05 14:53:28,565 [INFO] Room bbbc6da6: player711 fired at (8, 5) = HIT
+2026-06-05 14:53:28,574 [INFO] Game over in room bbbc6da6. Winner: 94f1ed5f-1a99-4a78-bcaa-5aef894c876e
+2026-06-05 14:53:40,722 [INFO] Client connected from ('127.0.0.1', 21167)
+2026-06-05 14:53:40,724 [INFO] User logged in: player20 from ('127.0.0.1', 21167)
+2026-06-05 15:29:12,983 [WARNING] Connection reset: ('127.0.0.1', 55197)
+2026-06-05 15:29:14,217 [WARNING] Connection reset: ('127.0.0.1', 55206)
+2026-06-05 15:35:03,552 [INFO] Server started on 127.0.0.1:5000
+2026-06-05 15:35:07,384 [INFO] Client connected from ('127.0.0.1', 27912)
+2026-06-05 15:35:07,386 [INFO] User logged in: player507 from ('127.0.0.1', 27912)
+2026-06-05 15:35:09,552 [INFO] Client connected from ('127.0.0.1', 4281)
+2026-06-05 15:35:09,552 [INFO] User logged in: player509 from ('127.0.0.1', 4281)
+2026-06-05 15:36:11,333 [INFO] Room created: 592d5a9b | player509 vs player507
+2026-06-05 15:36:18,035 [INFO] player507 placed ships in room 592d5a9b
+2026-06-05 15:36:27,688 [INFO] player509 placed ships in room 592d5a9b
+2026-06-05 15:36:27,855 [INFO] Game started in room 592d5a9b
+2026-06-05 15:36:44,653 [INFO] Room 592d5a9b: player509 fired at (2, 1) = HIT
+2026-06-05 15:36:46,558 [INFO] Room 592d5a9b: player507 fired at (3, 2) = HIT
+2026-06-05 15:36:48,387 [INFO] Room 592d5a9b: player509 fired at (3, 1) = HIT
+2026-06-05 15:36:50,144 [INFO] Room 592d5a9b: player507 fired at (5, 2) = HIT
+2026-06-05 15:36:52,055 [INFO] Room 592d5a9b: player509 fired at (4, 1) = HIT
+2026-06-05 15:36:53,821 [INFO] Room 592d5a9b: player507 fired at (4, 2) = HIT
+2026-06-05 15:36:57,186 [INFO] Room 592d5a9b: player509 fired at (5, 1) = HIT
+2026-06-05 15:36:59,701 [INFO] Room 592d5a9b: player507 fired at (3, 1) = HIT
+2026-06-05 15:37:01,485 [INFO] Room 592d5a9b: player509 fired at (6, 1) = HIT
+2026-06-05 15:37:04,503 [INFO] Room 592d5a9b: player507 fired at (4, 1) = HIT
+2026-06-05 15:37:07,791 [INFO] Room 592d5a9b: player509 fired at (2, 4) = HIT
+2026-06-05 15:37:10,319 [INFO] Room 592d5a9b: player507 fired at (5, 1) = HIT
+2026-06-05 15:37:13,453 [INFO] Room 592d5a9b: player509 fired at (3, 4) = HIT
+2026-06-05 15:37:15,935 [INFO] Room 592d5a9b: player507 fired at (6, 1) = HIT
+2026-06-05 15:37:17,406 [INFO] Room 592d5a9b: player509 fired at (4, 4) = HIT
+2026-06-05 15:37:19,211 [INFO] Room 592d5a9b: player507 fired at (7, 1) = HIT
+2026-06-05 15:37:21,424 [INFO] Room 592d5a9b: player509 fired at (5, 4) = HIT
+2026-06-05 15:37:25,517 [INFO] Room 592d5a9b: player507 fired at (2, 4) = MISS
+2026-06-05 15:37:28,652 [INFO] Room 592d5a9b: player509 fired at (1, 6) = HIT
+2026-06-05 15:37:30,427 [INFO] Room 592d5a9b: player507 fired at (1, 4) = HIT
+2026-06-05 15:37:31,998 [INFO] Room 592d5a9b: player509 fired at (2, 6) = HIT
+2026-06-05 15:37:33,899 [INFO] Room 592d5a9b: player507 fired at (1, 5) = HIT
+2026-06-05 15:37:35,467 [INFO] Room 592d5a9b: player509 fired at (3, 6) = HIT
+2026-06-05 15:37:37,374 [INFO] Room 592d5a9b: player507 fired at (1, 6) = HIT
+2026-06-05 15:37:39,483 [INFO] Room 592d5a9b: player509 fired at (4, 8) = HIT
+2026-06-05 15:37:41,679 [INFO] Room 592d5a9b: player507 fired at (1, 7) = HIT
+2026-06-05 15:37:45,042 [INFO] Room 592d5a9b: player509 fired at (5, 8) = HIT
+2026-06-05 15:37:48,480 [INFO] Room 592d5a9b: player507 fired at (4, 4) = HIT
+2026-06-05 15:37:50,645 [INFO] Room 592d5a9b: player509 fired at (6, 8) = HIT
+2026-06-05 15:37:52,800 [INFO] Room 592d5a9b: player507 fired at (5, 4) = HIT
+2026-06-05 15:37:55,845 [INFO] Room 592d5a9b: player509 fired at (9, 6) = MISS
+2026-06-05 15:37:58,742 [INFO] Room 592d5a9b: player507 fired at (7, 5) = HIT
+2026-06-05 15:38:00,878 [INFO] Room 592d5a9b: player509 fired at (9, 5) = HIT
+2026-06-05 15:38:02,793 [INFO] Room 592d5a9b: player507 fired at (7, 4) = HIT
+2026-06-05 15:38:05,421 [INFO] Room 592d5a9b: player509 fired at (9, 4) = MISS
+2026-06-05 15:38:08,502 [INFO] Room 592d5a9b: player507 fired at (7, 6) = HIT
+2026-06-05 15:38:08,512 [INFO] Game over in room 592d5a9b. Winner: 8c3e194d-37d3-4aaf-9fdd-827943fba11b
+2026-06-05 15:38:12,964 [INFO] Client connected from ('127.0.0.1', 55848)
+2026-06-05 15:38:12,965 [INFO] User logged in: player692 from ('127.0.0.1', 55848)
+2026-06-05 15:47:35,671 [WARNING] Connection reset: ('127.0.0.1', 4281)
+2026-06-05 15:47:36,534 [WARNING] Connection reset: ('127.0.0.1', 27912)
+2026-06-05 15:47:47,510 [WARNING] Connection reset: ('127.0.0.1', 55848)
+2026-06-05 15:48:50,778 [INFO] Client connected from ('127.0.0.1', 25811)
+2026-06-05 15:48:50,792 [INFO] User logged in: dummy_1_9ede from ('127.0.0.1', 25811)
+2026-06-05 15:48:50,793 [INFO] Client connected from ('127.0.0.1', 25812)
+2026-06-05 15:48:50,795 [INFO] User logged in: dummy_0_0729 from ('127.0.0.1', 25812)
+2026-06-05 15:48:50,796 [INFO] Client disconnected: ('127.0.0.1', 25811)
+2026-06-05 15:48:50,797 [INFO] Client disconnected: ('127.0.0.1', 25812)
+2026-06-05 15:48:50,797 [INFO] Client connected from ('127.0.0.1', 25813)
+2026-06-05 15:48:50,797 [INFO] User logged in: dummy_2_04b8 from ('127.0.0.1', 25813)
+2026-06-05 15:48:50,797 [INFO] Client connected from ('127.0.0.1', 25814)
+2026-06-05 15:48:50,798 [INFO] User logged in: dummy_3_7a6a from ('127.0.0.1', 25814)
+2026-06-05 15:48:50,798 [INFO] Client connected from ('127.0.0.1', 25815)
+2026-06-05 15:48:50,798 [INFO] Client disconnected: ('127.0.0.1', 25813)
+2026-06-05 15:48:50,799 [INFO] User logged in: dummy_4_dd05 from ('127.0.0.1', 25815)
+2026-06-05 15:48:50,799 [INFO] Client connected from ('127.0.0.1', 25816)
+2026-06-05 15:48:50,799 [INFO] Client disconnected: ('127.0.0.1', 25814)
+2026-06-05 15:48:50,801 [INFO] User logged in: dummy_5_3181 from ('127.0.0.1', 25816)
+2026-06-05 15:48:50,801 [INFO] Client disconnected: ('127.0.0.1', 25815)
+2026-06-05 15:48:50,801 [INFO] Client connected from ('127.0.0.1', 25817)
+2026-06-05 15:48:50,802 [INFO] Client disconnected: ('127.0.0.1', 25816)
+2026-06-05 15:48:50,802 [INFO] User logged in: dummy_6_e39f from ('127.0.0.1', 25817)
+2026-06-05 15:48:50,802 [INFO] Client connected from ('127.0.0.1', 25818)
+2026-06-05 15:48:50,803 [INFO] User logged in: dummy_7_aadd from ('127.0.0.1', 25818)
+2026-06-05 15:48:50,803 [INFO] Client connected from ('127.0.0.1', 25819)
+2026-06-05 15:48:50,803 [INFO] Client disconnected: ('127.0.0.1', 25817)
+2026-06-05 15:48:50,804 [INFO] Client disconnected: ('127.0.0.1', 25818)
+2026-06-05 15:48:50,804 [INFO] User logged in: dummy_8_ac90 from ('127.0.0.1', 25819)
+2026-06-05 15:48:50,804 [INFO] Client connected from ('127.0.0.1', 25820)
+2026-06-05 15:48:50,806 [INFO] Client disconnected: ('127.0.0.1', 25819)
+2026-06-05 15:48:50,806 [INFO] User logged in: dummy_9_4dbe from ('127.0.0.1', 25820)
+2026-06-05 15:48:50,807 [INFO] Client connected from ('127.0.0.1', 25821)
+2026-06-05 15:48:50,807 [INFO] User logged in: dummy_10_037f from ('127.0.0.1', 25821)
+2026-06-05 15:48:50,807 [INFO] Client disconnected: ('127.0.0.1', 25820)
+2026-06-05 15:48:50,807 [INFO] Client connected from ('127.0.0.1', 25822)
+2026-06-05 15:48:50,808 [INFO] User logged in: dummy_11_12d8 from ('127.0.0.1', 25822)
+2026-06-05 15:48:50,808 [INFO] Client disconnected: ('127.0.0.1', 25821)
+2026-06-05 15:48:50,808 [INFO] Client connected from ('127.0.0.1', 25823)
+2026-06-05 15:48:50,809 [INFO] Client disconnected: ('127.0.0.1', 25822)
+2026-06-05 15:48:50,809 [INFO] User logged in: dummy_12_69d9 from ('127.0.0.1', 25823)
+2026-06-05 15:48:50,809 [INFO] Client connected from ('127.0.0.1', 25824)
+2026-06-05 15:48:50,810 [INFO] User logged in: dummy_13_6a2a from ('127.0.0.1', 25824)
+2026-06-05 15:48:50,810 [INFO] Client connected from ('127.0.0.1', 25825)
+2026-06-05 15:48:50,810 [INFO] Client disconnected: ('127.0.0.1', 25823)
+2026-06-05 15:48:50,811 [INFO] User logged in: dummy_14_48d3 from ('127.0.0.1', 25825)
+2026-06-05 15:48:50,811 [INFO] Client connected from ('127.0.0.1', 25826)
+2026-06-05 15:48:50,811 [INFO] Client disconnected: ('127.0.0.1', 25824)
+2026-06-05 15:48:50,812 [INFO] User logged in: dummy_15_c27e from ('127.0.0.1', 25826)
+2026-06-05 15:48:50,812 [INFO] Client connected from ('127.0.0.1', 25827)
+2026-06-05 15:48:50,812 [INFO] Client disconnected: ('127.0.0.1', 25825)
+2026-06-05 15:48:50,813 [INFO] User logged in: dummy_16_573d from ('127.0.0.1', 25827)
+2026-06-05 15:48:50,813 [INFO] Client connected from ('127.0.0.1', 25828)
+2026-06-05 15:48:50,814 [INFO] Client disconnected: ('127.0.0.1', 25826)
+2026-06-05 15:48:50,814 [INFO] Client disconnected: ('127.0.0.1', 25827)
+2026-06-05 15:48:50,815 [INFO] User logged in: dummy_17_591d from ('127.0.0.1', 25828)
+2026-06-05 15:48:50,815 [INFO] Client connected from ('127.0.0.1', 25829)
+2026-06-05 15:48:50,816 [INFO] Client disconnected: ('127.0.0.1', 25828)
+2026-06-05 15:48:50,816 [INFO] User logged in: dummy_18_b578 from ('127.0.0.1', 25829)
+2026-06-05 15:48:50,817 [INFO] Client connected from ('127.0.0.1', 25830)
+2026-06-05 15:48:50,817 [INFO] Client disconnected: ('127.0.0.1', 25829)
+2026-06-05 15:48:50,818 [INFO] User logged in: dummy_19_f6d9 from ('127.0.0.1', 25830)
+2026-06-05 15:48:50,818 [INFO] Client connected from ('127.0.0.1', 25831)
+2026-06-05 15:48:50,819 [INFO] Client disconnected: ('127.0.0.1', 25830)
+2026-06-05 15:48:50,819 [INFO] User logged in: dummy_20_3b28 from ('127.0.0.1', 25831)
+2026-06-05 15:48:50,820 [INFO] Client connected from ('127.0.0.1', 25832)
+2026-06-05 15:48:50,823 [INFO] Client disconnected: ('127.0.0.1', 25831)
+2026-06-05 15:48:50,824 [INFO] User logged in: dummy_21_6966 from ('127.0.0.1', 25832)
+2026-06-05 15:48:50,824 [INFO] Client connected from ('127.0.0.1', 25833)
+2026-06-05 15:48:50,826 [INFO] Client disconnected: ('127.0.0.1', 25832)
+2026-06-05 15:48:50,826 [INFO] User logged in: dummy_22_f366 from ('127.0.0.1', 25833)
+2026-06-05 15:48:50,826 [INFO] Client connected from ('127.0.0.1', 25834)
+2026-06-05 15:48:50,827 [INFO] Client disconnected: ('127.0.0.1', 25833)
+2026-06-05 15:48:50,828 [INFO] User logged in: dummy_23_ced7 from ('127.0.0.1', 25834)
+2026-06-05 15:48:50,828 [INFO] Client connected from ('127.0.0.1', 25835)
+2026-06-05 15:48:50,829 [INFO] Client disconnected: ('127.0.0.1', 25834)
+2026-06-05 15:48:50,829 [INFO] User logged in: dummy_24_62db from ('127.0.0.1', 25835)
+2026-06-05 15:48:50,829 [INFO] Client connected from ('127.0.0.1', 25836)
+2026-06-05 15:48:50,830 [INFO] Client disconnected: ('127.0.0.1', 25835)
+2026-06-05 15:48:50,830 [INFO] User logged in: dummy_25_5ea3 from ('127.0.0.1', 25836)
+2026-06-05 15:48:50,830 [INFO] Client connected from ('127.0.0.1', 25837)
+2026-06-05 15:48:50,831 [INFO] Client disconnected: ('127.0.0.1', 25836)
+2026-06-05 15:48:50,831 [INFO] User logged in: dummy_26_a43b from ('127.0.0.1', 25837)
+2026-06-05 15:48:50,832 [INFO] Client connected from ('127.0.0.1', 25838)
+2026-06-05 15:48:50,832 [INFO] Client disconnected: ('127.0.0.1', 25837)
+2026-06-05 15:48:50,833 [INFO] User logged in: dummy_27_be5f from ('127.0.0.1', 25838)
+2026-06-05 15:48:50,833 [INFO] Client connected from ('127.0.0.1', 25839)
+2026-06-05 15:48:50,834 [INFO] Client disconnected: ('127.0.0.1', 25838)
+2026-06-05 15:48:50,834 [INFO] User logged in: dummy_28_c52b from ('127.0.0.1', 25839)
+2026-06-05 15:48:50,834 [INFO] Client connected from ('127.0.0.1', 25840)
+2026-06-05 15:48:50,835 [INFO] Client disconnected: ('127.0.0.1', 25839)
+2026-06-05 15:48:50,839 [INFO] User logged in: dummy_29_9e61 from ('127.0.0.1', 25840)
+2026-06-05 15:48:50,839 [INFO] Client connected from ('127.0.0.1', 25841)
+2026-06-05 15:48:50,839 [INFO] Client disconnected: ('127.0.0.1', 25840)
+2026-06-05 15:48:50,840 [INFO] User logged in: dummy_30_7e61 from ('127.0.0.1', 25841)
+2026-06-05 15:48:50,840 [INFO] Client connected from ('127.0.0.1', 25842)
+2026-06-05 15:48:50,841 [INFO] Client disconnected: ('127.0.0.1', 25841)
+2026-06-05 15:48:50,841 [INFO] User logged in: dummy_31_9f54 from ('127.0.0.1', 25842)
+2026-06-05 15:48:50,841 [INFO] Client connected from ('127.0.0.1', 25843)
+2026-06-05 15:48:50,842 [INFO] Client disconnected: ('127.0.0.1', 25842)
+2026-06-05 15:48:50,843 [INFO] User logged in: dummy_32_7f60 from ('127.0.0.1', 25843)
+2026-06-05 15:48:50,843 [INFO] Client connected from ('127.0.0.1', 25844)
+2026-06-05 15:48:50,844 [INFO] Client disconnected: ('127.0.0.1', 25843)
+2026-06-05 15:48:50,845 [INFO] User logged in: dummy_33_e879 from ('127.0.0.1', 25844)
+2026-06-05 15:48:50,845 [INFO] Client connected from ('127.0.0.1', 25845)
+2026-06-05 15:48:50,845 [INFO] Client disconnected: ('127.0.0.1', 25844)
+2026-06-05 15:48:50,846 [INFO] User logged in: dummy_34_7ac8 from ('127.0.0.1', 25845)
+2026-06-05 15:48:50,846 [INFO] Client connected from ('127.0.0.1', 25846)
+2026-06-05 15:48:50,847 [INFO] Client disconnected: ('127.0.0.1', 25845)
+2026-06-05 15:48:50,847 [INFO] User logged in: dummy_35_a094 from ('127.0.0.1', 25846)
+2026-06-05 15:48:50,847 [INFO] Client connected from ('127.0.0.1', 25847)
+2026-06-05 15:48:50,848 [INFO] Client disconnected: ('127.0.0.1', 25846)
+2026-06-05 15:48:50,848 [INFO] User logged in: dummy_36_3947 from ('127.0.0.1', 25847)
+2026-06-05 15:48:50,848 [INFO] Client connected from ('127.0.0.1', 25848)
+2026-06-05 15:48:50,849 [INFO] Client disconnected: ('127.0.0.1', 25847)
+2026-06-05 15:48:50,849 [INFO] User logged in: dummy_37_d052 from ('127.0.0.1', 25848)
+2026-06-05 15:48:50,850 [INFO] Client connected from ('127.0.0.1', 25849)
+2026-06-05 15:48:50,850 [INFO] Client disconnected: ('127.0.0.1', 25848)
+2026-06-05 15:48:50,851 [INFO] User logged in: dummy_38_49f3 from ('127.0.0.1', 25849)
+2026-06-05 15:48:50,852 [INFO] Client connected from ('127.0.0.1', 25850)
+2026-06-05 15:48:50,854 [INFO] Client disconnected: ('127.0.0.1', 25849)
+2026-06-05 15:48:50,855 [INFO] User logged in: dummy_39_5a97 from ('127.0.0.1', 25850)
+2026-06-05 15:48:50,855 [INFO] Client connected from ('127.0.0.1', 25851)
+2026-06-05 15:48:50,855 [INFO] Client disconnected: ('127.0.0.1', 25850)
+2026-06-05 15:48:50,856 [INFO] User logged in: dummy_40_ef1b from ('127.0.0.1', 25851)
+2026-06-05 15:48:50,857 [INFO] Client connected from ('127.0.0.1', 25852)
+2026-06-05 15:48:50,857 [INFO] Client disconnected: ('127.0.0.1', 25851)
+2026-06-05 15:48:50,858 [INFO] User logged in: dummy_41_8297 from ('127.0.0.1', 25852)
+2026-06-05 15:48:50,858 [INFO] Client connected from ('127.0.0.1', 25853)
+2026-06-05 15:48:50,859 [INFO] Client disconnected: ('127.0.0.1', 25852)
+2026-06-05 15:48:50,859 [INFO] User logged in: dummy_42_2743 from ('127.0.0.1', 25853)
+2026-06-05 15:48:50,859 [INFO] Client connected from ('127.0.0.1', 25854)
+2026-06-05 15:48:50,860 [INFO] Client disconnected: ('127.0.0.1', 25853)
+2026-06-05 15:48:50,860 [INFO] User logged in: dummy_43_8d20 from ('127.0.0.1', 25854)
+2026-06-05 15:48:50,861 [INFO] Client connected from ('127.0.0.1', 25855)
+2026-06-05 15:48:50,861 [INFO] Client disconnected: ('127.0.0.1', 25854)
+2026-06-05 15:48:50,862 [INFO] User logged in: dummy_44_7691 from ('127.0.0.1', 25855)
+2026-06-05 15:48:50,862 [INFO] Client connected from ('127.0.0.1', 25856)
+2026-06-05 15:48:50,862 [INFO] Client disconnected: ('127.0.0.1', 25855)
+2026-06-05 15:48:50,863 [INFO] User logged in: dummy_45_8d56 from ('127.0.0.1', 25856)
+2026-06-05 15:48:50,863 [INFO] Client connected from ('127.0.0.1', 25857)
+2026-06-05 15:48:50,864 [INFO] Client disconnected: ('127.0.0.1', 25856)
+2026-06-05 15:48:50,864 [INFO] User logged in: dummy_46_141b from ('127.0.0.1', 25857)
+2026-06-05 15:48:50,864 [INFO] Client connected from ('127.0.0.1', 25858)
+2026-06-05 15:48:50,865 [INFO] Client disconnected: ('127.0.0.1', 25857)
+2026-06-05 15:48:50,865 [INFO] User logged in: dummy_47_3bbb from ('127.0.0.1', 25858)
+2026-06-05 15:48:50,866 [INFO] Client connected from ('127.0.0.1', 25859)
+2026-06-05 15:48:50,866 [INFO] Client disconnected: ('127.0.0.1', 25858)
+2026-06-05 15:48:50,868 [INFO] User logged in: dummy_48_18c2 from ('127.0.0.1', 25859)
+2026-06-05 15:48:50,868 [INFO] Client connected from ('127.0.0.1', 25860)
+2026-06-05 15:48:50,870 [INFO] Client disconnected: ('127.0.0.1', 25859)
+2026-06-05 15:48:50,871 [INFO] User logged in: dummy_49_e87c from ('127.0.0.1', 25860)
+2026-06-05 15:48:50,872 [INFO] Client disconnected: ('127.0.0.1', 25860)
+2026-06-05 15:55:29,428 [INFO] Server started on 127.0.0.1:5000
+2026-06-05 15:55:45,185 [INFO] Client connected from ('127.0.0.1', 18829)
+2026-06-05 15:55:45,187 [INFO] User logged in: dummy_1_ff2f from ('127.0.0.1', 18829)
+2026-06-05 15:55:45,187 [INFO] Client connected from ('127.0.0.1', 18828)
+2026-06-05 15:55:45,187 [INFO] User logged in: dummy_0_3167 from ('127.0.0.1', 18828)
+2026-06-05 15:55:45,188 [INFO] Client connected from ('127.0.0.1', 18830)
+2026-06-05 15:55:45,188 [INFO] User logged in: dummy_2_a237 from ('127.0.0.1', 18830)
+2026-06-05 15:55:45,188 [INFO] Client connected from ('127.0.0.1', 18831)
+2026-06-05 15:55:45,189 [INFO] User logged in: dummy_3_57bf from ('127.0.0.1', 18831)
+2026-06-05 15:55:45,189 [INFO] Client connected from ('127.0.0.1', 18832)
+2026-06-05 15:55:45,189 [INFO] Client disconnected: ('127.0.0.1', 18829)
+2026-06-05 15:55:45,190 [INFO] User logged in: dummy_4_744c from ('127.0.0.1', 18832)
+2026-06-05 15:55:45,190 [INFO] Client disconnected: ('127.0.0.1', 18828)
+2026-06-05 15:55:45,190 [INFO] Client connected from ('127.0.0.1', 18833)
+2026-06-05 15:55:45,191 [INFO] Client disconnected: ('127.0.0.1', 18830)
+2026-06-05 15:55:45,191 [INFO] Client disconnected: ('127.0.0.1', 18831)
+2026-06-05 15:55:45,192 [INFO] Client disconnected: ('127.0.0.1', 18832)
+2026-06-05 15:55:45,192 [INFO] User logged in: dummy_5_49e8 from ('127.0.0.1', 18833)
+2026-06-05 15:55:45,193 [INFO] Client connected from ('127.0.0.1', 18834)
+2026-06-05 15:55:45,193 [INFO] User logged in: dummy_6_2998 from ('127.0.0.1', 18834)
+2026-06-05 15:55:45,194 [INFO] Client disconnected: ('127.0.0.1', 18833)
+2026-06-05 15:55:45,193 [INFO] Client connected from ('127.0.0.1', 18835)
+2026-06-05 15:55:45,194 [INFO] Client disconnected: ('127.0.0.1', 18834)
+2026-06-05 15:55:45,195 [INFO] User logged in: dummy_7_f76f from ('127.0.0.1', 18835)
+2026-06-05 15:55:45,195 [INFO] Client connected from ('127.0.0.1', 18836)
+2026-06-05 15:55:45,196 [INFO] User logged in: dummy_8_439a from ('127.0.0.1', 18836)
+2026-06-05 15:55:45,196 [INFO] Client connected from ('127.0.0.1', 18837)
+2026-06-05 15:55:45,196 [INFO] Client disconnected: ('127.0.0.1', 18835)
+2026-06-05 15:55:45,197 [INFO] User logged in: dummy_9_bcbe from ('127.0.0.1', 18837)
+2026-06-05 15:55:45,197 [INFO] Client connected from ('127.0.0.1', 18838)
+2026-06-05 15:55:45,198 [INFO] Client disconnected: ('127.0.0.1', 18836)
+2026-06-05 15:55:45,198 [INFO] User logged in: dummy_10_cc70 from ('127.0.0.1', 18838)
+2026-06-05 15:55:45,198 [INFO] Client connected from ('127.0.0.1', 18839)
+2026-06-05 15:55:45,199 [INFO] Client disconnected: ('127.0.0.1', 18837)
+2026-06-05 15:55:45,200 [INFO] Client disconnected: ('127.0.0.1', 18838)
+2026-06-05 15:55:45,200 [INFO] User logged in: dummy_11_8c2c from ('127.0.0.1', 18839)
+2026-06-05 15:55:45,200 [INFO] Client connected from ('127.0.0.1', 18840)
+2026-06-05 15:55:45,201 [INFO] User logged in: dummy_12_4b1e from ('127.0.0.1', 18840)
+2026-06-05 15:55:45,201 [INFO] Client connected from ('127.0.0.1', 18841)
+2026-06-05 15:55:45,201 [INFO] Client disconnected: ('127.0.0.1', 18839)
+2026-06-05 15:55:45,202 [INFO] User logged in: dummy_13_f3ca from ('127.0.0.1', 18841)
+2026-06-05 15:55:45,202 [INFO] Client connected from ('127.0.0.1', 18842)
+2026-06-05 15:55:45,202 [INFO] Client disconnected: ('127.0.0.1', 18840)
+2026-06-05 15:55:45,203 [INFO] User logged in: dummy_14_f083 from ('127.0.0.1', 18842)
+2026-06-05 15:55:45,203 [INFO] Client connected from ('127.0.0.1', 18843)
+2026-06-05 15:55:45,203 [INFO] Client disconnected: ('127.0.0.1', 18841)
+2026-06-05 15:55:45,204 [INFO] User logged in: dummy_15_15aa from ('127.0.0.1', 18843)
+2026-06-05 15:55:45,204 [INFO] Client connected from ('127.0.0.1', 18844)
+2026-06-05 15:55:45,205 [INFO] Client disconnected: ('127.0.0.1', 18842)
+2026-06-05 15:55:45,205 [INFO] User logged in: dummy_16_3c1c from ('127.0.0.1', 18844)
+2026-06-05 15:55:45,205 [INFO] Client connected from ('127.0.0.1', 18845)
+2026-06-05 15:55:45,205 [INFO] Client disconnected: ('127.0.0.1', 18843)
+2026-06-05 15:55:45,206 [INFO] Client disconnected: ('127.0.0.1', 18844)
+2026-06-05 15:55:45,207 [INFO] User logged in: dummy_17_770b from ('127.0.0.1', 18845)
+2026-06-05 15:55:45,207 [INFO] Client connected from ('127.0.0.1', 18846)
+2026-06-05 15:55:45,208 [INFO] Client disconnected: ('127.0.0.1', 18845)
+2026-06-05 15:55:45,208 [INFO] User logged in: dummy_18_6df1 from ('127.0.0.1', 18846)
+2026-06-05 15:55:45,209 [INFO] Client connected from ('127.0.0.1', 18847)
+2026-06-05 15:55:45,210 [INFO] Client disconnected: ('127.0.0.1', 18846)
+2026-06-05 15:55:45,210 [INFO] User logged in: dummy_19_a946 from ('127.0.0.1', 18847)
+2026-06-05 15:55:45,210 [INFO] Client connected from ('127.0.0.1', 18848)
+2026-06-05 15:55:45,213 [INFO] User logged in: dummy_20_46b9 from ('127.0.0.1', 18848)
+2026-06-05 15:55:45,213 [INFO] Client connected from ('127.0.0.1', 18849)
+2026-06-05 15:55:45,214 [INFO] Client disconnected: ('127.0.0.1', 18847)
+2026-06-05 15:55:45,215 [INFO] Client disconnected: ('127.0.0.1', 18848)
+2026-06-05 15:55:45,216 [INFO] User logged in: dummy_21_02b3 from ('127.0.0.1', 18849)
+2026-06-05 15:55:45,216 [INFO] Client connected from ('127.0.0.1', 18850)
+2026-06-05 15:55:45,217 [INFO] Client disconnected: ('127.0.0.1', 18849)
+2026-06-05 15:55:45,217 [INFO] User logged in: dummy_22_76b6 from ('127.0.0.1', 18850)
+2026-06-05 15:55:45,217 [INFO] Client connected from ('127.0.0.1', 18851)
+2026-06-05 15:55:45,218 [INFO] Client disconnected: ('127.0.0.1', 18850)
+2026-06-05 15:55:45,219 [INFO] User logged in: dummy_23_b65a from ('127.0.0.1', 18851)
+2026-06-05 15:55:45,219 [INFO] Client connected from ('127.0.0.1', 18852)
+2026-06-05 15:55:45,220 [INFO] Client disconnected: ('127.0.0.1', 18851)
+2026-06-05 15:55:45,220 [INFO] User logged in: dummy_24_aab5 from ('127.0.0.1', 18852)
+2026-06-05 15:55:45,220 [INFO] Client connected from ('127.0.0.1', 18853)
+2026-06-05 15:55:45,221 [INFO] Client disconnected: ('127.0.0.1', 18852)
+2026-06-05 15:55:45,222 [INFO] User logged in: dummy_25_c54a from ('127.0.0.1', 18853)
+2026-06-05 15:55:45,223 [INFO] Client connected from ('127.0.0.1', 18854)
+2026-06-05 15:55:45,223 [INFO] Client disconnected: ('127.0.0.1', 18853)
+2026-06-05 15:55:45,224 [INFO] User logged in: dummy_26_ee3a from ('127.0.0.1', 18854)
+2026-06-05 15:55:45,224 [INFO] Client connected from ('127.0.0.1', 18855)
+2026-06-05 15:55:45,225 [INFO] Client disconnected: ('127.0.0.1', 18854)
+2026-06-05 15:55:45,225 [INFO] User logged in: dummy_27_8c18 from ('127.0.0.1', 18855)
+2026-06-05 15:55:45,225 [INFO] Client connected from ('127.0.0.1', 18856)
+2026-06-05 15:55:45,228 [INFO] User logged in: dummy_28_e9da from ('127.0.0.1', 18856)
+2026-06-05 15:55:45,229 [INFO] Client disconnected: ('127.0.0.1', 18855)
+2026-06-05 15:55:45,229 [INFO] Client connected from ('127.0.0.1', 18858)
+2026-06-05 15:55:45,230 [INFO] Client disconnected: ('127.0.0.1', 18856)
+2026-06-05 15:55:45,232 [INFO] User logged in: dummy_29_c7e2 from ('127.0.0.1', 18858)
+2026-06-05 15:55:45,232 [INFO] Client connected from ('127.0.0.1', 18857)
+2026-06-05 15:55:45,233 [INFO] Client disconnected: ('127.0.0.1', 18858)
+2026-06-05 15:55:45,233 [INFO] User logged in: dummy_30_afd2 from ('127.0.0.1', 18857)
+2026-06-05 15:55:45,233 [INFO] Client connected from ('127.0.0.1', 18859)
+2026-06-05 15:55:45,234 [INFO] Client disconnected: ('127.0.0.1', 18857)
+2026-06-05 15:55:45,234 [INFO] User logged in: dummy_31_be7e from ('127.0.0.1', 18859)
+2026-06-05 15:55:45,234 [INFO] Client connected from ('127.0.0.1', 18860)
+2026-06-05 15:55:45,235 [INFO] Client disconnected: ('127.0.0.1', 18859)
+2026-06-05 15:55:45,235 [INFO] User logged in: dummy_32_4fa6 from ('127.0.0.1', 18860)
+2026-06-05 15:55:45,236 [INFO] Client connected from ('127.0.0.1', 18861)
+2026-06-05 15:55:45,236 [INFO] Client disconnected: ('127.0.0.1', 18860)
+2026-06-05 15:55:45,237 [INFO] User logged in: dummy_33_db58 from ('127.0.0.1', 18861)
+2026-06-05 15:55:45,237 [INFO] Client connected from ('127.0.0.1', 18862)
+2026-06-05 15:55:45,238 [INFO] Client disconnected: ('127.0.0.1', 18861)
+2026-06-05 15:55:45,238 [INFO] User logged in: dummy_34_19eb from ('127.0.0.1', 18862)
+2026-06-05 15:55:45,238 [INFO] Client connected from ('127.0.0.1', 18863)
+2026-06-05 15:55:45,239 [INFO] Client disconnected: ('127.0.0.1', 18862)
+2026-06-05 15:55:45,239 [INFO] Client connected from ('127.0.0.1', 18864)
+2026-06-05 15:55:45,239 [INFO] User logged in: dummy_35_89f1 from ('127.0.0.1', 18863)
+2026-06-05 15:55:45,242 [INFO] Client disconnected: ('127.0.0.1', 18863)
+2026-06-05 15:55:45,243 [INFO] User logged in: dummy_36_4082 from ('127.0.0.1', 18864)
+2026-06-05 15:55:45,243 [INFO] Client connected from ('127.0.0.1', 18865)
+2026-06-05 15:55:45,244 [INFO] Client disconnected: ('127.0.0.1', 18864)
+2026-06-05 15:55:45,245 [INFO] User logged in: dummy_37_0682 from ('127.0.0.1', 18865)
+2026-06-05 15:55:45,245 [INFO] Client connected from ('127.0.0.1', 18866)
+2026-06-05 15:55:45,246 [INFO] Client disconnected: ('127.0.0.1', 18865)
+2026-06-05 15:55:45,246 [INFO] User logged in: dummy_38_b67c from ('127.0.0.1', 18866)
+2026-06-05 15:55:45,246 [INFO] Client connected from ('127.0.0.1', 18867)
+2026-06-05 15:55:45,247 [INFO] Client disconnected: ('127.0.0.1', 18866)
+2026-06-05 15:55:45,247 [INFO] User logged in: dummy_39_d145 from ('127.0.0.1', 18867)
+2026-06-05 15:55:45,248 [INFO] Client connected from ('127.0.0.1', 18868)
+2026-06-05 15:55:45,248 [INFO] Client disconnected: ('127.0.0.1', 18867)
+2026-06-05 15:55:45,249 [INFO] User logged in: dummy_40_c2c5 from ('127.0.0.1', 18868)
+2026-06-05 15:55:45,249 [INFO] Client connected from ('127.0.0.1', 18869)
+2026-06-05 15:55:45,250 [INFO] Client disconnected: ('127.0.0.1', 18868)
+2026-06-05 15:55:45,250 [INFO] User logged in: dummy_41_f460 from ('127.0.0.1', 18869)
+2026-06-05 15:55:45,250 [INFO] Client connected from ('127.0.0.1', 18870)
+2026-06-05 15:55:45,251 [INFO] Client disconnected: ('127.0.0.1', 18869)
+2026-06-05 15:55:45,251 [INFO] User logged in: dummy_42_61df from ('127.0.0.1', 18870)
+2026-06-05 15:55:45,252 [INFO] Client connected from ('127.0.0.1', 18871)
+2026-06-05 15:55:45,252 [INFO] Client disconnected: ('127.0.0.1', 18870)
+2026-06-05 15:55:45,253 [INFO] User logged in: dummy_43_fc63 from ('127.0.0.1', 18871)
+2026-06-05 15:55:45,253 [INFO] Client connected from ('127.0.0.1', 18872)
+2026-06-05 15:55:45,254 [INFO] User logged in: dummy_44_e011 from ('127.0.0.1', 18872)
+2026-06-05 15:55:45,254 [INFO] Client disconnected: ('127.0.0.1', 18871)
+2026-06-05 15:55:45,254 [INFO] Client connected from ('127.0.0.1', 18873)
+2026-06-05 15:55:45,257 [INFO] Client disconnected: ('127.0.0.1', 18872)
+2026-06-05 15:55:45,257 [INFO] User logged in: dummy_45_0836 from ('127.0.0.1', 18873)
+2026-06-05 15:55:45,258 [INFO] Client connected from ('127.0.0.1', 18874)
+2026-06-05 15:55:45,259 [INFO] Client disconnected: ('127.0.0.1', 18873)
+2026-06-05 15:55:45,259 [INFO] User logged in: dummy_46_3a16 from ('127.0.0.1', 18874)
+2026-06-05 15:55:45,259 [INFO] Client connected from ('127.0.0.1', 18875)
+2026-06-05 15:55:45,260 [INFO] Client disconnected: ('127.0.0.1', 18874)
+2026-06-05 15:55:45,260 [INFO] User logged in: dummy_47_0217 from ('127.0.0.1', 18875)
+2026-06-05 15:55:45,260 [INFO] Client connected from ('127.0.0.1', 18876)
+2026-06-05 15:55:45,261 [INFO] Client disconnected: ('127.0.0.1', 18875)
+2026-06-05 15:55:45,262 [INFO] User logged in: dummy_48_7cf7 from ('127.0.0.1', 18876)
+2026-06-05 15:55:45,262 [INFO] Client connected from ('127.0.0.1', 18877)
+2026-06-05 15:55:45,263 [INFO] Client disconnected: ('127.0.0.1', 18876)
+2026-06-05 15:55:45,264 [INFO] User logged in: dummy_49_b98d from ('127.0.0.1', 18877)
+2026-06-05 15:55:45,264 [INFO] Client disconnected: ('127.0.0.1', 18877)
+2026-06-05 15:56:04,832 [INFO] Client connected from ('127.0.0.1', 32428)
+2026-06-05 15:56:04,833 [WARNING] Error sent to ('127.0.0.1', 32428): Malformed JSON packet
+2026-06-05 15:56:04,834 [INFO] Client disconnected: ('127.0.0.1', 32428)
+2026-06-05 15:56:04,834 [INFO] Client connected from ('127.0.0.1', 32429)
+2026-06-05 15:56:04,835 [WARNING] Error sent to ('127.0.0.1', 32429): Unknown message type: HACK_SERVER
+2026-06-05 15:56:04,835 [INFO] Client disconnected: ('127.0.0.1', 32429)
+2026-06-05 15:56:04,835 [INFO] Client connected from ('127.0.0.1', 32430)
+2026-06-05 15:56:04,836 [WARNING] Error sent to ('127.0.0.1', 32430): You must login first
+2026-06-05 15:56:04,836 [INFO] Client disconnected: ('127.0.0.1', 32430)
+2026-06-05 16:16:34,362 [INFO] Client connected from ('127.0.0.1', 10634)
+2026-06-05 16:16:51,009 [WARNING] Connection reset: ('127.0.0.1', 10634)
+2026-06-05 16:23:01,070 [INFO] Client connected from ('127.0.0.1', 8944)
+2026-06-05 16:23:01,180 [WARNING] Connection reset: ('127.0.0.1', 8944)
+2026-06-05 16:23:12,643 [INFO] Client connected from ('127.0.0.1', 23232)
+2026-06-05 16:23:27,820 [WARNING] Connection reset: ('127.0.0.1', 23232)
+2026-06-05 16:23:29,411 [INFO] Client connected from ('127.0.0.1', 23234)
+2026-06-05 16:24:54,528 [WARNING] Connection reset: ('127.0.0.1', 23234)
+2026-06-05 16:24:56,014 [INFO] Client connected from ('127.0.0.1', 25647)
+2026-06-05 16:26:23,806 [WARNING] Connection reset: ('127.0.0.1', 25647)
+2026-06-05 16:26:25,340 [INFO] Client connected from ('127.0.0.1', 30941)
+2026-06-05 16:27:24,868 [WARNING] Connection reset: ('127.0.0.1', 30941)
+2026-06-05 16:27:26,355 [INFO] Client connected from ('127.0.0.1', 1572)
+2026-06-05 16:27:28,159 [WARNING] Connection reset: ('127.0.0.1', 1572)
+2026-06-05 16:37:00,083 [INFO] Client connected from ('127.0.0.1', 33838)
+2026-06-05 16:37:21,327 [WARNING] Connection reset: ('127.0.0.1', 33838)
+2026-06-05 16:37:23,314 [INFO] Client connected from ('127.0.0.1', 20821)
+2026-06-05 16:39:41,576 [WARNING] Connection reset: ('127.0.0.1', 20821)
+2026-06-05 16:39:43,304 [INFO] Client connected from ('127.0.0.1', 48663)
+2026-06-05 16:39:47,839 [WARNING] Connection reset: ('127.0.0.1', 48663)
+2026-06-05 16:39:49,507 [INFO] Client connected from ('127.0.0.1', 48664)
+2026-06-05 16:40:02,557 [WARNING] Connection reset: ('127.0.0.1', 48664)
+2026-06-05 16:41:46,798 [INFO] Client connected from ('127.0.0.1', 44144)
+2026-06-05 16:42:39,000 [WARNING] Connection reset: ('127.0.0.1', 44144)
+2026-06-05 16:42:40,657 [INFO] Client connected from ('127.0.0.1', 52550)
+2026-06-05 16:44:36,384 [WARNING] Connection reset: ('127.0.0.1', 52550)
+2026-06-05 16:44:40,048 [INFO] Client connected from ('127.0.0.1', 5878)
+2026-06-05 16:44:47,368 [WARNING] Connection reset: ('127.0.0.1', 5878)
+2026-06-05 16:47:08,326 [INFO] Client connected from ('127.0.0.1', 41552)
+2026-06-05 16:52:08,348 [WARNING] Client timeout: ('127.0.0.1', 41552)
+2026-06-05 17:03:26,936 [INFO] Server started on 127.0.0.1:5000
+2026-06-05 17:03:29,756 [INFO] Client connected from ('127.0.0.1', 51946)
+2026-06-05 17:03:46,661 [INFO] User registered: Furaku
+2026-06-05 17:03:49,969 [INFO] User logged in: Furaku from ('127.0.0.1', 51946)
+2026-06-05 17:03:54,356 [WARNING] Connection reset: ('127.0.0.1', 51946)
+2026-06-05 17:03:56,300 [INFO] Client connected from ('127.0.0.1', 27378)
+2026-06-05 17:04:05,445 [INFO] User logged in: Furaku from ('127.0.0.1', 27378)
+2026-06-05 17:05:00,021 [INFO] Client connected from ('127.0.0.1', 52754)
+2026-06-05 17:05:12,494 [INFO] User registered: Aqul
+2026-06-05 17:05:14,064 [INFO] User logged in: Aqul from ('127.0.0.1', 52754)
+2026-06-05 17:05:15,374 [INFO] Room created: 872d3d0d | Furaku vs Aqul
+2026-06-05 17:05:38,952 [INFO] Furaku placed ships in room 872d3d0d
+2026-06-05 17:05:48,063 [INFO] Aqul placed ships in room 872d3d0d
+2026-06-05 17:05:48,221 [INFO] Game started in room 872d3d0d
+2026-06-05 17:06:04,700 [INFO] Room 872d3d0d: Furaku fired at (7, 4) = MISS
+2026-06-05 17:06:08,613 [INFO] Room 872d3d0d: Aqul fired at (2, 1) = HIT
+2026-06-05 17:06:19,462 [INFO] Client connected from ('127.0.0.1', 14410)
+2026-06-05 17:06:28,966 [INFO] User registered: spec
+2026-06-05 17:06:29,508 [INFO] User logged in: spec from ('127.0.0.1', 14410)
+2026-06-05 17:06:46,030 [WARNING] Connection reset: ('127.0.0.1', 52754)
+2026-06-05 17:06:47,952 [WARNING] Connection reset: ('127.0.0.1', 27378)
+2026-06-05 17:06:50,313 [INFO] Client connected from ('127.0.0.1', 38194)
+2026-06-05 17:07:10,349 [INFO] User logged in: Furaku from ('127.0.0.1', 38194)
+2026-06-05 17:07:18,525 [INFO] Client connected from ('127.0.0.1', 45225)
+2026-06-05 17:07:39,442 [INFO] User logged in: Aqul from ('127.0.0.1', 45225)
+2026-06-05 17:07:40,705 [INFO] Room created: 6140a3fd | Furaku vs Aqul
+2026-06-05 17:08:03,186 [WARNING] Connection reset: ('127.0.0.1', 14410)
+2026-06-05 17:11:09,053 [WARNING] Failed to send to ('127.0.0.1', 14410): [WinError 10038] An operation was attempted on something that is not a socket
+2026-06-05 17:11:09,071 [INFO] Room created: bfb2a46a | spec vs Aqul
+2026-06-05 17:16:09,103 [WARNING] Client timeout: ('127.0.0.1', 45225)
+2026-06-05 17:16:31,940 [WARNING] Client timeout: ('127.0.0.1', 38194)
+2026-06-05 17:16:49,639 [INFO] Client connected from ('127.0.0.1', 22089)
+2026-06-05 17:16:59,882 [INFO] User logged in: Furaku from ('127.0.0.1', 22089)
+2026-06-05 17:22:32,153 [WARNING] Client timeout: ('127.0.0.1', 22089)
+2026-06-05 17:27:17,611 [INFO] Server started on 127.0.0.1:5000
+2026-06-05 17:27:20,731 [INFO] Client connected from ('127.0.0.1', 9301)
+2026-06-05 17:27:30,241 [INFO] User logged in: Furaku from ('127.0.0.1', 9301)
+2026-06-05 17:27:41,769 [INFO] Waiting room created: 4b6e52d7 | host=Furaku
+2026-06-05 17:27:54,450 [INFO] Client connected from ('127.0.0.1', 9302)
+2026-06-05 17:28:03,174 [INFO] User logged in: Aqul from ('127.0.0.1', 9302)
+2026-06-05 17:28:04,325 [INFO] Room matched: 4b6e52d7 | Furaku vs Aqul
+2026-06-05 17:32:41,807 [WARNING] Client timeout: ('127.0.0.1', 9301)
+2026-06-05 17:33:04,338 [WARNING] Client timeout: ('127.0.0.1', 9302)
+2026-06-05 17:41:29,720 [INFO] Server started on 127.0.0.1:5000
+2026-06-05 17:41:31,939 [INFO] Client connected from ('127.0.0.1', 39868)
+2026-06-05 17:41:39,086 [INFO] User logged in: Furaku from ('127.0.0.1', 39868)
+2026-06-05 17:41:59,088 [INFO] Waiting room created: 7b92e8c6 | host=Furaku
+2026-06-05 17:42:05,157 [INFO] Client connected from ('127.0.0.1', 39869)
+2026-06-05 17:42:13,179 [INFO] User logged in: Aqul from ('127.0.0.1', 39869)
+2026-06-05 17:42:47,481 [INFO] Aqul joined room 7b92e8c6 as spectator
+2026-06-05 17:42:54,112 [WARNING] Connection reset: ('127.0.0.1', 39869)
+2026-06-05 17:42:56,211 [INFO] Client connected from ('127.0.0.1', 12237)
+2026-06-05 17:43:04,434 [INFO] User logged in: Aqul from ('127.0.0.1', 12237)
+2026-06-05 17:44:31,653 [INFO] Manual room created: 8a5de84a | name=Anjay | host=Aqul
+2026-06-05 17:44:40,139 [INFO] Client connected from ('127.0.0.1', 58717)
+2026-06-05 17:44:46,726 [INFO] User logged in: spec from ('127.0.0.1', 58717)
+2026-06-05 17:46:59,113 [WARNING] Client timeout: ('127.0.0.1', 39868)
+2026-06-05 17:49:35,994 [WARNING] Client timeout: ('127.0.0.1', 12237)
+2026-06-05 17:49:47,870 [WARNING] Client timeout: ('127.0.0.1', 58717)
+2026-06-05 18:01:12,730 [INFO] Client connected from ('127.0.0.1', 33934)
+2026-06-05 18:01:28,560 [INFO] User logged in: Furaku from ('127.0.0.1', 33934)
+2026-06-05 18:01:30,170 [WARNING] Failed to send to ('127.0.0.1', 39868): [WinError 10038] An operation was attempted on something that is not a socket
+2026-06-05 18:01:30,182 [INFO] Room matched: 7b92e8c6 | Furaku vs Furaku
+2026-06-05 18:01:35,543 [INFO] Client connected from ('127.0.0.1', 47230)
+2026-06-05 18:01:41,801 [INFO] User logged in: Aqul from ('127.0.0.1', 47230)
+2026-06-05 18:06:30,217 [WARNING] Client timeout: ('127.0.0.1', 33934)
+2026-06-05 18:06:42,943 [WARNING] Client timeout: ('127.0.0.1', 47230)
+2026-06-05 18:10:13,683 [INFO] Client connected from ('127.0.0.1', 50151)
+2026-06-05 18:10:21,260 [INFO] User logged in: Aqul from ('127.0.0.1', 50151)
+2026-06-05 18:10:41,996 [INFO] Client connected from ('127.0.0.1', 38010)
+2026-06-05 18:10:49,615 [INFO] User logged in: Furaku from ('127.0.0.1', 38010)
+2026-06-05 18:10:51,196 [WARNING] Failed to send to ('127.0.0.1', 12237): [WinError 10038] An operation was attempted on something that is not a socket
+2026-06-05 18:10:51,205 [INFO] Room matched: 8a5de84a | Aqul vs Furaku
+2026-06-05 18:11:25,485 [INFO] Manual room created: ef9e0727 | name=123 | host=Aqul
+2026-06-05 18:11:42,992 [INFO] Furaku joined room ef9e0727 as spectator
+2026-06-05 18:11:47,295 [WARNING] Connection reset: ('127.0.0.1', 38010)
+2026-06-05 18:13:15,014 [INFO] Server started on 127.0.0.1:5000
+2026-06-05 18:13:17,936 [INFO] Client connected from ('127.0.0.1', 37554)
+2026-06-05 18:13:24,588 [INFO] User logged in: Furaku from ('127.0.0.1', 37554)
+2026-06-05 18:13:31,561 [INFO] Waiting room created: 4b90f0ed | host=Furaku
+2026-06-05 18:13:38,742 [INFO] Client connected from ('127.0.0.1', 37555)
+2026-06-05 18:13:46,892 [INFO] User logged in: Aqul from ('127.0.0.1', 37555)
+2026-06-05 18:18:09,782 [WARNING] Connection reset: ('127.0.0.1', 37555)
+2026-06-05 18:18:12,106 [WARNING] Connection reset: ('127.0.0.1', 37554)
+2026-06-05 18:18:14,693 [INFO] Client connected from ('127.0.0.1', 40433)
+2026-06-05 18:18:28,692 [INFO] User logged in: Furaku from ('127.0.0.1', 40433)
+2026-06-05 18:18:36,203 [INFO] Client connected from ('127.0.0.1', 45954)
+2026-06-05 18:18:42,518 [INFO] User logged in: Aqul from ('127.0.0.1', 45954)
+2026-06-05 18:18:44,025 [WARNING] Failed to send to ('127.0.0.1', 37554): [WinError 10038] An operation was attempted on something that is not a socket
+2026-06-05 18:18:44,066 [INFO] Room matched: 4b90f0ed | Furaku vs Aqul
+2026-06-05 18:19:28,481 [WARNING] Connection reset: ('127.0.0.1', 45954)
+2026-06-05 18:19:30,260 [WARNING] Connection reset: ('127.0.0.1', 40433)
+2026-06-05 18:22:38,564 [INFO] Client connected from ('127.0.0.1', 6475)
+2026-06-05 18:22:57,198 [INFO] User logged in: Furaku from ('127.0.0.1', 6475)
+2026-06-05 18:23:06,059 [INFO] Manual room created: 0b2747b8 | name=123 | host=Furaku
+2026-06-05 18:23:11,267 [INFO] Client connected from ('127.0.0.1', 6480)
+2026-06-05 18:23:20,852 [INFO] User logged in: Aqul from ('127.0.0.1', 6480)
+2026-06-05 18:23:37,632 [INFO] Room matched: 0b2747b8 | Furaku vs Aqul
+2026-06-05 18:25:55,273 [WARNING] Connection reset: ('127.0.0.1', 6480)
+2026-06-05 18:28:06,070 [WARNING] Client timeout: ('127.0.0.1', 6475)
+2026-06-05 18:46:10,160 [INFO] Server started on 127.0.0.1:5000
+2026-06-05 18:46:13,778 [INFO] Client connected from ('127.0.0.1', 45377)
+2026-06-05 18:46:35,091 [INFO] User logged in: Furaku from ('127.0.0.1', 45377)
+2026-06-05 18:46:42,496 [INFO] Client connected from ('127.0.0.1', 60859)
+2026-06-05 18:46:49,854 [INFO] User logged in: Aqul from ('127.0.0.1', 60859)
+2026-06-05 18:46:52,562 [INFO] Client connected from ('127.0.0.1', 60860)
+2026-06-05 18:46:58,779 [INFO] User logged in: spec from ('127.0.0.1', 60860)
+2026-06-05 18:47:04,304 [INFO] Waiting room created: 66345934 | host=Aqul
+2026-06-05 18:47:09,735 [INFO] Room matched: 66345934 | Aqul vs Furaku
+2026-06-05 18:47:19,067 [INFO] Furaku left room 66345934
+2026-06-05 18:47:31,605 [INFO] Aqul left room 66345934
+2026-06-05 18:47:43,958 [INFO] Manual room created: d00c9b58 | name=123 | host=Aqul
+2026-06-05 18:58:29,612 [INFO] Server started on 127.0.0.1:5000
+2026-06-05 18:58:32,237 [INFO] Client connected from ('127.0.0.1', 40591)
+2026-06-05 18:58:49,968 [INFO] User registered: 123
+2026-06-05 18:58:50,629 [INFO] User logged in: 123 from ('127.0.0.1', 40591)
+2026-06-05 18:59:01,608 [INFO] Client connected from ('127.0.0.1', 7709)
+2026-06-05 18:59:08,247 [INFO] User registered: 234
+2026-06-05 18:59:08,893 [INFO] User logged in: 234 from ('127.0.0.1', 7709)
+2026-06-05 18:59:17,993 [INFO] Waiting room created: 608445d0 | host=123
+2026-06-05 18:59:23,194 [INFO] Room matched: 608445d0 | 123 vs 234
+2026-06-05 19:04:18,010 [WARNING] Client timeout: ('127.0.0.1', 40591)
+2026-06-05 19:04:18,015 [INFO] 123 left room 608445d0
+2026-06-05 19:04:23,203 [WARNING] Client timeout: ('127.0.0.1', 7709)
+2026-06-05 19:04:23,204 [INFO] 234 left room 608445d0
+2026-06-06 14:09:50,346 [INFO] Server started on 127.0.0.1:5000
+2026-06-06 14:10:42,915 [INFO] Client connected from ('127.0.0.1', 50558)
+2026-06-06 14:10:48,892 [INFO] User logged in: 123 from ('127.0.0.1', 50558)
+2026-06-06 14:10:52,657 [INFO] Waiting room created: 09564737 | host=123
+2026-06-06 14:11:33,268 [INFO] Client connected from ('127.0.0.1', 40066)
+2026-06-06 14:11:46,382 [INFO] User logged in: 234 from ('127.0.0.1', 40066)
+2026-06-06 14:11:51,487 [INFO] Room matched: 09564737 | 123 vs 234
+2026-06-06 14:15:04,393 [WARNING] Connection reset: ('127.0.0.1', 40066)
+2026-06-06 14:15:04,396 [INFO] 234 left room 09564737
+2026-06-06 14:15:06,598 [INFO] Client connected from ('127.0.0.1', 50061)
+2026-06-06 14:15:11,620 [INFO] User logged in: 123 from ('127.0.0.1', 50061)
+2026-06-06 14:15:19,221 [WARNING] Connection reset: ('127.0.0.1', 50558)
+2026-06-06 14:15:19,221 [INFO] 123 left room 09564737
+2026-06-06 14:15:21,602 [INFO] Client connected from ('127.0.0.1', 18452)
+2026-06-06 14:15:27,229 [INFO] User logged in: 234 from ('127.0.0.1', 18452)
+2026-06-06 14:15:28,562 [INFO] Waiting room created: 74558c61 | host=234
+2026-06-06 14:15:32,174 [INFO] Room matched: 74558c61 | 234 vs 123
+2026-06-06 14:20:28,578 [WARNING] Client timeout: ('127.0.0.1', 18452)
+2026-06-06 14:20:28,583 [INFO] 234 left room 74558c61
+2026-06-06 14:20:32,176 [WARNING] Client timeout: ('127.0.0.1', 50061)
+2026-06-06 14:20:32,176 [INFO] 123 left room 74558c61
+2026-06-06 16:10:15,864 [INFO] Client connected from ('127.0.0.1', 41655)
+2026-06-06 16:15:15,884 [WARNING] Client timeout: ('127.0.0.1', 41655)
+2026-06-06 16:21:46,542 [INFO] Server started on 127.0.0.1:5000
+2026-06-06 16:21:49,780 [INFO] Client connected from ('127.0.0.1', 2179)
+2026-06-06 16:21:55,292 [INFO] User logged in: 123 from ('127.0.0.1', 2179)
+2026-06-06 16:21:57,727 [INFO] Waiting room created: ee8020dc | host=123
+2026-06-06 16:22:12,413 [INFO] Client connected from ('127.0.0.1', 19645)
+2026-06-06 16:22:18,121 [INFO] User logged in: 234 from ('127.0.0.1', 19645)
+2026-06-06 16:22:21,209 [INFO] Room matched: ee8020dc | 123 vs 234
+2026-06-06 16:24:57,865 [WARNING] Connection reset: ('127.0.0.1', 19645)
+2026-06-06 16:24:57,866 [INFO] 234 left room ee8020dc
+2026-06-06 16:25:01,926 [WARNING] Connection reset: ('127.0.0.1', 2179)
+2026-06-06 16:25:01,926 [INFO] 123 left room ee8020dc
+2026-06-06 16:25:03,973 [INFO] Client connected from ('127.0.0.1', 41451)
+2026-06-06 16:25:48,956 [INFO] Server started on 127.0.0.1:5000
+2026-06-06 16:25:52,458 [INFO] Client connected from ('127.0.0.1', 29324)
+2026-06-06 16:25:57,116 [INFO] User logged in: 123 from ('127.0.0.1', 29324)
+2026-06-06 16:26:00,945 [INFO] Client connected from ('127.0.0.1', 29325)
+2026-06-06 16:26:05,604 [INFO] User logged in: 234 from ('127.0.0.1', 29325)
+2026-06-06 16:26:06,496 [INFO] Waiting room created: b1a2a5ea | host=234
+2026-06-06 16:26:08,124 [INFO] Room matched: b1a2a5ea | 234 vs 123
+2026-06-06 16:26:34,891 [INFO] 123 placed ships in room b1a2a5ea
+2026-06-06 16:26:49,113 [INFO] 234 placed ships in room b1a2a5ea
+2026-06-06 16:26:53,689 [INFO] Game started in room b1a2a5ea
+2026-06-06 16:26:58,889 [INFO] Room b1a2a5ea: 234 fired at (4, 3) = MISS
+2026-06-06 16:27:03,835 [INFO] Room b1a2a5ea: 123 fired at (4, 1) = MISS
+2026-06-06 16:27:05,950 [INFO] Room b1a2a5ea: 234 fired at (3, 5) = HIT
+2026-06-06 16:27:08,017 [INFO] Room b1a2a5ea: 123 fired at (6, 3) = MISS
+2026-06-06 16:27:10,110 [INFO] Room b1a2a5ea: 234 fired at (4, 5) = HIT
+2026-06-06 16:27:13,769 [WARNING] Connection reset: ('127.0.0.1', 29324)
+2026-06-06 16:27:13,770 [INFO] 123 left room b1a2a5ea
+2026-06-06 16:27:16,252 [WARNING] Connection reset: ('127.0.0.1', 29325)
+2026-06-06 16:27:16,252 [INFO] 234 left room b1a2a5ea
+2026-06-06 16:33:06,019 [INFO] Client connected from ('127.0.0.1', 1633)
+2026-06-06 16:33:40,748 [INFO] User logged in: 123 from ('127.0.0.1', 1633)
+2026-06-06 16:33:44,993 [INFO] Client connected from ('127.0.0.1', 13231)
+2026-06-06 16:33:54,004 [INFO] User logged in: 234 from ('127.0.0.1', 13231)
+2026-06-06 16:33:55,129 [INFO] Waiting room created: 59729fe1 | host=234
+2026-06-06 16:33:57,107 [INFO] Room matched: 59729fe1 | 234 vs 123
+2026-06-06 16:34:01,963 [INFO] 123 placed ships in room 59729fe1
+2026-06-06 16:34:10,630 [INFO] 234 placed ships in room 59729fe1
+2026-06-06 16:34:10,997 [INFO] Game started in room 59729fe1
+2026-06-06 16:39:04,082 [WARNING] Client timeout: ('127.0.0.1', 1633)
+2026-06-06 16:39:04,083 [INFO] 123 left room 59729fe1
+2026-06-06 16:39:11,011 [WARNING] Client timeout: ('127.0.0.1', 13231)
+2026-06-06 16:39:11,011 [INFO] 234 left room 59729fe1
+2026-06-06 16:45:45,112 [INFO] Client connected from ('127.0.0.1', 35133)
+2026-06-06 16:45:50,656 [INFO] User logged in: 123 from ('127.0.0.1', 35133)
+2026-06-06 16:45:55,471 [INFO] Waiting room created: b99c87f6 | host=123
+2026-06-06 16:46:01,092 [INFO] Client connected from ('127.0.0.1', 35139)
+2026-06-06 16:46:06,357 [INFO] User logged in: 234 from ('127.0.0.1', 35139)
+2026-06-06 16:46:07,379 [INFO] Room matched: b99c87f6 | 123 vs 234
+2026-06-06 16:46:16,963 [INFO] 234 placed ships in room b99c87f6
+2026-06-06 16:46:22,878 [INFO] 123 placed ships in room b99c87f6
+2026-06-06 16:46:23,412 [INFO] Game started in room b99c87f6
+2026-06-06 16:49:26,882 [WARNING] Connection reset: ('127.0.0.1', 35133)
+2026-06-06 16:49:26,883 [INFO] 123 left room b99c87f6
+2026-06-06 16:49:28,755 [WARNING] Connection reset: ('127.0.0.1', 35139)
+2026-06-06 16:49:28,755 [INFO] 234 left room b99c87f6
+2026-06-06 16:49:31,066 [INFO] Client connected from ('127.0.0.1', 23773)
+2026-06-06 16:49:34,887 [INFO] User logged in: 123 from ('127.0.0.1', 23773)
+2026-06-06 16:49:35,926 [INFO] Waiting room created: 6b954552 | host=123
+2026-06-06 16:49:41,078 [INFO] Client connected from ('127.0.0.1', 23774)
+2026-06-06 16:49:47,871 [INFO] User logged in: 234 from ('127.0.0.1', 23774)
+2026-06-06 16:49:49,287 [INFO] Room matched: 6b954552 | 123 vs 234
+2026-06-06 16:49:57,179 [INFO] 123 placed ships in room 6b954552
+2026-06-06 16:50:02,805 [INFO] 234 placed ships in room 6b954552
+2026-06-06 16:50:03,522 [INFO] Game started in room 6b954552
+2026-06-06 16:51:14,161 [WARNING] Connection reset: ('127.0.0.1', 23774)
+2026-06-06 16:51:14,162 [INFO] 234 left room 6b954552
+2026-06-06 16:51:16,186 [WARNING] Connection reset: ('127.0.0.1', 23773)
+2026-06-06 16:51:16,186 [INFO] 123 left room 6b954552
+2026-06-06 16:51:18,282 [INFO] Client connected from ('127.0.0.1', 58408)
+2026-06-06 16:51:22,451 [INFO] User logged in: 123 from ('127.0.0.1', 58408)
+2026-06-06 16:51:27,220 [INFO] Client connected from ('127.0.0.1', 58409)
+2026-06-06 16:51:31,155 [INFO] User logged in: 234 from ('127.0.0.1', 58409)
+2026-06-06 16:51:32,022 [INFO] Waiting room created: f7a255e0 | host=234
+2026-06-06 16:51:35,633 [INFO] Room matched: f7a255e0 | 234 vs 123
+2026-06-06 16:51:39,794 [INFO] 123 placed ships in room f7a255e0
+2026-06-06 16:51:41,031 [INFO] 123 placed ships in room f7a255e0
+2026-06-06 16:51:47,845 [INFO] 234 placed ships in room f7a255e0
+2026-06-06 16:51:48,368 [INFO] Game started in room f7a255e0
+2026-06-06 16:52:44,567 [WARNING] Connection reset: ('127.0.0.1', 58409)
+2026-06-06 16:52:44,567 [INFO] 234 left room f7a255e0
+2026-06-06 16:52:48,938 [WARNING] Connection reset: ('127.0.0.1', 58408)
+2026-06-06 16:52:48,938 [INFO] 123 left room f7a255e0
+2026-06-06 16:52:50,701 [INFO] Client connected from ('127.0.0.1', 64606)
+2026-06-06 16:52:54,204 [INFO] User logged in: 123 from ('127.0.0.1', 64606)
+2026-06-06 16:52:55,113 [INFO] Waiting room created: 0c4dbdfc | host=123
+2026-06-06 16:52:58,521 [INFO] Client connected from ('127.0.0.1', 64609)
+2026-06-06 16:53:01,011 [INFO] User logged in: 123 from ('127.0.0.1', 64609)
+2026-06-06 16:53:01,994 [INFO] Room matched: 0c4dbdfc | 123 vs 123
+2026-06-06 16:53:08,414 [INFO] 123 placed ships in room 0c4dbdfc
+2026-06-06 16:53:15,096 [INFO] 123 placed ships in room 0c4dbdfc
+2026-06-06 16:53:18,753 [INFO] Game started in room 0c4dbdfc
+2026-06-06 16:53:36,904 [WARNING] Connection reset: ('127.0.0.1', 64609)
+2026-06-06 16:53:36,904 [INFO] 123 left room 0c4dbdfc
+2026-06-06 16:53:38,302 [WARNING] Connection reset: ('127.0.0.1', 64606)
+2026-06-06 16:53:38,303 [INFO] 123 left room 0c4dbdfc
+2026-06-06 16:53:40,357 [INFO] Client connected from ('127.0.0.1', 14983)
+2026-06-06 16:53:43,963 [INFO] User logged in: 123 from ('127.0.0.1', 14983)
+2026-06-06 16:53:48,539 [INFO] Client connected from ('127.0.0.1', 14984)
+2026-06-06 16:53:51,278 [INFO] User logged in: 123 from ('127.0.0.1', 14984)
+2026-06-06 16:53:52,087 [INFO] Waiting room created: e846c565 | host=123
+2026-06-06 16:53:54,839 [INFO] Room matched: e846c565 | 123 vs 123
+2026-06-06 16:53:58,892 [INFO] 123 placed ships in room e846c565
+2026-06-06 16:54:05,322 [INFO] 123 placed ships in room e846c565
+2026-06-06 16:54:05,458 [INFO] Game started in room e846c565
+2026-06-06 16:58:59,613 [WARNING] Client timeout: ('127.0.0.1', 14983)
+2026-06-06 16:58:59,613 [INFO] 123 left room e846c565
+2026-06-06 16:59:05,463 [WARNING] Client timeout: ('127.0.0.1', 14984)
+2026-06-06 16:59:05,464 [INFO] 123 left room e846c565
+2026-06-06 17:20:56,422 [INFO] Server started on 127.0.0.1:5000
+2026-06-06 17:21:01,046 [INFO] Client connected from ('127.0.0.1', 15997)
+2026-06-06 17:21:06,624 [INFO] User logged in: 123 from ('127.0.0.1', 15997)
+2026-06-06 17:21:08,423 [INFO] Waiting room created: fff89e7f | host=123
+2026-06-06 17:21:11,793 [INFO] Client connected from ('127.0.0.1', 3640)
+2026-06-06 17:21:17,350 [INFO] User logged in: 234 from ('127.0.0.1', 3640)
+2026-06-06 17:21:18,457 [INFO] Room matched: fff89e7f | 123 vs 234
+2026-06-06 17:21:25,481 [INFO] 234 placed ships in room fff89e7f
+2026-06-06 17:21:32,553 [INFO] 123 placed ships in room fff89e7f
+2026-06-06 17:21:33,313 [INFO] Game started in room fff89e7f
+2026-06-06 17:21:57,110 [INFO] Room fff89e7f: 123 fired at (3, 2) = HIT
+2026-06-06 17:22:00,785 [INFO] Room fff89e7f: 234 fired at (4, 3) = HIT
+2026-06-06 17:22:04,082 [INFO] Room fff89e7f: 123 fired at (3, 3) = HIT
+2026-06-06 17:22:24,124 [INFO] Game over by forfeit in room fff89e7f. Winner: 234
+2026-06-06 17:22:37,550 [INFO] Waiting room created: f409a577 | host=234
+2026-06-06 17:22:40,987 [INFO] Room matched: f409a577 | 234 vs 123
+2026-06-06 17:22:45,547 [INFO] 123 placed ships in room f409a577
+2026-06-06 17:22:52,615 [INFO] 234 placed ships in room f409a577
+2026-06-06 17:22:54,108 [INFO] Game started in room f409a577
+2026-06-06 17:23:39,184 [INFO] Game over by forfeit in room f409a577. Winner: 123
+2026-06-06 17:23:42,518 [INFO] Waiting room created: 87199b2f | host=234
+2026-06-06 17:23:55,459 [INFO] 234 left room 87199b2f
+2026-06-06 17:25:12,889 [WARNING] Connection reset: ('127.0.0.1', 3640)
+2026-06-06 17:25:14,625 [WARNING] Connection reset: ('127.0.0.1', 15997)
+2026-06-06 17:25:14,627 [WARNING] Failed to send to ('127.0.0.1', 3640): [WinError 10038] An operation was attempted on something that is not a socket
+2026-06-06 17:25:14,627 [INFO] 123 left room f409a577
+2026-06-06 17:25:16,354 [INFO] Client connected from ('127.0.0.1', 56284)
+2026-06-06 17:25:20,366 [INFO] User logged in: 123 from ('127.0.0.1', 56284)
+2026-06-06 17:25:21,205 [WARNING] Failed to send to ('127.0.0.1', 3640): [WinError 10038] An operation was attempted on something that is not a socket
+2026-06-06 17:25:21,207 [INFO] Room matched: f409a577 | 234 vs 123
+2026-06-06 17:25:24,461 [INFO] Client connected from ('127.0.0.1', 56300)
+2026-06-06 17:25:28,086 [INFO] User logged in: 123 from ('127.0.0.1', 56300)
+2026-06-06 17:25:28,692 [INFO] Waiting room created: 3f9a1a32 | host=123
+2026-06-06 17:25:34,501 [WARNING] Failed to send to ('127.0.0.1', 3640): [WinError 10038] An operation was attempted on something that is not a socket
+2026-06-06 17:25:34,501 [INFO] 123 left room f409a577
+2026-06-06 17:25:35,269 [WARNING] Failed to send to ('127.0.0.1', 3640): [WinError 10038] An operation was attempted on something that is not a socket
+2026-06-06 17:25:35,270 [INFO] Room matched: f409a577 | 234 vs 123
+2026-06-06 17:25:37,771 [WARNING] Failed to send to ('127.0.0.1', 3640): [WinError 10038] An operation was attempted on something that is not a socket
+2026-06-06 17:25:37,771 [INFO] 123 left room f409a577
+2026-06-06 17:25:44,571 [INFO] Room matched: 3f9a1a32 | 123 vs 123
+2026-06-06 17:25:49,648 [INFO] 123 placed ships in room 3f9a1a32
+2026-06-06 17:25:54,632 [INFO] 123 placed ships in room 3f9a1a32
+2026-06-06 17:25:57,197 [INFO] Game started in room 3f9a1a32
+2026-06-06 17:27:29,590 [WARNING] Connection reset: ('127.0.0.1', 56284)
+2026-06-06 17:27:29,591 [INFO] 123 left room 3f9a1a32
+2026-06-06 17:27:31,225 [WARNING] Connection reset: ('127.0.0.1', 56300)
+2026-06-06 17:27:31,225 [INFO] 123 left room 3f9a1a32
+2026-06-06 17:27:32,846 [INFO] Client connected from ('127.0.0.1', 3928)
+2026-06-06 17:27:39,409 [INFO] User logged in: 123 from ('127.0.0.1', 3928)
+2026-06-06 17:27:40,460 [WARNING] Failed to send to ('127.0.0.1', 3640): [WinError 10038] An operation was attempted on something that is not a socket
+2026-06-06 17:27:40,462 [INFO] Room matched: f409a577 | 234 vs 123
+2026-06-06 17:28:21,711 [WARNING] Connection reset: ('127.0.0.1', 3928)
+2026-06-06 17:28:21,712 [WARNING] Failed to send to ('127.0.0.1', 3640): [WinError 10038] An operation was attempted on something that is not a socket
+2026-06-06 17:28:21,712 [INFO] 123 left room f409a577
+2026-06-06 22:02:43,796 [INFO] Server started on 127.0.0.1:5000
+2026-06-06 22:03:16,369 [INFO] Client connected from ('127.0.0.1', 52966)
+2026-06-06 22:03:20,535 [INFO] User logged in: 123 from ('127.0.0.1', 52966)
+2026-06-06 22:03:40,205 [INFO] Waiting room created: 04f758f9 | host=123
+2026-06-07 01:16:07,797 [WARNING] Client timeout: ('127.0.0.1', 52966)
+2026-06-07 01:16:07,801 [INFO] 123 left room 04f758f9
+2026-06-07 01:16:54,975 [INFO] Server started on 127.0.0.1:5000
+2026-06-07 01:17:21,607 [INFO] Client connected from ('127.0.0.1', 58716)
+2026-06-07 01:17:25,837 [INFO] User logged in: 123 from ('127.0.0.1', 58716)
+2026-06-07 01:17:43,229 [INFO] Waiting room created: 0266af43 | host=123
+2026-06-07 01:17:49,512 [INFO] Client connected from ('127.0.0.1', 58741)
+2026-06-07 01:18:00,019 [INFO] User logged in: 234 from ('127.0.0.1', 58741)
+2026-06-07 01:18:10,089 [INFO] Room matched: 0266af43 | 123 vs 234
+2026-06-07 01:18:12,532 [INFO] 234 left room 0266af43
+2026-06-07 01:18:14,882 [INFO] Room matched: 0266af43 | 123 vs 234
+2026-06-07 01:18:37,806 [INFO] Client connected from ('127.0.0.1', 58828)
+2026-06-07 01:18:46,291 [INFO] User logged in: spec from ('127.0.0.1', 58828)
+2026-06-07 01:18:52,074 [INFO] 234 left room 0266af43
+2026-06-07 01:19:06,754 [INFO] Manual room created: 31aa3fc6 | name=kntl | host=234
+2026-06-07 01:19:14,265 [INFO] 234 left room 31aa3fc6
+2026-06-07 01:19:20,325 [INFO] Room matched: 0266af43 | 123 vs 234
+2026-06-07 01:19:25,356 [INFO] spec joined room 0266af43 as spectator
+2026-06-07 01:19:35,963 [INFO] 234 placed ships in room 0266af43
+2026-06-07 01:19:44,232 [INFO] 123 placed ships in room 0266af43
+2026-06-07 01:19:45,558 [INFO] Game started in room 0266af43
+2026-06-07 01:19:55,202 [INFO] Room 0266af43: 123 fired at (4, 3) = MISS
+2026-06-07 01:20:01,461 [INFO] Room 0266af43: 234 fired at (2, 1) = MISS
+2026-06-07 01:20:03,644 [INFO] Room 0266af43: 123 fired at (2, 1) = HIT
+2026-06-07 01:20:20,030 [INFO] Game over by forfeit in room 0266af43. Winner: 234
+2026-06-07 01:21:11,358 [INFO] Waiting room created: df489a24 | host=123
+2026-06-07 01:21:43,271 [WARNING] Connection reset: ('127.0.0.1', 58716)
+2026-06-07 01:21:43,271 [INFO] 123 left room df489a24
+2026-06-07 01:21:45,116 [WARNING] Connection reset: ('127.0.0.1', 58741)
+2026-06-07 01:21:45,143 [WARNING] Failed to send to ('127.0.0.1', 58716): [WinError 10038] An operation was attempted on something that is not a socket
+2026-06-07 01:21:45,144 [INFO] 234 left room 0266af43
+2026-06-07 01:24:25,363 [WARNING] Client timeout: ('127.0.0.1', 58828)
+2026-06-07 01:24:25,364 [WARNING] Failed to send to ('127.0.0.1', 58716): [WinError 10038] An operation was attempted on something that is not a socket
+2026-06-07 01:24:25,364 [INFO] spec left room 0266af43
+2026-06-07 01:42:30,692 [INFO] Server started on 127.0.0.1:5000
+2026-06-07 01:43:02,148 [INFO] Client connected from ('127.0.0.1', 40636)
+2026-06-07 01:43:35,004 [INFO] Client connected from ('127.0.0.1', 8184)
+2026-06-07 01:43:40,720 [INFO] User logged in: 123 from ('127.0.0.1', 8184)
+2026-06-07 01:43:53,559 [INFO] User logged in: 234 from ('127.0.0.1', 40636)
+2026-06-07 01:43:58,531 [INFO] Waiting room created: 587ce8bf | host=234
+2026-06-07 01:44:00,650 [INFO] Room matched: 587ce8bf | 234 vs 123
+2026-06-07 01:44:04,009 [INFO] Client connected from ('127.0.0.1', 8186)
+2026-06-07 01:44:10,460 [INFO] User logged in: spec from ('127.0.0.1', 8186)
+2026-06-07 01:44:14,386 [INFO] spec joined room 587ce8bf as spectator
+2026-06-07 01:44:20,401 [INFO] Placement started in room 587ce8bf
+2026-06-07 01:44:26,690 [INFO] 234 placed ships in room 587ce8bf
+2026-06-07 01:44:33,600 [INFO] 123 placed ships in room 587ce8bf
+2026-06-07 01:44:34,238 [INFO] Game started in room 587ce8bf
+2026-06-07 01:45:11,334 [INFO] Room 587ce8bf: 234 fired at (4, 3) = HIT
+2026-06-07 01:45:16,989 [INFO] Room 587ce8bf: 123 fired at (5, 2) = MISS
+2026-06-07 01:45:59,745 [WARNING] Error sent to ('127.0.0.1', 40636): You already fired at this cell
+2026-06-07 01:46:00,513 [WARNING] Error sent to ('127.0.0.1', 40636): You already fired at this cell
+2026-06-07 01:49:14,389 [WARNING] Client timeout: ('127.0.0.1', 8186)
+2026-06-07 01:49:14,390 [INFO] spec left room 587ce8bf
+2026-06-07 01:50:16,990 [WARNING] Client timeout: ('127.0.0.1', 8184)
+2026-06-07 01:50:16,991 [INFO] 123 left room 587ce8bf
+2026-06-07 01:51:00,515 [WARNING] Client timeout: ('127.0.0.1', 40636)
+2026-06-07 01:51:00,515 [INFO] 234 left room 587ce8bf
+2026-06-07 01:54:09,367 [INFO] Server started on 127.0.0.1:5000
+2026-06-07 01:54:12,031 [INFO] Client connected from ('127.0.0.1', 21010)
+2026-06-07 01:54:18,338 [INFO] User logged in: 123 from ('127.0.0.1', 21010)
+2026-06-07 01:54:22,235 [INFO] Client connected from ('127.0.0.1', 21011)
+2026-06-07 01:54:31,726 [INFO] User logged in: 234 from ('127.0.0.1', 21011)
+2026-06-07 01:54:32,688 [INFO] Waiting room created: 9c731f3d | host=234
+2026-06-07 01:54:36,641 [INFO] Room matched: 9c731f3d | 234 vs 123
+2026-06-07 01:54:42,004 [INFO] Client connected from ('127.0.0.1', 21012)
+2026-06-07 01:55:13,981 [INFO] Client connected from ('127.0.0.1', 63583)
+2026-06-07 01:55:20,632 [INFO] User logged in: Furaku from ('127.0.0.1', 63583)
+2026-06-07 01:55:23,929 [INFO] Furaku joined room 9c731f3d as spectator
+2026-06-07 01:56:00,064 [INFO] Furaku left room 9c731f3d
+2026-06-07 01:56:04,728 [INFO] Furaku joined room 9c731f3d as spectator
+2026-06-07 01:56:14,367 [INFO] User logged in: Aqul from ('127.0.0.1', 21012)
+2026-06-07 01:56:17,681 [INFO] Aqul joined room 9c731f3d as spectator
+2026-06-07 01:56:21,906 [INFO] Placement started in room 9c731f3d
+2026-06-07 01:56:29,157 [INFO] 123 placed ships in room 9c731f3d
+2026-06-07 01:56:35,770 [INFO] 234 placed ships in room 9c731f3d
+2026-06-07 01:56:36,965 [INFO] Game started in room 9c731f3d
+2026-06-07 01:57:13,215 [INFO] Aqul left room 9c731f3d
+2026-06-07 01:58:56,787 [INFO] Placement started in room 9c731f3d
+2026-06-07 01:59:01,341 [INFO] 123 placed ships in room 9c731f3d
+2026-06-07 01:59:02,230 [INFO] Game started in room 9c731f3d
+2026-06-07 01:59:15,006 [INFO] Room 9c731f3d: 234 fired at (5, 2) = MISS
+2026-06-07 01:59:22,233 [INFO] Room 9c731f3d: 123 fired at (2, 2) = MISS
+2026-06-07 01:59:32,290 [INFO] Room 9c731f3d: 234 fired at (3, 3) = HIT
+2026-06-07 02:01:04,738 [WARNING] Client timeout: ('127.0.0.1', 63583)
+2026-06-07 02:01:04,739 [INFO] Furaku left room 9c731f3d
+2026-06-07 02:02:13,215 [WARNING] Client timeout: ('127.0.0.1', 21012)
+2026-06-07 02:04:22,238 [WARNING] Client timeout: ('127.0.0.1', 21010)
+2026-06-07 02:04:22,238 [INFO] 123 left room 9c731f3d
+2026-06-07 02:04:32,296 [WARNING] Client timeout: ('127.0.0.1', 21011)
+2026-06-07 02:04:32,296 [INFO] 234 left room 9c731f3d
+2026-06-07 02:26:39,310 [INFO] Server started on 127.0.0.1:5000
+2026-06-07 02:26:42,957 [INFO] Client connected from ('127.0.0.1', 7631)
+2026-06-07 02:26:46,484 [INFO] User logged in: 123 from ('127.0.0.1', 7631)
+2026-06-07 02:32:10,274 [WARNING] Client timeout: ('127.0.0.1', 7631)
+2026-06-07 02:33:03,864 [INFO] Client connected from ('127.0.0.1', 59112)
+2026-06-07 02:33:08,087 [INFO] User logged in: 123 from ('127.0.0.1', 59112)
+2026-06-07 02:36:11,130 [WARNING] Connection reset: ('127.0.0.1', 59112)
+2026-06-07 02:36:13,788 [INFO] Client connected from ('127.0.0.1', 24295)
+2026-06-07 02:36:17,245 [INFO] User logged in: 123 from ('127.0.0.1', 24295)
+2026-06-07 02:36:24,744 [WARNING] Connection reset: ('127.0.0.1', 24295)
+2026-06-07 02:47:45,269 [INFO] Server started on 127.0.0.1:5000
+2026-06-07 02:47:49,201 [INFO] Client connected from ('127.0.0.1', 48851)
+2026-06-07 02:47:55,394 [INFO] User logged in: 123 from ('127.0.0.1', 48851)
+2026-06-07 02:48:02,129 [INFO] Waiting room created: 068fef11 | host=123
+2026-06-07 02:48:05,712 [INFO] Client connected from ('127.0.0.1', 48855)
+2026-06-07 02:48:12,766 [INFO] User logged in: 234 from ('127.0.0.1', 48855)
+2026-06-07 02:48:13,586 [INFO] Room matched: 068fef11 | 123 vs 234
+2026-06-07 02:48:15,760 [INFO] Placement started in room 068fef11
+2026-06-07 02:48:22,350 [INFO] 234 placed ships in room 068fef11
+2026-06-07 02:48:30,364 [INFO] 123 placed ships in room 068fef11
+2026-06-07 02:48:30,770 [INFO] Game started in room 068fef11
+2026-06-07 02:49:14,924 [INFO] Game over by forfeit in room 068fef11. Winner: 123
+2026-06-07 02:49:38,088 [INFO] 234 left room 068fef11
+2026-06-07 02:51:29,419 [WARNING] Connection reset: ('127.0.0.1', 48855)
+2026-06-07 02:51:31,633 [WARNING] Connection reset: ('127.0.0.1', 48851)
+2026-06-07 02:51:31,633 [INFO] 123 left room 068fef11
+2026-06-07 02:51:33,806 [INFO] Client connected from ('127.0.0.1', 13149)
+2026-06-07 02:51:39,338 [WARNING] Connection reset: ('127.0.0.1', 13149)
+2026-06-07 03:01:51,825 [INFO] Client connected from ('127.0.0.1', 47271)
+2026-06-07 03:01:57,050 [WARNING] Connection reset: ('127.0.0.1', 47271)
+2026-06-07 03:06:36,952 [INFO] Client connected from ('127.0.0.1', 25128)
+2026-06-07 03:06:40,763 [INFO] User logged in: 123 from ('127.0.0.1', 25128)
+2026-06-07 03:07:06,095 [WARNING] Connection reset: ('127.0.0.1', 25128)
+2026-06-07 04:28:58,144 [INFO] Server started on 0.0.0.0:5000
+2026-06-07 04:29:05,260 [INFO] Client connected from ('127.0.0.1', 20292)
+2026-06-07 04:29:05,376 [WARNING] Connection reset: ('127.0.0.1', 20292)
+2026-06-07 04:29:22,524 [INFO] Client connected from ('127.0.0.1', 62572)
+2026-06-07 04:29:22,652 [WARNING] Connection reset: ('127.0.0.1', 62572)
+2026-06-07 04:30:28,253 [INFO] Client connected from ('127.0.0.1', 5271)
+2026-06-07 04:30:28,351 [WARNING] Connection reset: ('127.0.0.1', 5271)
+2026-06-07 04:48:00,508 [INFO] Client connected from ('127.0.0.1', 31078)
+2026-06-07 04:48:00,614 [WARNING] Connection reset: ('127.0.0.1', 31078)
+2026-06-07 04:50:50,383 [INFO] Client connected from ('127.0.0.1', 57323)
+2026-06-07 04:50:54,505 [WARNING] Connection reset: ('127.0.0.1', 57323)
+2026-06-07 04:55:37,745 [INFO] Server started on 0.0.0.0:5000
+2026-06-07 04:55:40,562 [INFO] Client connected from ('127.0.0.1', 17423)
+2026-06-07 04:55:43,725 [WARNING] Connection reset: ('127.0.0.1', 17423)
+2026-06-07 04:57:42,961 [INFO] Client connected from ('127.0.0.1', 38432)
+2026-06-07 04:57:44,636 [WARNING] Connection reset: ('127.0.0.1', 38432)
+2026-06-07 04:58:54,060 [INFO] Client connected from ('127.0.0.1', 54994)
+2026-06-07 04:58:56,010 [WARNING] Connection reset: ('127.0.0.1', 54994)
+2026-06-07 04:59:57,522 [INFO] Client connected from ('127.0.0.1', 30999)
+2026-06-07 04:59:59,044 [WARNING] Connection reset: ('127.0.0.1', 30999)
+2026-06-07 05:06:37,124 [INFO] Client connected from ('127.0.0.1', 51941)
+2026-06-07 05:06:42,468 [INFO] User logged in: 123 from ('127.0.0.1', 51941)
+2026-06-07 05:06:43,579 [INFO] Waiting room created: 34a7714d | host=123
+2026-06-07 06:40:52,405 [INFO] Server started on 0.0.0.0:5000
+2026-06-07 06:41:19,421 [INFO] Client connected from ('127.0.0.1', 29120)
+2026-06-07 06:41:36,068 [INFO] User registered: aqul
+2026-06-07 06:41:37,780 [INFO] User logged in: aqul from ('127.0.0.1', 29120)
+2026-06-07 06:41:46,943 [INFO] Manual room created: 845a9fce | name=anjay | host=aqul
+2026-06-07 06:42:38,408 [WARNING] Connection reset: ('127.0.0.1', 29120)
+2026-06-07 06:42:38,408 [INFO] aqul left room 845a9fce
+2026-06-07 06:43:58,179 [INFO] Client connected from ('127.0.0.1', 64195)
+2026-06-07 06:44:12,455 [INFO] User logged in: aqul from ('127.0.0.1', 64195)
+2026-06-07 06:44:22,204 [INFO] Manual room created: 5ca91c97 | name=anjay | host=aqul
+2026-06-07 06:46:16,292 [INFO] Client connected from ('127.0.0.1', 42196)
+2026-06-07 06:46:24,930 [INFO] User registered: budi
+2026-06-07 06:46:25,659 [INFO] User logged in: budi from ('127.0.0.1', 42196)
+2026-06-07 06:46:28,805 [INFO] Room matched: 5ca91c97 | aqul vs budi
+2026-06-07 06:46:31,548 [INFO] Placement started in room 5ca91c97
+2026-06-07 06:46:42,466 [INFO] budi placed ships in room 5ca91c97
+2026-06-07 06:47:18,490 [INFO] aqul placed ships in room 5ca91c97
+2026-06-07 06:47:32,311 [INFO] Client connected from ('127.0.0.1', 54332)
+2026-06-07 06:47:43,070 [INFO] User registered: rudi
+2026-06-07 06:47:43,801 [INFO] User logged in: rudi from ('127.0.0.1', 54332)
+2026-06-07 06:47:50,259 [INFO] rudi joined room 5ca91c97 as spectator
+2026-06-07 06:48:19,970 [INFO] Placement started in room 5ca91c97
+2026-06-07 06:48:25,644 [INFO] budi placed ships in room 5ca91c97
+2026-06-07 06:48:31,065 [INFO] aqul placed ships in room 5ca91c97
+2026-06-07 06:48:37,741 [INFO] Game started in room 5ca91c97
+2026-06-07 06:48:45,311 [INFO] Room 5ca91c97: aqul fired at (4, 3) = HIT
+2026-06-07 06:48:47,832 [INFO] Room 5ca91c97: budi fired at (1, 2) = MISS
+2026-06-07 06:48:49,704 [INFO] Room 5ca91c97: aqul fired at (3, 7) = MISS
+2026-06-07 06:48:51,264 [INFO] Room 5ca91c97: budi fired at (7, 4) = HIT
+2026-06-07 06:49:01,013 [INFO] Room 5ca91c97: aqul fired at (2, 5) = MISS
+2026-06-07 06:49:02,534 [INFO] Room 5ca91c97: budi fired at (5, 2) = MISS
+2026-06-07 06:49:04,654 [INFO] Room 5ca91c97: aqul fired at (7, 6) = MISS
+2026-06-07 06:49:06,432 [INFO] Room 5ca91c97: budi fired at (3, 8) = MISS
+2026-06-07 06:49:08,728 [INFO] Room 5ca91c97: aqul fired at (3, 0) = MISS
+2026-06-07 06:49:10,251 [INFO] Room 5ca91c97: budi fired at (4, 4) = MISS
+2026-06-07 06:49:12,884 [INFO] Room 5ca91c97: aqul fired at (7, 3) = MISS
+2026-06-07 06:49:14,317 [INFO] Room 5ca91c97: budi fired at (7, 7) = MISS
+2026-06-07 06:49:15,809 [INFO] Room 5ca91c97: aqul fired at (4, 6) = HIT
+2026-06-07 06:49:17,816 [INFO] Room 5ca91c97: budi fired at (7, 5) = HIT
+2026-06-07 06:49:19,753 [INFO] Room 5ca91c97: aqul fired at (4, 5) = HIT
+2026-06-07 06:49:22,904 [INFO] Room 5ca91c97: budi fired at (7, 3) = MISS
+2026-06-07 06:49:25,139 [INFO] Room 5ca91c97: aqul fired at (4, 4) = HIT
+2026-06-07 06:49:29,323 [INFO] Room 5ca91c97: budi fired at (7, 6) = MISS
+2026-06-07 06:49:31,930 [INFO] Room 5ca91c97: aqul fired at (3, 6) = HIT
+2026-06-07 06:49:33,379 [INFO] Room 5ca91c97: budi fired at (2, 3) = HIT
+2026-06-07 06:49:34,993 [INFO] Room 5ca91c97: aqul fired at (3, 5) = HIT
+2026-06-07 06:49:36,304 [INFO] Room 5ca91c97: budi fired at (2, 4) = HIT
+2026-06-07 06:49:37,582 [INFO] Room 5ca91c97: aqul fired at (3, 4) = HIT
+2026-06-07 06:49:38,523 [WARNING] Error sent to ('127.0.0.1', 42196): You already fired at this cell
+2026-06-07 06:49:39,240 [INFO] Room 5ca91c97: budi fired at (2, 5) = HIT
+2026-06-07 06:49:40,734 [INFO] Room 5ca91c97: aqul fired at (3, 3) = HIT
+2026-06-07 06:49:43,191 [INFO] Room 5ca91c97: budi fired at (3, 3) = HIT
+2026-06-07 06:49:45,355 [INFO] Room 5ca91c97: aqul fired at (4, 2) = MISS
+2026-06-07 06:49:47,004 [INFO] Room 5ca91c97: budi fired at (3, 4) = HIT
+2026-06-07 06:49:48,643 [INFO] Room 5ca91c97: aqul fired at (6, 4) = MISS
+2026-06-07 06:49:50,263 [INFO] Room 5ca91c97: budi fired at (3, 5) = HIT
+2026-06-07 06:49:51,629 [INFO] Room 5ca91c97: aqul fired at (8, 5) = MISS
+2026-06-07 06:49:53,713 [INFO] Room 5ca91c97: budi fired at (6, 5) = MISS
+2026-06-07 06:49:55,691 [INFO] Room 5ca91c97: aqul fired at (4, 7) = MISS
+2026-06-07 06:49:57,716 [INFO] Room 5ca91c97: budi fired at (5, 6) = MISS
+2026-06-07 06:50:07,360 [INFO] Room 5ca91c97: aqul fired at (5, 6) = HIT
+2026-06-07 06:50:12,137 [INFO] Room 5ca91c97: budi fired at (6, 6) = MISS
+2026-06-07 06:50:14,027 [INFO] Room 5ca91c97: aqul fired at (5, 5) = HIT
+2026-06-07 06:50:15,541 [INFO] Room 5ca91c97: budi fired at (6, 3) = HIT
+2026-06-07 06:50:18,803 [WARNING] Error sent to ('127.0.0.1', 64195): You already fired at this cell
+2026-06-07 06:50:20,364 [INFO] Room 5ca91c97: aqul fired at (6, 2) = MISS
+2026-06-07 06:50:22,115 [INFO] Room 5ca91c97: budi fired at (5, 3) = HIT
+2026-06-07 06:50:23,734 [INFO] Room 5ca91c97: aqul fired at (7, 4) = MISS
+2026-06-07 06:50:25,395 [INFO] Room 5ca91c97: budi fired at (6, 2) = MISS
+2026-06-07 06:50:28,028 [INFO] Room 5ca91c97: aqul fired at (8, 4) = MISS
+2026-06-07 06:50:29,568 [INFO] Room 5ca91c97: budi fired at (6, 4) = HIT
+2026-06-07 06:50:31,244 [INFO] Room 5ca91c97: aqul fired at (8, 8) = MISS
+2026-06-07 06:50:32,607 [INFO] Room 5ca91c97: budi fired at (5, 4) = HIT
+2026-06-07 06:50:34,923 [INFO] Room 5ca91c97: aqul fired at (5, 8) = MISS
+2026-06-07 06:50:36,339 [INFO] Room 5ca91c97: budi fired at (5, 8) = HIT
+2026-06-07 06:50:38,328 [INFO] Room 5ca91c97: aqul fired at (4, 9) = MISS
+2026-06-07 06:50:40,270 [INFO] Room 5ca91c97: budi fired at (5, 9) = HIT
+2026-06-07 06:50:42,334 [INFO] Room 5ca91c97: aqul fired at (7, 7) = MISS
+2026-06-07 06:50:44,366 [INFO] Room 5ca91c97: budi fired at (5, 7) = HIT
+2026-06-07 06:50:45,871 [INFO] Room 5ca91c97: aqul fired at (7, 8) = MISS
+2026-06-07 06:50:48,256 [INFO] Room 5ca91c97: budi fired at (4, 8) = MISS
+2026-06-07 06:50:50,375 [INFO] Room 5ca91c97: aqul fired at (6, 7) = MISS
+2026-06-07 06:50:52,813 [INFO] Room 5ca91c97: budi fired at (6, 8) = MISS
+2026-06-07 06:50:55,624 [INFO] Room 5ca91c97: aqul fired at (6, 5) = HIT
+2026-06-07 06:50:57,860 [INFO] Room 5ca91c97: budi fired at (4, 6) = MISS
+2026-06-07 06:50:59,486 [INFO] Room 5ca91c97: aqul fired at (6, 6) = HIT
+2026-06-07 06:51:01,118 [INFO] Room 5ca91c97: budi fired at (8, 7) = MISS
+2026-06-07 06:51:04,697 [INFO] Room 5ca91c97: aqul fired at (8, 7) = HIT
+2026-06-07 06:51:07,104 [INFO] Room 5ca91c97: budi fired at (2, 9) = MISS
+2026-06-07 06:51:10,154 [INFO] Room 5ca91c97: aqul fired at (8, 6) = HIT
+2026-06-07 06:51:12,306 [INFO] Room 5ca91c97: budi fired at (8, 6) = MISS
+2026-06-07 06:51:13,837 [INFO] Room 5ca91c97: aqul fired at (2, 8) = MISS
+2026-06-07 06:51:15,579 [INFO] Room 5ca91c97: budi fired at (1, 9) = HIT
+2026-06-07 06:51:17,273 [INFO] Room 5ca91c97: aqul fired at (1, 6) = MISS
+2026-06-07 06:51:18,929 [INFO] Room 5ca91c97: budi fired at (1, 8) = HIT
+2026-06-07 06:51:20,556 [INFO] Room 5ca91c97: aqul fired at (0, 2) = MISS
+2026-06-07 06:51:22,597 [INFO] Room 5ca91c97: budi fired at (1, 7) = HIT
+2026-06-07 06:51:29,494 [INFO] Room 5ca91c97: aqul fired at (7, 2) = MISS
+2026-06-07 06:51:31,111 [INFO] Room 5ca91c97: budi fired at (2, 2) = HIT
+2026-06-07 06:51:32,167 [INFO] Room 5ca91c97: aqul fired at (3, 1) = MISS
+2026-06-07 06:51:34,165 [INFO] Room 5ca91c97: budi fired at (3, 2) = HIT
+2026-06-07 06:51:34,187 [INFO] Game over in room 5ca91c97. Winner: 78eb8045-baeb-44a2-88a7-b68d0d33e2b5
+2026-06-07 06:52:12,511 [INFO] rudi left room 5ca91c97
+2026-06-07 06:53:00,343 [INFO] aqul left room 5ca91c97
+2026-06-07 06:53:30,468 [INFO] budi left room 5ca91c97
+2026-06-07 06:56:17,282 [INFO] Waiting room created: 07a50b56 | host=budi
+2026-06-07 06:56:23,024 [INFO] aqul joined room 07a50b56 as spectator
+2026-06-07 06:56:34,078 [INFO] Room matched: 07a50b56 | budi vs rudi
+2026-06-07 06:56:36,022 [INFO] Placement started in room 07a50b56
+2026-06-07 06:57:00,418 [INFO] budi placed ships in room 07a50b56
+2026-06-07 06:57:21,024 [INFO] rudi placed ships in room 07a50b56
+2026-06-07 06:57:32,063 [INFO] Game started in room 07a50b56
+2026-06-07 06:57:50,058 [INFO] Room 07a50b56: budi fired at (0, 2) = MISS
+2026-06-07 06:57:58,234 [INFO] Room 07a50b56: rudi fired at (0, 0) = MISS
+2026-06-07 06:58:04,862 [INFO] Room 07a50b56: budi fired at (0, 0) = HIT
+2026-06-07 06:58:21,847 [INFO] Game over by forfeit in room 07a50b56. Winner: rudi
+2026-06-07 06:58:33,873 [INFO] rudi requested rematch in room 07a50b56
+2026-06-07 06:58:36,831 [INFO] Room matched: 07a50b56 | rudi vs budi
+2026-06-07 06:58:39,907 [INFO] Placement started in room 07a50b56
+2026-06-07 06:58:54,235 [INFO] rudi placed ships in room 07a50b56
+2026-06-07 06:59:11,682 [INFO] budi placed ships in room 07a50b56
+2026-06-07 06:59:15,875 [INFO] Game started in room 07a50b56
+2026-06-07 06:59:20,783 [INFO] Room 07a50b56: rudi fired at (0, 7) = HIT
+2026-06-07 06:59:25,042 [INFO] Room 07a50b56: budi fired at (0, 8) = MISS
+2026-06-07 06:59:27,885 [INFO] Room 07a50b56: rudi fired at (1, 7) = HIT
+2026-06-07 06:59:30,471 [INFO] Room 07a50b56: budi fired at (9, 8) = HIT
+2026-06-07 06:59:33,955 [INFO] Room 07a50b56: rudi fired at (2, 7) = HIT
+2026-06-07 06:59:36,584 [INFO] Room 07a50b56: budi fired at (9, 7) = HIT
+2026-06-07 06:59:39,127 [INFO] Room 07a50b56: rudi fired at (2, 8) = HIT
+2026-06-07 06:59:41,323 [INFO] Room 07a50b56: budi fired at (9, 6) = HIT
+2026-06-07 06:59:43,860 [INFO] Room 07a50b56: rudi fired at (1, 8) = MISS
+2026-06-07 06:59:47,686 [INFO] Room 07a50b56: budi fired at (9, 5) = HIT
+2026-06-07 06:59:53,776 [INFO] Room 07a50b56: rudi fired at (2, 9) = HIT
+2026-06-07 06:59:58,968 [INFO] Room 07a50b56: budi fired at (9, 4) = HIT
+2026-06-07 07:00:04,624 [INFO] Room 07a50b56: rudi fired at (3, 8) = HIT
+2026-06-07 07:00:09,328 [INFO] Room 07a50b56: budi fired at (9, 3) = HIT
+2026-06-07 07:00:13,422 [INFO] Room 07a50b56: rudi fired at (3, 7) = HIT
+2026-06-07 07:00:16,254 [INFO] Room 07a50b56: budi fired at (9, 2) = HIT
+2026-06-07 07:00:19,352 [INFO] Room 07a50b56: rudi fired at (3, 9) = HIT
+2026-06-07 07:00:22,245 [INFO] Room 07a50b56: budi fired at (9, 1) = HIT
+2026-06-07 07:00:24,935 [INFO] Room 07a50b56: rudi fired at (4, 8) = HIT
+2026-06-07 07:00:28,796 [INFO] Room 07a50b56: budi fired at (8, 1) = HIT
+2026-06-07 07:00:33,545 [INFO] Room 07a50b56: rudi fired at (4, 7) = HIT
+2026-06-07 07:00:35,979 [INFO] Room 07a50b56: budi fired at (8, 2) = HIT
+2026-06-07 07:00:40,422 [INFO] Room 07a50b56: rudi fired at (5, 7) = HIT
+2026-06-07 07:00:43,357 [INFO] Room 07a50b56: budi fired at (8, 3) = HIT
+2026-06-07 07:00:45,776 [INFO] Room 07a50b56: rudi fired at (5, 8) = HIT
+2026-06-07 07:00:49,236 [INFO] Room 07a50b56: budi fired at (8, 4) = HIT
+2026-06-07 07:00:53,127 [INFO] Room 07a50b56: rudi fired at (4, 9) = HIT
+2026-06-07 07:00:55,499 [INFO] Room 07a50b56: budi fired at (8, 5) = HIT
+2026-06-07 07:00:59,589 [INFO] Room 07a50b56: rudi fired at (5, 9) = HIT
+2026-06-07 07:01:03,433 [INFO] Room 07a50b56: budi fired at (6, 9) = MISS
+2026-06-07 07:01:18,033 [INFO] Game over by forfeit in room 07a50b56. Winner: budi
+2026-06-07 07:01:29,431 [INFO] budi left room 07a50b56
+2026-06-07 07:01:37,911 [INFO] aqul left room 07a50b56
+2026-06-07 07:02:31,843 [INFO] Room matched: 07a50b56 | rudi vs budi
+2026-06-07 07:02:33,529 [INFO] Placement started in room 07a50b56
+2026-06-07 07:03:08,196 [INFO] rudi placed ships in room 07a50b56
+2026-06-07 07:03:14,884 [INFO] budi placed ships in room 07a50b56
+2026-06-07 07:03:16,603 [INFO] Game started in room 07a50b56
+2026-06-07 07:03:24,540 [INFO] Room 07a50b56: rudi fired at (2, 3) = MISS
+2026-06-07 07:03:26,930 [INFO] Room 07a50b56: budi fired at (5, 3) = HIT
+2026-06-07 07:03:28,659 [INFO] Room 07a50b56: rudi fired at (2, 1) = MISS
+2026-06-07 07:03:30,413 [INFO] Room 07a50b56: budi fired at (6, 2) = MISS
+2026-06-07 07:03:32,096 [INFO] Room 07a50b56: rudi fired at (4, 5) = MISS
+2026-06-07 07:03:34,260 [INFO] Room 07a50b56: budi fired at (2, 4) = MISS
+2026-06-07 07:03:36,218 [INFO] Room 07a50b56: rudi fired at (2, 5) = HIT
+2026-06-07 07:03:38,889 [INFO] Room 07a50b56: budi fired at (5, 6) = HIT
+2026-06-07 07:03:41,153 [INFO] Room 07a50b56: rudi fired at (5, 3) = MISS
+2026-06-07 07:03:53,243 [INFO] aqul joined room 07a50b56 as spectator
+2026-06-07 07:04:04,127 [INFO] aqul left room 07a50b56
+2026-06-07 07:04:09,642 [INFO] Room 07a50b56: budi fired at (3, 3) = MISS
+2026-06-07 07:04:12,134 [INFO] Room 07a50b56: rudi fired at (3, 3) = HIT
+2026-06-07 07:05:03,313 [INFO] Room 07a50b56: budi fired at (4, 4) = MISS
+2026-06-07 07:05:05,145 [INFO] Room 07a50b56: rudi fired at (4, 4) = MISS
+2026-06-07 07:05:07,337 [WARNING] Error sent to ('127.0.0.1', 42196): You already fired at this cell
+2026-06-07 07:05:08,181 [INFO] Room 07a50b56: budi fired at (5, 4) = MISS
+2026-06-07 07:05:24,265 [INFO] Room 07a50b56: rudi fired at (3, 2) = HIT
+2026-06-07 07:05:26,389 [INFO] Room 07a50b56: budi fired at (3, 2) = MISS
+2026-06-07 07:05:58,866 [INFO] aqul joined room 07a50b56 as spectator
+2026-06-07 07:06:04,403 [INFO] Game over by forfeit in room 07a50b56. Winner: rudi
+2026-06-07 07:06:09,567 [INFO] aqul left room 07a50b56
+2026-06-07 07:06:13,430 [INFO] Placement started in room 07a50b56
+2026-06-07 07:06:29,403 [INFO] budi placed ships in room 07a50b56
+2026-06-07 07:06:34,337 [INFO] budi placed ships in room 07a50b56
+2026-06-07 07:06:35,326 [INFO] Game started in room 07a50b56
+2026-06-07 07:06:46,302 [INFO] Room 07a50b56: rudi fired at (1, 3) = HIT
+2026-06-07 07:06:52,386 [WARNING] Error sent to ('127.0.0.1', 42196): You already fired at this cell
+2026-06-07 07:06:53,620 [INFO] Room 07a50b56: budi fired at (2, 3) = MISS
+2026-06-07 07:06:58,848 [INFO] Room 07a50b56: rudi fired at (6, 4) = MISS
+2026-06-07 07:08:05,268 [INFO] aqul joined room 07a50b56 as spectator
+2026-06-07 07:08:17,205 [WARNING] Error sent to ('127.0.0.1', 42196): You already fired at this cell
+2026-06-07 07:08:18,137 [INFO] Room 07a50b56: budi fired at (2, 5) = MISS
+2026-06-07 07:08:22,932 [INFO] aqul left room 07a50b56
+2026-06-07 07:08:27,043 [INFO] aqul joined room 07a50b56 as spectator
+2026-06-07 07:11:58,849 [WARNING] Client timeout: ('127.0.0.1', 54332)
+2026-06-07 07:11:58,850 [INFO] rudi left room 07a50b56
+2026-06-07 07:12:15,784 [INFO] aqul left room 07a50b56
+2026-06-07 07:12:33,818 [INFO] Room matched: 07a50b56 | budi vs aqul
+2026-06-07 07:12:38,372 [INFO] Placement started in room 07a50b56
+2026-06-07 07:13:18,142 [WARNING] Client timeout: ('127.0.0.1', 42196)
+2026-06-07 07:13:18,142 [INFO] budi left room 07a50b56
+2026-06-08 14:24:10,282 [INFO] Server started on 0.0.0.0:5000
+2026-06-08 14:24:32,560 [INFO] Client connected from ('127.0.0.1', 16875)
+2026-06-08 14:24:53,670 [INFO] User logged in: budi from ('127.0.0.1', 16875)
+2026-06-08 14:25:25,021 [INFO] Client connected from ('127.0.0.1', 21681)
+2026-06-08 14:25:38,888 [INFO] User logged in: rudi from ('127.0.0.1', 21681)
+2026-06-08 14:27:35,135 [INFO] Manual room created: 66829b83 | name=anjay | host=rudi
+2026-06-08 14:27:38,845 [INFO] Room matched: 66829b83 | rudi vs budi
+2026-06-08 14:27:39,905 [INFO] Placement started in room 66829b83
+2026-06-08 14:28:33,935 [INFO] rudi placed ships in room 66829b83
+2026-06-08 14:28:44,488 [INFO] budi placed ships in room 66829b83
+2026-06-08 14:28:46,211 [INFO] Game started in room 66829b83
+2026-06-08 14:28:48,560 [INFO] Room 66829b83: rudi fired at (3, 4) = MISS
+2026-06-08 14:28:50,066 [INFO] Room 66829b83: budi fired at (3, 2) = MISS
+2026-06-08 14:28:51,877 [INFO] Room 66829b83: rudi fired at (6, 1) = MISS
+2026-06-08 14:28:53,400 [INFO] Room 66829b83: budi fired at (6, 1) = HIT
+2026-06-08 14:28:56,893 [INFO] Room 66829b83: rudi fired at (8, 2) = MISS
+2026-06-08 14:28:59,169 [INFO] Room 66829b83: budi fired at (6, 2) = HIT
+2026-06-08 14:29:01,159 [INFO] Room 66829b83: rudi fired at (6, 2) = MISS
+2026-06-08 14:29:03,245 [INFO] Room 66829b83: budi fired at (5, 2) = HIT
+2026-06-08 14:29:08,214 [INFO] Room 66829b83: rudi fired at (3, 2) = MISS
+2026-06-08 14:29:10,517 [INFO] Room 66829b83: budi fired at (3, 3) = MISS
+2026-06-08 14:29:22,059 [INFO] Room 66829b83: rudi fired at (2, 3) = HIT
+2026-06-08 14:29:23,425 [INFO] Room 66829b83: budi fired at (3, 5) = MISS
+2026-06-08 14:29:27,654 [INFO] Room 66829b83: rudi fired at (2, 4) = MISS
+2026-06-08 14:29:30,388 [INFO] Room 66829b83: budi fired at (2, 3) = MISS
+2026-06-08 14:29:32,047 [INFO] Room 66829b83: rudi fired at (2, 2) = HIT
+2026-06-08 14:29:33,562 [INFO] Room 66829b83: budi fired at (2, 2) = MISS
+2026-06-08 14:29:35,285 [INFO] Room 66829b83: rudi fired at (1, 2) = HIT
+2026-06-08 14:29:36,717 [INFO] Room 66829b83: budi fired at (1, 2) = MISS
+2026-06-08 14:30:24,743 [INFO] Client connected from ('127.0.0.1', 1443)
+2026-06-08 14:30:37,496 [INFO] User registered: aziz
+2026-06-08 14:30:38,287 [INFO] User logged in: aziz from ('127.0.0.1', 1443)
+2026-06-08 14:30:48,635 [INFO] aziz joined room 66829b83 as spectator
+2026-06-08 14:31:00,834 [INFO] Room 66829b83: rudi fired at (6, 5) = MISS
+2026-06-08 14:31:01,950 [INFO] Room 66829b83: budi fired at (6, 5) = MISS
+2026-06-08 14:31:03,250 [INFO] Room 66829b83: rudi fired at (7, 3) = MISS
+2026-06-08 14:31:07,885 [INFO] Game over by forfeit in room 66829b83. Winner: rudi
+2026-06-08 14:31:28,438 [INFO] rudi left room 66829b83
+2026-06-08 14:31:44,361 [WARNING] Connection reset: ('127.0.0.1', 21681)
+2026-06-08 14:32:04,705 [WARNING] Connection reset: ('127.0.0.1', 16875)
+2026-06-08 14:32:04,705 [INFO] budi left room 66829b83
+2026-06-08 14:32:06,458 [WARNING] Connection reset: ('127.0.0.1', 1443)
+2026-06-08 14:32:06,459 [INFO] aziz left room 66829b83
