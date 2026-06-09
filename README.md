@@ -267,11 +267,132 @@ Fungsi `load_font` digunakan untuk memuat font kustom dari file TTF dengan fallb
 `assets.py` pada folder `client/` berfungsi sebagai modul pemuat aset yang menangani inisialisasi font dan gambar kapal dengan mekanisme fallback agar program tetap berjalan meski aset tidak lengkap.
 
 #### Penejelasan audio.py
+File `audio.py` pada folder `client/` berfungsi untuk mengelola pemutaran musik latar dan efek suara selama permainan berlangsung.
+
+---
+
+##### Fungsi switch_music_if_needed dan get_music_type_for_state
+
+```
+def get_music_type_for_state(state):
+    battle_states = ["GAME", "GAME_OVER", "SPECTATOR", "SPECTATOR_RESULT", "REPLAY_VIEWER"]
+    if state in battle_states:
+        return "BATTLE"
+    return "MAIN"
+
+def switch_music_if_needed():
+    target_music_type = get_music_type_for_state(screen_state)
+    if current_music_type == target_music_type:
+        apply_music_volume()
+        return
+    pygame.mixer.music.load(music_path)
+    pygame.mixer.music.play(-1)
+```
+
+Fungsi `get_music_type_for_state` digunakan untuk menentukan jenis musik yang sesuai berdasarkan state layar saat ini, membedakan antara musik menu utama dan musik pertempuran. Fungsi `switch_music_if_needed` digunakan untuk mengganti musik secara otomatis ketika state layar berubah tanpa memuat ulang apabila jenis musik belum berubah.
+
+---
+
+#### Fungsi handle_easter_key dan trigger_easter_code
+
+```
+def handle_easter_key(event):
+    easter_code_buffer = (easter_code_buffer + char.upper())[-7:]
+    if easter_code_buffer == "HESOYAM":
+        trigger_easter_code()
+
+def trigger_easter_code():
+    easter_pending_secret_state = not secret_music_enabled
+    easter_popup_open = True
+    play_easter_sound()
+```
+
+Fungsi `handle_easter_key` digunakan untuk mendeteksi pengetikan kode rahasia tertentu di layar menu utama dengan menyimpan riwayat 7 karakter terakhir yang diketik. Fungsi `trigger_easter_code` digunakan untuk mengaktifkan mode musik rahasia dan menampilkan popup konfirmasi apabila kode yang benar dimasukkan.
+
+---
+
+##### Ringkasan
+
+`audio.py` pada folder `client/` berfungsi sebagai manajer audio yang menangani pergantian musik latar sesuai state permainan, pengaturan volume, dan sebuah easter egg berupa musik rahasia yang dapat diaktifkan melalui kode tertentu.
+
+---
 
 #### Penejelasan event_handler.py
+(belum)
 
 #### Penejelasan game_logic.py
+File `game_logic.py` pada folder `client/` berfungsi untuk menyimpan seluruh logika permainan sisi klien, mulai dari pengelolaan penempatan kapal, validasi input, pengiriman aksi ke server, hingga pemrosesan data replay.
 
+---
+
+##### Fungsi place_ship_at_grid dan can_place_ship
+
+```
+def can_place_ship(cells):
+    for cell in cells:
+        if x < 0 or x >= BOARD_SIZE or y < 0 or y >= BOARD_SIZE:
+            return False
+        if local_board[y][x] == CELL_SHIP:
+            return False
+    return True
+
+def place_ship_at_grid(grid_x, grid_y):
+    cells = get_ship_cells(grid_x, grid_y, ship, orientation)
+    if not can_place_ship(cells):
+        status_text = "Invalid placement"
+        return
+    # tandai sel di local_board sebagai CELL_SHIP
+```
+
+Fungsi `can_place_ship` digunakan untuk memvalidasi apakah kapal dapat ditempatkan pada sel-sel tertentu tanpa keluar batas atau bertumpang tindih. Fungsi `place_ship_at_grid` digunakan untuk menempatkan kapal di papan lokal berdasarkan koordinat grid yang dipilih pemain.
+
+---
+
+##### Fungsi reset_game_state dan send_login_from_auth
+
+```python
+def reset_game_state():
+    placed_ships = []
+    local_board = [[CELL_EMPTY ...]]
+    enemy_board = [[CELL_EMPTY ...]]
+    current_turn_session_id = None
+    winner_session_id = None
+
+def send_login_from_auth():
+    valid, message = validate_auth_input()
+    client.send({"type": LOGIN, "payload": {"username": ..., "password": ...}})
+```
+
+Fungsi `reset_game_state` digunakan untuk mengatur ulang semua variabel state permainan ke kondisi awal sebelum pertandingan baru dimulai. Fungsi `send_login_from_auth` digunakan untuk memvalidasi input form autentikasi lalu mengirimkan pesan LOGIN ke server.
+
+---
+
+#### Fungsi build_replay_board dan apply_replay_events
+
+```
+def apply_replay_events(board_1, board_2, replay, step_index):
+    for event in events[:step_index]:
+        target_board = board_2 if shooter == player_1 else board_1
+        if result == "HIT":
+            target_board[y][x] = CELL_HIT
+        elif result == "MISS":
+            target_board[y][x] = CELL_MISS
+
+def build_replay_board(replay, side, step_index):
+    board_1 = build_board_from_ships(ships_1)
+    apply_replay_events(board_1, board_2, replay, step_index)
+    return board_1 if side == 1 else board_2
+```
+
+Fungsi `apply_replay_events` digunakan untuk memutar ulang event tembakan dari data replay hingga langkah tertentu ke papan rekonstruksi. Fungsi `build_replay_board` digunakan untuk membangun tampilan papan pada frame replay tertentu dengan menggabungkan posisi kapal awal dan event yang sudah terjadi.
+
+---
+
+##### Ringkasan
+
+`game_logic.py` pada folder `client/` berfungsi sebagai pusat logika sisi klien yang mengelola interaksi pemain dengan papan, komunikasi ke server, dan pemrosesan data untuk fitur replay.
+
+---
 #### Penejelasan main.py
 
 #### Penejelasan message_handler.py
