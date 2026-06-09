@@ -39,32 +39,19 @@ Link ditaruh di bawah ini
     - [Penejelasan response_builder.py]()
     - [Penejelasan room_manager.py]()
     - [Penejelasan socket_server.py]()
-
-
-### Folder server/handlers
-#### Penjelasan auth_handler.py
-
-#### Penjelasan game_handler.py
-
-#### Penjelasan leaderboard_handler.py
-
-#### Penjelasan matchmaking_handler.py
-
-#### Penjelasan placement_handler.py
-
-#### Penjelasan replay_handler.py
-
-#### Penjelasan room_handler.py
-
-#### Penjelasan __init__.py
-
-### Folder shared/
-#### Penjelasan constants.py
-
-#### Penjelasan message_type.py
-
-#### Penjelasan serializer.py
-
+- Folder server/handlers
+    - Penjelasan auth_handler.py
+    - Penjelasan game_handler.py
+    - Penjelasan leaderboard_handler.py
+    - Penjelasan matchmaking_handler.py
+    - Penjelasan placement_handler.py
+    - Penjelasan replay_handler.py
+    - Penjelasan room_handler.py
+    - Penjelasan __init__.py
+- Folder shared/
+    - Penjelasan constants.py
+    - Penjelasan message_type.py
+    - Penjelasan serializer.py
 ---
 ## Penjelasan Program
 ### Struktur Directory
