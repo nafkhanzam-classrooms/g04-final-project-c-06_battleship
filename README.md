@@ -424,7 +424,7 @@ File `network_client.py` pada folder `client/` berfungsi sebagai modul koneksi j
 
 ##### Fungsi connect dan listen
 
-```python
+```
 def connect(self):
     self.socket.connect((self.host, self.port))
     self.connected = True
@@ -472,7 +472,26 @@ Fungsi `send` digunakan untuk mengirimkan pesan dictionary ke server dalam forma
 (Belom)
 
 #### Penejelasan state.py
+File `state.py` pada folder `client/` berfungsi sebagai modul helper untuk inisialisasi state papan permainan.
 
+---
+
+##### Fungsi create_empty_board
+
+```
+def create_empty_board():
+    return [[CELL_EMPTY for _ in range(BOARD_SIZE)] for _ in range(BOARD_SIZE)]
+```
+
+Fungsi ini digunakan untuk menghasilkan papan kosong berukuran `BOARD_SIZE` x `BOARD_SIZE` yang dapat digunakan sebagai papan lokal maupun papan lawan di sisi klien.
+
+---
+
+##### Ringkasan
+
+`state.py` pada folder `client/` berfungsi sebagai penyedia fungsi inisialisasi state papan yang digunakan oleh komponen klien lainnya.
+
+---
 
 ### Folder Server/
 #### Penejelasan auth_service.py
