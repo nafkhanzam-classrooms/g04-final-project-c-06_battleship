@@ -26,7 +26,7 @@ Link ditaruh di bawah ini
   * [Penejelasan game_logic.py](#penejelasan-game_logicpy)
   * [Penejelasan main.py](#penejelasan-mainpy)
   * [Penejelasan network_client.py](#penejelasan-network_clientpy) 
-  * [Penejelasan message_handler.py](#penejelasan-message_handlerpy) belom
+  * [Penejelasan message_handler.py](#penejelasan-message_handlerpy)
   * [Penejelasan screens.py](#penejelasan-screenspy) belom
   * [Penejelasan state.py](#penejelasan-statepy)
 
@@ -317,7 +317,60 @@ Fungsi `handle_easter_key` digunakan untuk mendeteksi pengetikan kode rahasia te
 ---
 
 #### Penejelasan event_handler.py
-(belum)
+File `event_handler.py` berfungsi sebagai modul pengendali event utama pada sisi klien yang menangani input keyboard, mouse, transisi state layar, pengiriman aksi ke server, serta pemanggilan fungsi render setiap frame.
+
+---
+
+##### Fungsi run_loop
+
+```
+def run_loop():
+    running = True
+    while running:
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                running = False
+            if event.type == pygame.MOUSEBUTTONDOWN and screen_state == "TITLE":
+                screen_state = "AUTH"
+                status_text = "Please login or register"
+            if screen_state == "AUTH":
+                username_input.handle_event(event)
+                password_input.handle_event(event)
+            if event.type == pygame.KEYDOWN:
+                if event.key == pygame.K_ESCAPE:
+                    ...
+                elif event.key == pygame.K_p and session_id:
+                    ...
+            if event.type == pygame.MOUSEBUTTONDOWN:
+                if screen_state == "MAIN_MENU":
+                    ...
+                elif screen_state == "GAME":
+                    ...
+
+        current_time = pygame.time.get_ticks()
+        if session_id and latency_auto_enabled and current_time - last_ping_time >= PING_INTERVAL_MS:
+            client.send({"type": PING, "session_id": session_id, "payload": {"sent_at": current_time}})
+
+        if screen_state == "TITLE":
+            draw_title_screen()
+        elif screen_state == "AUTH":
+            draw_auth_screen()
+        elif screen_state == "GAME":
+            draw_game()
+
+        pygame.display.flip()
+        clock.tick(60)
+```
+
+Fungsi `run_loop` digunakan sebagai loop utama aplikasi klien yang terus-menerus membaca event dari `pygame`, memproses interaksi pengguna sesuai `screen_state`, mengirimkan perintah ke server, memperbarui fitur seperti auto ping, lalu merender layar yang sesuai pada setiap frame. Fungsi ini juga menangani perpindahan antar menu, kontrol placement, aksi permainan, mode spectator, replay, leaderboard, settings, serta penutupan aplikasi secara bersih ketika loop berakhir.
+
+---
+
+##### Ringkasan
+
+`event_handler.py` berfungsi sebagai pusat kendali interaksi pengguna di sisi klien yang menghubungkan input pemain, perubahan state aplikasi, komunikasi aksi ke server, dan proses rendering layar secara real-time.
+
+---
 
 #### Penejelasan game_logic.py
 File `game_logic.py` pada folder `client/` berfungsi untuk menyimpan seluruh logika permainan sisi klien, mulai dari pengelolaan penempatan kapal, validasi input, pengiriman aksi ke server, hingga pemrosesan data replay.
