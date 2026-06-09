@@ -22,12 +22,12 @@ Link ditaruh di bawah ini
   * [Penjelasan app.py](#penjelasan-apppy)
   * [Penejelasan assets.py](#penejelasan-assetspy)
   * [Penejelasan audio.py](#penejelasan-audiopy)
-  * [Penejelasan event_handler.py](#penejelasan-event_handlerpy)
+  * [Penejelasan event_handler.py](#penejelasan-event_handlerpy) belom
   * [Penejelasan game_logic.py](#penejelasan-game_logicpy)
   * [Penejelasan main.py](#penejelasan-mainpy)
-  * [Penejelasan message_handler.py](#penejelasan-message_handlerpy)
-  * [Penejelasan network_client.py](#penejelasan-network_clientpy)
-  * [Penejelasan screens.py](#penejelasan-screenspy)
+  * [Penejelasan network_client.py](#penejelasan-network_clientpy) 
+  * [Penejelasan message_handler.py](#penejelasan-message_handlerpy) belom
+  * [Penejelasan screens.py](#penejelasan-screenspy) belom
   * [Penejelasan state.py](#penejelasan-statepy)
 
 * [Folder Server/](#folder-server)
@@ -350,7 +350,7 @@ Fungsi `can_place_ship` digunakan untuk memvalidasi apakah kapal dapat ditempatk
 
 ##### Fungsi reset_game_state dan send_login_from_auth
 
-```python
+```
 def reset_game_state():
     placed_ships = []
     local_board = [[CELL_EMPTY ...]]
@@ -394,12 +394,82 @@ Fungsi `apply_replay_events` digunakan untuk memutar ulang event tembakan dari d
 
 ---
 #### Penejelasan main.py
+File `main.py` pada folder `client/` berfungsi sebagai titik masuk eksekusi aplikasi klien.
 
-#### Penejelasan message_handler.py
+---
+
+##### Entry Point
+
+```
+import client.app  # noqa: F401
+```
+
+Bagian ini digunakan untuk menjalankan klien dengan mengimpor `client.app` yang secara otomatis mengeksekusi seluruh inisialisasi dan game loop. Program dijalankan dengan perintah `python -m client.main` dari direktori root proyek.
+
+---
+
+##### Ringkasan
+
+`main.py` pada folder `client/` berfungsi sebagai titik awal eksekusi yang menginisialisasi modul `app` untuk menjalankan aplikasi klien.
+
+---
+
+#### Penejelasan message_handler.py 
+(Belom)
 
 #### Penejelasan network_client.py
+File `network_client.py` pada folder `client/` berfungsi sebagai modul koneksi jaringan sisi klien yang menangani pengiriman dan penerimaan pesan dari server melalui TCP.
+
+---
+
+##### Fungsi connect dan listen
+
+```python
+def connect(self):
+    self.socket.connect((self.host, self.port))
+    self.connected = True
+    thread = threading.Thread(target=self.listen, daemon=True)
+    thread.start()
+
+def listen(self):
+    while self.connected:
+        data = self.socket.recv(4096)
+        self.buffer += data.decode("utf-8")
+
+        while "\n" in self.buffer:
+            raw_message, self.buffer = self.buffer.split("\n", 1)
+            message = decode_message(raw_message)
+            if self.on_message:
+                self.on_message(message)
+```
+
+Fungsi `connect` digunakan untuk membuka koneksi TCP ke server dan menjalankan loop penerimaan pesan dalam thread daemon terpisah agar tidak memblokir thread utama. Fungsi `listen` digunakan untuk terus-menerus membaca data dari socket, memisahkan pesan berbasis delimiter newline, lalu meneruskan setiap pesan ke callback `on_message`.
+
+---
+
+##### Fungsi send dan close
+
+```
+def send(self, message):
+    self.socket.sendall(encode_message(message))
+
+def close(self):
+    self.connected = False
+    self.socket.close()
+```
+
+Fungsi `send` digunakan untuk mengirimkan pesan dictionary ke server dalam format JSON. Fungsi `close` digunakan untuk memutuskan koneksi secara bersih.
+
+---
+
+##### Ringkasan
+
+`network_client.py` pada folder `client/` berfungsi sebagai lapisan jaringan sisi klien yang mengelola koneksi TCP, pengiriman pesan, dan penerimaan pesan secara asinkron melalui threading.
+
+---
 
 #### Penejelasan screens.py
+(Belom)
 
 #### Penejelasan state.py
 
