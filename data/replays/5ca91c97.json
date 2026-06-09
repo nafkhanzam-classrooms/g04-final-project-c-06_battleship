@@ -1,0 +1,920 @@
+{
+    "room_id": "5ca91c97",
+    "player_1": "aqul",
+    "player_2": "budi",
+    "started_at": "2026-06-07T06:46:28.804577",
+    "finished_at": "2026-06-07T06:51:34.184776",
+    "winner": "budi",
+    "player_1_ships": [
+        {
+            "name": "Wooden Boat",
+            "width": 1,
+            "height": 2,
+            "orientation": "H",
+            "cells": [
+                {
+                    "x": 7,
+                    "y": 4
+                },
+                {
+                    "x": 7,
+                    "y": 5
+                }
+            ]
+        },
+        {
+            "name": "Pirate Boat",
+            "width": 2,
+            "height": 2,
+            "orientation": "H",
+            "cells": [
+                {
+                    "x": 5,
+                    "y": 3
+                },
+                {
+                    "x": 6,
+                    "y": 3
+                },
+                {
+                    "x": 5,
+                    "y": 4
+                },
+                {
+                    "x": 6,
+                    "y": 4
+                }
+            ]
+        },
+        {
+            "name": "Battle Ship",
+            "width": 2,
+            "height": 4,
+            "orientation": "H",
+            "cells": [
+                {
+                    "x": 2,
+                    "y": 2
+                },
+                {
+                    "x": 3,
+                    "y": 2
+                },
+                {
+                    "x": 2,
+                    "y": 3
+                },
+                {
+                    "x": 3,
+                    "y": 3
+                },
+                {
+                    "x": 2,
+                    "y": 4
+                },
+                {
+                    "x": 3,
+                    "y": 4
+                },
+                {
+                    "x": 2,
+                    "y": 5
+                },
+                {
+                    "x": 3,
+                    "y": 5
+                }
+            ]
+        },
+        {
+            "name": "Steel Ship",
+            "width": 1,
+            "height": 3,
+            "orientation": "H",
+            "cells": [
+                {
+                    "x": 5,
+                    "y": 7
+                },
+                {
+                    "x": 5,
+                    "y": 8
+                },
+                {
+                    "x": 5,
+                    "y": 9
+                }
+            ]
+        },
+        {
+            "name": "Cyber Ship",
+            "width": 1,
+            "height": 3,
+            "orientation": "H",
+            "cells": [
+                {
+                    "x": 1,
+                    "y": 7
+                },
+                {
+                    "x": 1,
+                    "y": 8
+                },
+                {
+                    "x": 1,
+                    "y": 9
+                }
+            ]
+        }
+    ],
+    "player_2_ships": [
+        {
+            "name": "Wooden Boat",
+            "width": 1,
+            "height": 2,
+            "orientation": "H",
+            "cells": [
+                {
+                    "x": 8,
+                    "y": 6
+                },
+                {
+                    "x": 8,
+                    "y": 7
+                }
+            ]
+        },
+        {
+            "name": "Pirate Boat",
+            "width": 2,
+            "height": 2,
+            "orientation": "H",
+            "cells": [
+                {
+                    "x": 5,
+                    "y": 5
+                },
+                {
+                    "x": 6,
+                    "y": 5
+                },
+                {
+                    "x": 5,
+                    "y": 6
+                },
+                {
+                    "x": 6,
+                    "y": 6
+                }
+            ]
+        },
+        {
+            "name": "Battle Ship",
+            "width": 2,
+            "height": 4,
+            "orientation": "H",
+            "cells": [
+                {
+                    "x": 3,
+                    "y": 3
+                },
+                {
+                    "x": 4,
+                    "y": 3
+                },
+                {
+                    "x": 3,
+                    "y": 4
+                },
+                {
+                    "x": 4,
+                    "y": 4
+                },
+                {
+                    "x": 3,
+                    "y": 5
+                },
+                {
+                    "x": 4,
+                    "y": 5
+                },
+                {
+                    "x": 3,
+                    "y": 6
+                },
+                {
+                    "x": 4,
+                    "y": 6
+                }
+            ]
+        },
+        {
+            "name": "Steel Ship",
+            "width": 1,
+            "height": 3,
+            "orientation": "H",
+            "cells": [
+                {
+                    "x": 1,
+                    "y": 2
+                },
+                {
+                    "x": 1,
+                    "y": 3
+                },
+                {
+                    "x": 1,
+                    "y": 4
+                }
+            ]
+        },
+        {
+            "name": "Cyber Ship",
+            "width": 1,
+            "height": 3,
+            "orientation": "H",
+            "cells": [
+                {
+                    "x": 5,
+                    "y": 1
+                },
+                {
+                    "x": 5,
+                    "y": 2
+                },
+                {
+                    "x": 5,
+                    "y": 3
+                }
+            ]
+        }
+    ],
+    "events": [
+        {
+            "turn": 1,
+            "shooter": "aqul",
+            "action": "FIRE",
+            "x": 4,
+            "y": 3,
+            "result": "HIT",
+            "timestamp": "2026-06-07T06:48:45.309674"
+        },
+        {
+            "turn": 2,
+            "shooter": "budi",
+            "action": "FIRE",
+            "x": 1,
+            "y": 2,
+            "result": "MISS",
+            "timestamp": "2026-06-07T06:48:47.829232"
+        },
+        {
+            "turn": 3,
+            "shooter": "aqul",
+            "action": "FIRE",
+            "x": 3,
+            "y": 7,
+            "result": "MISS",
+            "timestamp": "2026-06-07T06:48:49.701964"
+        },
+        {
+            "turn": 4,
+            "shooter": "budi",
+            "action": "FIRE",
+            "x": 7,
+            "y": 4,
+            "result": "HIT",
+            "timestamp": "2026-06-07T06:48:51.261723"
+        },
+        {
+            "turn": 5,
+            "shooter": "aqul",
+            "action": "FIRE",
+            "x": 2,
+            "y": 5,
+            "result": "MISS",
+            "timestamp": "2026-06-07T06:49:01.010413"
+        },
+        {
+            "turn": 6,
+            "shooter": "budi",
+            "action": "FIRE",
+            "x": 5,
+            "y": 2,
+            "result": "MISS",
+            "timestamp": "2026-06-07T06:49:02.532238"
+        },
+        {
+            "turn": 7,
+            "shooter": "aqul",
+            "action": "FIRE",
+            "x": 7,
+            "y": 6,
+            "result": "MISS",
+            "timestamp": "2026-06-07T06:49:04.652187"
+        },
+        {
+            "turn": 8,
+            "shooter": "budi",
+            "action": "FIRE",
+            "x": 3,
+            "y": 8,
+            "result": "MISS",
+            "timestamp": "2026-06-07T06:49:06.429687"
+        },
+        {
+            "turn": 9,
+            "shooter": "aqul",
+            "action": "FIRE",
+            "x": 3,
+            "y": 0,
+            "result": "MISS",
+            "timestamp": "2026-06-07T06:49:08.725807"
+        },
+        {
+            "turn": 10,
+            "shooter": "budi",
+            "action": "FIRE",
+            "x": 4,
+            "y": 4,
+            "result": "MISS",
+            "timestamp": "2026-06-07T06:49:10.248665"
+        },
+        {
+            "turn": 11,
+            "shooter": "aqul",
+            "action": "FIRE",
+            "x": 7,
+            "y": 3,
+            "result": "MISS",
+            "timestamp": "2026-06-07T06:49:12.881945"
+        },
+        {
+            "turn": 12,
+            "shooter": "budi",
+            "action": "FIRE",
+            "x": 7,
+            "y": 7,
+            "result": "MISS",
+            "timestamp": "2026-06-07T06:49:14.314094"
+        },
+        {
+            "turn": 13,
+            "shooter": "aqul",
+            "action": "FIRE",
+            "x": 4,
+            "y": 6,
+            "result": "HIT",
+            "timestamp": "2026-06-07T06:49:15.806656"
+        },
+        {
+            "turn": 14,
+            "shooter": "budi",
+            "action": "FIRE",
+            "x": 7,
+            "y": 5,
+            "result": "HIT",
+            "timestamp": "2026-06-07T06:49:17.813031"
+        },
+        {
+            "turn": 15,
+            "shooter": "aqul",
+            "action": "FIRE",
+            "x": 4,
+            "y": 5,
+            "result": "HIT",
+            "timestamp": "2026-06-07T06:49:19.751409"
+        },
+        {
+            "turn": 16,
+            "shooter": "budi",
+            "action": "FIRE",
+            "x": 7,
+            "y": 3,
+            "result": "MISS",
+            "timestamp": "2026-06-07T06:49:22.902604"
+        },
+        {
+            "turn": 17,
+            "shooter": "aqul",
+            "action": "FIRE",
+            "x": 4,
+            "y": 4,
+            "result": "HIT",
+            "timestamp": "2026-06-07T06:49:25.137016"
+        },
+        {
+            "turn": 18,
+            "shooter": "budi",
+            "action": "FIRE",
+            "x": 7,
+            "y": 6,
+            "result": "MISS",
+            "timestamp": "2026-06-07T06:49:29.320698"
+        },
+        {
+            "turn": 19,
+            "shooter": "aqul",
+            "action": "FIRE",
+            "x": 3,
+            "y": 6,
+            "result": "HIT",
+            "timestamp": "2026-06-07T06:49:31.928455"
+        },
+        {
+            "turn": 20,
+            "shooter": "budi",
+            "action": "FIRE",
+            "x": 2,
+            "y": 3,
+            "result": "HIT",
+            "timestamp": "2026-06-07T06:49:33.375926"
+        },
+        {
+            "turn": 21,
+            "shooter": "aqul",
+            "action": "FIRE",
+            "x": 3,
+            "y": 5,
+            "result": "HIT",
+            "timestamp": "2026-06-07T06:49:34.991148"
+        },
+        {
+            "turn": 22,
+            "shooter": "budi",
+            "action": "FIRE",
+            "x": 2,
+            "y": 4,
+            "result": "HIT",
+            "timestamp": "2026-06-07T06:49:36.302218"
+        },
+        {
+            "turn": 23,
+            "shooter": "aqul",
+            "action": "FIRE",
+            "x": 3,
+            "y": 4,
+            "result": "HIT",
+            "timestamp": "2026-06-07T06:49:37.579574"
+        },
+        {
+            "turn": 24,
+            "shooter": "budi",
+            "action": "FIRE",
+            "x": 2,
+            "y": 5,
+            "result": "HIT",
+            "timestamp": "2026-06-07T06:49:39.236914"
+        },
+        {
+            "turn": 25,
+            "shooter": "aqul",
+            "action": "FIRE",
+            "x": 3,
+            "y": 3,
+            "result": "HIT",
+            "timestamp": "2026-06-07T06:49:40.731432"
+        },
+        {
+            "turn": 26,
+            "shooter": "budi",
+            "action": "FIRE",
+            "x": 3,
+            "y": 3,
+            "result": "HIT",
+            "timestamp": "2026-06-07T06:49:43.188683"
+        },
+        {
+            "turn": 27,
+            "shooter": "aqul",
+            "action": "FIRE",
+            "x": 4,
+            "y": 2,
+            "result": "MISS",
+            "timestamp": "2026-06-07T06:49:45.353556"
+        },
+        {
+            "turn": 28,
+            "shooter": "budi",
+            "action": "FIRE",
+            "x": 3,
+            "y": 4,
+            "result": "HIT",
+            "timestamp": "2026-06-07T06:49:47.001108"
+        },
+        {
+            "turn": 29,
+            "shooter": "aqul",
+            "action": "FIRE",
+            "x": 6,
+            "y": 4,
+            "result": "MISS",
+            "timestamp": "2026-06-07T06:49:48.641499"
+        },
+        {
+            "turn": 30,
+            "shooter": "budi",
+            "action": "FIRE",
+            "x": 3,
+            "y": 5,
+            "result": "HIT",
+            "timestamp": "2026-06-07T06:49:50.260450"
+        },
+        {
+            "turn": 31,
+            "shooter": "aqul",
+            "action": "FIRE",
+            "x": 8,
+            "y": 5,
+            "result": "MISS",
+            "timestamp": "2026-06-07T06:49:51.626951"
+        },
+        {
+            "turn": 32,
+            "shooter": "budi",
+            "action": "FIRE",
+            "x": 6,
+            "y": 5,
+            "result": "MISS",
+            "timestamp": "2026-06-07T06:49:53.709539"
+        },
+        {
+            "turn": 33,
+            "shooter": "aqul",
+            "action": "FIRE",
+            "x": 4,
+            "y": 7,
+            "result": "MISS",
+            "timestamp": "2026-06-07T06:49:55.688787"
+        },
+        {
+            "turn": 34,
+            "shooter": "budi",
+            "action": "FIRE",
+            "x": 5,
+            "y": 6,
+            "result": "MISS",
+            "timestamp": "2026-06-07T06:49:57.714107"
+        },
+        {
+            "turn": 35,
+            "shooter": "aqul",
+            "action": "FIRE",
+            "x": 5,
+            "y": 6,
+            "result": "HIT",
+            "timestamp": "2026-06-07T06:50:07.357734"
+        },
+        {
+            "turn": 36,
+            "shooter": "budi",
+            "action": "FIRE",
+            "x": 6,
+            "y": 6,
+            "result": "MISS",
+            "timestamp": "2026-06-07T06:50:12.133067"
+        },
+        {
+            "turn": 37,
+            "shooter": "aqul",
+            "action": "FIRE",
+            "x": 5,
+            "y": 5,
+            "result": "HIT",
+            "timestamp": "2026-06-07T06:50:14.024376"
+        },
+        {
+            "turn": 38,
+            "shooter": "budi",
+            "action": "FIRE",
+            "x": 6,
+            "y": 3,
+            "result": "HIT",
+            "timestamp": "2026-06-07T06:50:15.538284"
+        },
+        {
+            "turn": 39,
+            "shooter": "aqul",
+            "action": "FIRE",
+            "x": 6,
+            "y": 2,
+            "result": "MISS",
+            "timestamp": "2026-06-07T06:50:20.362219"
+        },
+        {
+            "turn": 40,
+            "shooter": "budi",
+            "action": "FIRE",
+            "x": 5,
+            "y": 3,
+            "result": "HIT",
+            "timestamp": "2026-06-07T06:50:22.112770"
+        },
+        {
+            "turn": 41,
+            "shooter": "aqul",
+            "action": "FIRE",
+            "x": 7,
+            "y": 4,
+            "result": "MISS",
+            "timestamp": "2026-06-07T06:50:23.731439"
+        },
+        {
+            "turn": 42,
+            "shooter": "budi",
+            "action": "FIRE",
+            "x": 6,
+            "y": 2,
+            "result": "MISS",
+            "timestamp": "2026-06-07T06:50:25.391576"
+        },
+        {
+            "turn": 43,
+            "shooter": "aqul",
+            "action": "FIRE",
+            "x": 8,
+            "y": 4,
+            "result": "MISS",
+            "timestamp": "2026-06-07T06:50:28.025914"
+        },
+        {
+            "turn": 44,
+            "shooter": "budi",
+            "action": "FIRE",
+            "x": 6,
+            "y": 4,
+            "result": "HIT",
+            "timestamp": "2026-06-07T06:50:29.565654"
+        },
+        {
+            "turn": 45,
+            "shooter": "aqul",
+            "action": "FIRE",
+            "x": 8,
+            "y": 8,
+            "result": "MISS",
+            "timestamp": "2026-06-07T06:50:31.241684"
+        },
+        {
+            "turn": 46,
+            "shooter": "budi",
+            "action": "FIRE",
+            "x": 5,
+            "y": 4,
+            "result": "HIT",
+            "timestamp": "2026-06-07T06:50:32.605159"
+        },
+        {
+            "turn": 47,
+            "shooter": "aqul",
+            "action": "FIRE",
+            "x": 5,
+            "y": 8,
+            "result": "MISS",
+            "timestamp": "2026-06-07T06:50:34.920098"
+        },
+        {
+            "turn": 48,
+            "shooter": "budi",
+            "action": "FIRE",
+            "x": 5,
+            "y": 8,
+            "result": "HIT",
+            "timestamp": "2026-06-07T06:50:36.336724"
+        },
+        {
+            "turn": 49,
+            "shooter": "aqul",
+            "action": "FIRE",
+            "x": 4,
+            "y": 9,
+            "result": "MISS",
+            "timestamp": "2026-06-07T06:50:38.326015"
+        },
+        {
+            "turn": 50,
+            "shooter": "budi",
+            "action": "FIRE",
+            "x": 5,
+            "y": 9,
+            "result": "HIT",
+            "timestamp": "2026-06-07T06:50:40.266280"
+        },
+        {
+            "turn": 51,
+            "shooter": "aqul",
+            "action": "FIRE",
+            "x": 7,
+            "y": 7,
+            "result": "MISS",
+            "timestamp": "2026-06-07T06:50:42.331070"
+        },
+        {
+            "turn": 52,
+            "shooter": "budi",
+            "action": "FIRE",
+            "x": 5,
+            "y": 7,
+            "result": "HIT",
+            "timestamp": "2026-06-07T06:50:44.361653"
+        },
+        {
+            "turn": 53,
+            "shooter": "aqul",
+            "action": "FIRE",
+            "x": 7,
+            "y": 8,
+            "result": "MISS",
+            "timestamp": "2026-06-07T06:50:45.868259"
+        },
+        {
+            "turn": 54,
+            "shooter": "budi",
+            "action": "FIRE",
+            "x": 4,
+            "y": 8,
+            "result": "MISS",
+            "timestamp": "2026-06-07T06:50:48.253585"
+        },
+        {
+            "turn": 55,
+            "shooter": "aqul",
+            "action": "FIRE",
+            "x": 6,
+            "y": 7,
+            "result": "MISS",
+            "timestamp": "2026-06-07T06:50:50.371914"
+        },
+        {
+            "turn": 56,
+            "shooter": "budi",
+            "action": "FIRE",
+            "x": 6,
+            "y": 8,
+            "result": "MISS",
+            "timestamp": "2026-06-07T06:50:52.810810"
+        },
+        {
+            "turn": 57,
+            "shooter": "aqul",
+            "action": "FIRE",
+            "x": 6,
+            "y": 5,
+            "result": "HIT",
+            "timestamp": "2026-06-07T06:50:55.621831"
+        },
+        {
+            "turn": 58,
+            "shooter": "budi",
+            "action": "FIRE",
+            "x": 4,
+            "y": 6,
+            "result": "MISS",
+            "timestamp": "2026-06-07T06:50:57.856981"
+        },
+        {
+            "turn": 59,
+            "shooter": "aqul",
+            "action": "FIRE",
+            "x": 6,
+            "y": 6,
+            "result": "HIT",
+            "timestamp": "2026-06-07T06:50:59.483099"
+        },
+        {
+            "turn": 60,
+            "shooter": "budi",
+            "action": "FIRE",
+            "x": 8,
+            "y": 7,
+            "result": "MISS",
+            "timestamp": "2026-06-07T06:51:01.114526"
+        },
+        {
+            "turn": 61,
+            "shooter": "aqul",
+            "action": "FIRE",
+            "x": 8,
+            "y": 7,
+            "result": "HIT",
+            "timestamp": "2026-06-07T06:51:04.694225"
+        },
+        {
+            "turn": 62,
+            "shooter": "budi",
+            "action": "FIRE",
+            "x": 2,
+            "y": 9,
+            "result": "MISS",
+            "timestamp": "2026-06-07T06:51:07.101358"
+        },
+        {
+            "turn": 63,
+            "shooter": "aqul",
+            "action": "FIRE",
+            "x": 8,
+            "y": 6,
+            "result": "HIT",
+            "timestamp": "2026-06-07T06:51:10.151869"
+        },
+        {
+            "turn": 64,
+            "shooter": "budi",
+            "action": "FIRE",
+            "x": 8,
+            "y": 6,
+            "result": "MISS",
+            "timestamp": "2026-06-07T06:51:12.302319"
+        },
+        {
+            "turn": 65,
+            "shooter": "aqul",
+            "action": "FIRE",
+            "x": 2,
+            "y": 8,
+            "result": "MISS",
+            "timestamp": "2026-06-07T06:51:13.834206"
+        },
+        {
+            "turn": 66,
+            "shooter": "budi",
+            "action": "FIRE",
+            "x": 1,
+            "y": 9,
+            "result": "HIT",
+            "timestamp": "2026-06-07T06:51:15.576105"
+        },
+        {
+            "turn": 67,
+            "shooter": "aqul",
+            "action": "FIRE",
+            "x": 1,
+            "y": 6,
+            "result": "MISS",
+            "timestamp": "2026-06-07T06:51:17.270753"
+        },
+        {
+            "turn": 68,
+            "shooter": "budi",
+            "action": "FIRE",
+            "x": 1,
+            "y": 8,
+            "result": "HIT",
+            "timestamp": "2026-06-07T06:51:18.923714"
+        },
+        {
+            "turn": 69,
+            "shooter": "aqul",
+            "action": "FIRE",
+            "x": 0,
+            "y": 2,
+            "result": "MISS",
+            "timestamp": "2026-06-07T06:51:20.552826"
+        },
+        {
+            "turn": 70,
+            "shooter": "budi",
+            "action": "FIRE",
+            "x": 1,
+            "y": 7,
+            "result": "HIT",
+            "timestamp": "2026-06-07T06:51:22.594395"
+        },
+        {
+            "turn": 71,
+            "shooter": "aqul",
+            "action": "FIRE",
+            "x": 7,
+            "y": 2,
+            "result": "MISS",
+            "timestamp": "2026-06-07T06:51:29.491272"
+        },
+        {
+            "turn": 72,
+            "shooter": "budi",
+            "action": "FIRE",
+            "x": 2,
+            "y": 2,
+            "result": "HIT",
+            "timestamp": "2026-06-07T06:51:31.108403"
+        },
+        {
+            "turn": 73,
+            "shooter": "aqul",
+            "action": "FIRE",
+            "x": 3,
+            "y": 1,
+            "result": "MISS",
+            "timestamp": "2026-06-07T06:51:32.164143"
+        },
+        {
+            "turn": 74,
+            "shooter": "budi",
+            "action": "FIRE",
+            "x": 3,
+            "y": 2,
+            "result": "HIT",
+            "timestamp": "2026-06-07T06:51:34.161998"
+        }
+    ]
+}

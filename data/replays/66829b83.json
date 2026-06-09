@@ -1,0 +1,453 @@
+{
+    "room_id": "66829b83",
+    "player_1": "rudi",
+    "player_2": "budi",
+    "started_at": "2026-06-08T14:27:38.843876",
+    "finished_at": "2026-06-08T14:31:07.883026",
+    "winner": "rudi",
+    "player_1_ships": [
+        {
+            "name": "Wooden Boat",
+            "width": 1,
+            "height": 2,
+            "orientation": "H",
+            "cells": [
+                {
+                    "x": 2,
+                    "y": 4
+                },
+                {
+                    "x": 2,
+                    "y": 5
+                }
+            ]
+        },
+        {
+            "name": "Pirate Boat",
+            "width": 2,
+            "height": 2,
+            "orientation": "H",
+            "cells": [
+                {
+                    "x": 7,
+                    "y": 2
+                },
+                {
+                    "x": 8,
+                    "y": 2
+                },
+                {
+                    "x": 7,
+                    "y": 3
+                },
+                {
+                    "x": 8,
+                    "y": 3
+                }
+            ]
+        },
+        {
+            "name": "Battle Ship",
+            "width": 2,
+            "height": 4,
+            "orientation": "H",
+            "cells": [
+                {
+                    "x": 5,
+                    "y": 1
+                },
+                {
+                    "x": 6,
+                    "y": 1
+                },
+                {
+                    "x": 5,
+                    "y": 2
+                },
+                {
+                    "x": 6,
+                    "y": 2
+                },
+                {
+                    "x": 5,
+                    "y": 3
+                },
+                {
+                    "x": 6,
+                    "y": 3
+                },
+                {
+                    "x": 5,
+                    "y": 4
+                },
+                {
+                    "x": 6,
+                    "y": 4
+                }
+            ]
+        },
+        {
+            "name": "Steel Ship",
+            "width": 1,
+            "height": 3,
+            "orientation": "V",
+            "cells": [
+                {
+                    "x": 1,
+                    "y": 1
+                },
+                {
+                    "x": 2,
+                    "y": 1
+                },
+                {
+                    "x": 3,
+                    "y": 1
+                }
+            ]
+        },
+        {
+            "name": "Cyber Ship",
+            "width": 1,
+            "height": 3,
+            "orientation": "V",
+            "cells": [
+                {
+                    "x": 7,
+                    "y": 7
+                },
+                {
+                    "x": 8,
+                    "y": 7
+                },
+                {
+                    "x": 9,
+                    "y": 7
+                }
+            ]
+        }
+    ],
+    "player_2_ships": [
+        {
+            "name": "Wooden Boat",
+            "width": 1,
+            "height": 2,
+            "orientation": "H",
+            "cells": [
+                {
+                    "x": 5,
+                    "y": 3
+                },
+                {
+                    "x": 5,
+                    "y": 4
+                }
+            ]
+        },
+        {
+            "name": "Pirate Boat",
+            "width": 2,
+            "height": 2,
+            "orientation": "H",
+            "cells": [
+                {
+                    "x": 1,
+                    "y": 2
+                },
+                {
+                    "x": 2,
+                    "y": 2
+                },
+                {
+                    "x": 1,
+                    "y": 3
+                },
+                {
+                    "x": 2,
+                    "y": 3
+                }
+            ]
+        },
+        {
+            "name": "Battle Ship",
+            "width": 2,
+            "height": 4,
+            "orientation": "V",
+            "cells": [
+                {
+                    "x": 6,
+                    "y": 7
+                },
+                {
+                    "x": 7,
+                    "y": 7
+                },
+                {
+                    "x": 8,
+                    "y": 7
+                },
+                {
+                    "x": 9,
+                    "y": 7
+                },
+                {
+                    "x": 6,
+                    "y": 8
+                },
+                {
+                    "x": 7,
+                    "y": 8
+                },
+                {
+                    "x": 8,
+                    "y": 8
+                },
+                {
+                    "x": 9,
+                    "y": 8
+                }
+            ]
+        },
+        {
+            "name": "Steel Ship",
+            "width": 1,
+            "height": 3,
+            "orientation": "V",
+            "cells": [
+                {
+                    "x": 2,
+                    "y": 8
+                },
+                {
+                    "x": 3,
+                    "y": 8
+                },
+                {
+                    "x": 4,
+                    "y": 8
+                }
+            ]
+        },
+        {
+            "name": "Cyber Ship",
+            "width": 1,
+            "height": 3,
+            "orientation": "H",
+            "cells": [
+                {
+                    "x": 9,
+                    "y": 0
+                },
+                {
+                    "x": 9,
+                    "y": 1
+                },
+                {
+                    "x": 9,
+                    "y": 2
+                }
+            ]
+        }
+    ],
+    "events": [
+        {
+            "turn": 1,
+            "shooter": "rudi",
+            "action": "FIRE",
+            "x": 3,
+            "y": 4,
+            "result": "MISS",
+            "timestamp": "2026-06-08T14:28:48.558359"
+        },
+        {
+            "turn": 2,
+            "shooter": "budi",
+            "action": "FIRE",
+            "x": 3,
+            "y": 2,
+            "result": "MISS",
+            "timestamp": "2026-06-08T14:28:50.064805"
+        },
+        {
+            "turn": 3,
+            "shooter": "rudi",
+            "action": "FIRE",
+            "x": 6,
+            "y": 1,
+            "result": "MISS",
+            "timestamp": "2026-06-08T14:28:51.875287"
+        },
+        {
+            "turn": 4,
+            "shooter": "budi",
+            "action": "FIRE",
+            "x": 6,
+            "y": 1,
+            "result": "HIT",
+            "timestamp": "2026-06-08T14:28:53.398730"
+        },
+        {
+            "turn": 5,
+            "shooter": "rudi",
+            "action": "FIRE",
+            "x": 8,
+            "y": 2,
+            "result": "MISS",
+            "timestamp": "2026-06-08T14:28:56.891005"
+        },
+        {
+            "turn": 6,
+            "shooter": "budi",
+            "action": "FIRE",
+            "x": 6,
+            "y": 2,
+            "result": "HIT",
+            "timestamp": "2026-06-08T14:28:59.167517"
+        },
+        {
+            "turn": 7,
+            "shooter": "rudi",
+            "action": "FIRE",
+            "x": 6,
+            "y": 2,
+            "result": "MISS",
+            "timestamp": "2026-06-08T14:29:01.157662"
+        },
+        {
+            "turn": 8,
+            "shooter": "budi",
+            "action": "FIRE",
+            "x": 5,
+            "y": 2,
+            "result": "HIT",
+            "timestamp": "2026-06-08T14:29:03.243381"
+        },
+        {
+            "turn": 9,
+            "shooter": "rudi",
+            "action": "FIRE",
+            "x": 3,
+            "y": 2,
+            "result": "MISS",
+            "timestamp": "2026-06-08T14:29:08.212236"
+        },
+        {
+            "turn": 10,
+            "shooter": "budi",
+            "action": "FIRE",
+            "x": 3,
+            "y": 3,
+            "result": "MISS",
+            "timestamp": "2026-06-08T14:29:10.516231"
+        },
+        {
+            "turn": 11,
+            "shooter": "rudi",
+            "action": "FIRE",
+            "x": 2,
+            "y": 3,
+            "result": "HIT",
+            "timestamp": "2026-06-08T14:29:22.057794"
+        },
+        {
+            "turn": 12,
+            "shooter": "budi",
+            "action": "FIRE",
+            "x": 3,
+            "y": 5,
+            "result": "MISS",
+            "timestamp": "2026-06-08T14:29:23.423445"
+        },
+        {
+            "turn": 13,
+            "shooter": "rudi",
+            "action": "FIRE",
+            "x": 2,
+            "y": 4,
+            "result": "MISS",
+            "timestamp": "2026-06-08T14:29:27.652704"
+        },
+        {
+            "turn": 14,
+            "shooter": "budi",
+            "action": "FIRE",
+            "x": 2,
+            "y": 3,
+            "result": "MISS",
+            "timestamp": "2026-06-08T14:29:30.385512"
+        },
+        {
+            "turn": 15,
+            "shooter": "rudi",
+            "action": "FIRE",
+            "x": 2,
+            "y": 2,
+            "result": "HIT",
+            "timestamp": "2026-06-08T14:29:32.045173"
+        },
+        {
+            "turn": 16,
+            "shooter": "budi",
+            "action": "FIRE",
+            "x": 2,
+            "y": 2,
+            "result": "MISS",
+            "timestamp": "2026-06-08T14:29:33.560443"
+        },
+        {
+            "turn": 17,
+            "shooter": "rudi",
+            "action": "FIRE",
+            "x": 1,
+            "y": 2,
+            "result": "HIT",
+            "timestamp": "2026-06-08T14:29:35.283608"
+        },
+        {
+            "turn": 18,
+            "shooter": "budi",
+            "action": "FIRE",
+            "x": 1,
+            "y": 2,
+            "result": "MISS",
+            "timestamp": "2026-06-08T14:29:36.716147"
+        },
+        {
+            "turn": 19,
+            "shooter": "rudi",
+            "action": "FIRE",
+            "x": 6,
+            "y": 5,
+            "result": "MISS",
+            "timestamp": "2026-06-08T14:31:00.832194"
+        },
+        {
+            "turn": 20,
+            "shooter": "budi",
+            "action": "FIRE",
+            "x": 6,
+            "y": 5,
+            "result": "MISS",
+            "timestamp": "2026-06-08T14:31:01.947573"
+        },
+        {
+            "turn": 21,
+            "shooter": "rudi",
+            "action": "FIRE",
+            "x": 7,
+            "y": 3,
+            "result": "MISS",
+            "timestamp": "2026-06-08T14:31:03.248873"
+        },
+        {
+            "turn": 22,
+            "shooter": "budi",
+            "action": "FORFEIT",
+            "x": null,
+            "y": null,
+            "result": "FORFEIT",
+            "winner": "rudi",
+            "timestamp": "2026-06-08T14:31:07.863988"
+        }
+    ]
+}

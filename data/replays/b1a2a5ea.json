@@ -1,0 +1,55 @@
+{
+    "room_id": "b1a2a5ea",
+    "player_1": "234",
+    "player_2": "123",
+    "started_at": "2026-06-06T16:26:08.122688",
+    "finished_at": null,
+    "winner": null,
+    "events": [
+        {
+            "turn": 1,
+            "shooter": "234",
+            "action": "FIRE",
+            "x": 4,
+            "y": 3,
+            "result": "MISS",
+            "timestamp": "2026-06-06T16:26:58.887937"
+        },
+        {
+            "turn": 2,
+            "shooter": "123",
+            "action": "FIRE",
+            "x": 4,
+            "y": 1,
+            "result": "MISS",
+            "timestamp": "2026-06-06T16:27:03.833232"
+        },
+        {
+            "turn": 3,
+            "shooter": "234",
+            "action": "FIRE",
+            "x": 3,
+            "y": 5,
+            "result": "HIT",
+            "timestamp": "2026-06-06T16:27:05.948480"
+        },
+        {
+            "turn": 4,
+            "shooter": "123",
+            "action": "FIRE",
+            "x": 6,
+            "y": 3,
+            "result": "MISS",
+            "timestamp": "2026-06-06T16:27:08.015277"
+        },
+        {
+            "turn": 5,
+            "shooter": "234",
+            "action": "FIRE",
+            "x": 4,
+            "y": 5,
+            "result": "HIT",
+            "timestamp": "2026-06-06T16:27:10.107341"
+        }
+    ]
+}

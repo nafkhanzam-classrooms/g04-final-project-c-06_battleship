@@ -1,0 +1,264 @@
+{
+    "room_id": "068fef11",
+    "player_1": "123",
+    "player_2": "234",
+    "started_at": "2026-06-07T02:48:13.582447",
+    "finished_at": "2026-06-07T02:49:14.920342",
+    "winner": "123",
+    "player_1_ships": [
+        {
+            "name": "Wooden Boat",
+            "width": 1,
+            "height": 2,
+            "orientation": "H",
+            "cells": [
+                {
+                    "x": 2,
+                    "y": 2
+                },
+                {
+                    "x": 2,
+                    "y": 3
+                }
+            ]
+        },
+        {
+            "name": "Pirate Boat",
+            "width": 2,
+            "height": 2,
+            "orientation": "H",
+            "cells": [
+                {
+                    "x": 5,
+                    "y": 4
+                },
+                {
+                    "x": 6,
+                    "y": 4
+                },
+                {
+                    "x": 5,
+                    "y": 5
+                },
+                {
+                    "x": 6,
+                    "y": 5
+                }
+            ]
+        },
+        {
+            "name": "Battle Ship",
+            "width": 2,
+            "height": 4,
+            "orientation": "H",
+            "cells": [
+                {
+                    "x": 1,
+                    "y": 6
+                },
+                {
+                    "x": 2,
+                    "y": 6
+                },
+                {
+                    "x": 1,
+                    "y": 7
+                },
+                {
+                    "x": 2,
+                    "y": 7
+                },
+                {
+                    "x": 1,
+                    "y": 8
+                },
+                {
+                    "x": 2,
+                    "y": 8
+                },
+                {
+                    "x": 1,
+                    "y": 9
+                },
+                {
+                    "x": 2,
+                    "y": 9
+                }
+            ]
+        },
+        {
+            "name": "Steel Ship",
+            "width": 1,
+            "height": 3,
+            "orientation": "H",
+            "cells": [
+                {
+                    "x": 8,
+                    "y": 1
+                },
+                {
+                    "x": 8,
+                    "y": 2
+                },
+                {
+                    "x": 8,
+                    "y": 3
+                }
+            ]
+        },
+        {
+            "name": "Cyber Ship",
+            "width": 1,
+            "height": 3,
+            "orientation": "H",
+            "cells": [
+                {
+                    "x": 9,
+                    "y": 6
+                },
+                {
+                    "x": 9,
+                    "y": 7
+                },
+                {
+                    "x": 9,
+                    "y": 8
+                }
+            ]
+        }
+    ],
+    "player_2_ships": [
+        {
+            "name": "Wooden Boat",
+            "width": 1,
+            "height": 2,
+            "orientation": "H",
+            "cells": [
+                {
+                    "x": 3,
+                    "y": 2
+                },
+                {
+                    "x": 3,
+                    "y": 3
+                }
+            ]
+        },
+        {
+            "name": "Pirate Boat",
+            "width": 2,
+            "height": 2,
+            "orientation": "H",
+            "cells": [
+                {
+                    "x": 6,
+                    "y": 3
+                },
+                {
+                    "x": 7,
+                    "y": 3
+                },
+                {
+                    "x": 6,
+                    "y": 4
+                },
+                {
+                    "x": 7,
+                    "y": 4
+                }
+            ]
+        },
+        {
+            "name": "Battle Ship",
+            "width": 2,
+            "height": 4,
+            "orientation": "H",
+            "cells": [
+                {
+                    "x": 1,
+                    "y": 3
+                },
+                {
+                    "x": 2,
+                    "y": 3
+                },
+                {
+                    "x": 1,
+                    "y": 4
+                },
+                {
+                    "x": 2,
+                    "y": 4
+                },
+                {
+                    "x": 1,
+                    "y": 5
+                },
+                {
+                    "x": 2,
+                    "y": 5
+                },
+                {
+                    "x": 1,
+                    "y": 6
+                },
+                {
+                    "x": 2,
+                    "y": 6
+                }
+            ]
+        },
+        {
+            "name": "Steel Ship",
+            "width": 1,
+            "height": 3,
+            "orientation": "H",
+            "cells": [
+                {
+                    "x": 5,
+                    "y": 6
+                },
+                {
+                    "x": 5,
+                    "y": 7
+                },
+                {
+                    "x": 5,
+                    "y": 8
+                }
+            ]
+        },
+        {
+            "name": "Cyber Ship",
+            "width": 1,
+            "height": 3,
+            "orientation": "H",
+            "cells": [
+                {
+                    "x": 9,
+                    "y": 5
+                },
+                {
+                    "x": 9,
+                    "y": 6
+                },
+                {
+                    "x": 9,
+                    "y": 7
+                }
+            ]
+        }
+    ],
+    "events": [
+        {
+            "turn": 1,
+            "shooter": "234",
+            "action": "FORFEIT",
+            "x": null,
+            "y": null,
+            "result": "FORFEIT",
+            "winner": "123",
+            "timestamp": "2026-06-07T02:49:14.915180"
+        }
+    ]
+}

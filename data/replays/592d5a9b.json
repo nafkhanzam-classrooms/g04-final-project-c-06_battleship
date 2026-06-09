@@ -1,0 +1,334 @@
+{
+    "room_id": "592d5a9b",
+    "player_1": "player509",
+    "player_2": "player507",
+    "started_at": "2026-06-05T15:36:11.331177",
+    "finished_at": "2026-06-05T15:38:08.511127",
+    "winner": "player507",
+    "events": [
+        {
+            "turn": 1,
+            "shooter": "player509",
+            "action": "FIRE",
+            "x": 2,
+            "y": 1,
+            "result": "HIT",
+            "timestamp": "2026-06-05T15:36:44.652469"
+        },
+        {
+            "turn": 2,
+            "shooter": "player507",
+            "action": "FIRE",
+            "x": 3,
+            "y": 2,
+            "result": "HIT",
+            "timestamp": "2026-06-05T15:36:46.556944"
+        },
+        {
+            "turn": 3,
+            "shooter": "player509",
+            "action": "FIRE",
+            "x": 3,
+            "y": 1,
+            "result": "HIT",
+            "timestamp": "2026-06-05T15:36:48.386071"
+        },
+        {
+            "turn": 4,
+            "shooter": "player507",
+            "action": "FIRE",
+            "x": 5,
+            "y": 2,
+            "result": "HIT",
+            "timestamp": "2026-06-05T15:36:50.143305"
+        },
+        {
+            "turn": 5,
+            "shooter": "player509",
+            "action": "FIRE",
+            "x": 4,
+            "y": 1,
+            "result": "HIT",
+            "timestamp": "2026-06-05T15:36:52.053257"
+        },
+        {
+            "turn": 6,
+            "shooter": "player507",
+            "action": "FIRE",
+            "x": 4,
+            "y": 2,
+            "result": "HIT",
+            "timestamp": "2026-06-05T15:36:53.819778"
+        },
+        {
+            "turn": 7,
+            "shooter": "player509",
+            "action": "FIRE",
+            "x": 5,
+            "y": 1,
+            "result": "HIT",
+            "timestamp": "2026-06-05T15:36:57.185011"
+        },
+        {
+            "turn": 8,
+            "shooter": "player507",
+            "action": "FIRE",
+            "x": 3,
+            "y": 1,
+            "result": "HIT",
+            "timestamp": "2026-06-05T15:36:59.699711"
+        },
+        {
+            "turn": 9,
+            "shooter": "player509",
+            "action": "FIRE",
+            "x": 6,
+            "y": 1,
+            "result": "HIT",
+            "timestamp": "2026-06-05T15:37:01.484443"
+        },
+        {
+            "turn": 10,
+            "shooter": "player507",
+            "action": "FIRE",
+            "x": 4,
+            "y": 1,
+            "result": "HIT",
+            "timestamp": "2026-06-05T15:37:04.501282"
+        },
+        {
+            "turn": 11,
+            "shooter": "player509",
+            "action": "FIRE",
+            "x": 2,
+            "y": 4,
+            "result": "HIT",
+            "timestamp": "2026-06-05T15:37:07.789984"
+        },
+        {
+            "turn": 12,
+            "shooter": "player507",
+            "action": "FIRE",
+            "x": 5,
+            "y": 1,
+            "result": "HIT",
+            "timestamp": "2026-06-05T15:37:10.318369"
+        },
+        {
+            "turn": 13,
+            "shooter": "player509",
+            "action": "FIRE",
+            "x": 3,
+            "y": 4,
+            "result": "HIT",
+            "timestamp": "2026-06-05T15:37:13.452333"
+        },
+        {
+            "turn": 14,
+            "shooter": "player507",
+            "action": "FIRE",
+            "x": 6,
+            "y": 1,
+            "result": "HIT",
+            "timestamp": "2026-06-05T15:37:15.934298"
+        },
+        {
+            "turn": 15,
+            "shooter": "player509",
+            "action": "FIRE",
+            "x": 4,
+            "y": 4,
+            "result": "HIT",
+            "timestamp": "2026-06-05T15:37:17.404955"
+        },
+        {
+            "turn": 16,
+            "shooter": "player507",
+            "action": "FIRE",
+            "x": 7,
+            "y": 1,
+            "result": "HIT",
+            "timestamp": "2026-06-05T15:37:19.210624"
+        },
+        {
+            "turn": 17,
+            "shooter": "player509",
+            "action": "FIRE",
+            "x": 5,
+            "y": 4,
+            "result": "HIT",
+            "timestamp": "2026-06-05T15:37:21.422352"
+        },
+        {
+            "turn": 18,
+            "shooter": "player507",
+            "action": "FIRE",
+            "x": 2,
+            "y": 4,
+            "result": "MISS",
+            "timestamp": "2026-06-05T15:37:25.516319"
+        },
+        {
+            "turn": 19,
+            "shooter": "player509",
+            "action": "FIRE",
+            "x": 1,
+            "y": 6,
+            "result": "HIT",
+            "timestamp": "2026-06-05T15:37:28.651071"
+        },
+        {
+            "turn": 20,
+            "shooter": "player507",
+            "action": "FIRE",
+            "x": 1,
+            "y": 4,
+            "result": "HIT",
+            "timestamp": "2026-06-05T15:37:30.426041"
+        },
+        {
+            "turn": 21,
+            "shooter": "player509",
+            "action": "FIRE",
+            "x": 2,
+            "y": 6,
+            "result": "HIT",
+            "timestamp": "2026-06-05T15:37:31.995930"
+        },
+        {
+            "turn": 22,
+            "shooter": "player507",
+            "action": "FIRE",
+            "x": 1,
+            "y": 5,
+            "result": "HIT",
+            "timestamp": "2026-06-05T15:37:33.897456"
+        },
+        {
+            "turn": 23,
+            "shooter": "player509",
+            "action": "FIRE",
+            "x": 3,
+            "y": 6,
+            "result": "HIT",
+            "timestamp": "2026-06-05T15:37:35.466453"
+        },
+        {
+            "turn": 24,
+            "shooter": "player507",
+            "action": "FIRE",
+            "x": 1,
+            "y": 6,
+            "result": "HIT",
+            "timestamp": "2026-06-05T15:37:37.372344"
+        },
+        {
+            "turn": 25,
+            "shooter": "player509",
+            "action": "FIRE",
+            "x": 4,
+            "y": 8,
+            "result": "HIT",
+            "timestamp": "2026-06-05T15:37:39.481959"
+        },
+        {
+            "turn": 26,
+            "shooter": "player507",
+            "action": "FIRE",
+            "x": 1,
+            "y": 7,
+            "result": "HIT",
+            "timestamp": "2026-06-05T15:37:41.677560"
+        },
+        {
+            "turn": 27,
+            "shooter": "player509",
+            "action": "FIRE",
+            "x": 5,
+            "y": 8,
+            "result": "HIT",
+            "timestamp": "2026-06-05T15:37:45.039848"
+        },
+        {
+            "turn": 28,
+            "shooter": "player507",
+            "action": "FIRE",
+            "x": 4,
+            "y": 4,
+            "result": "HIT",
+            "timestamp": "2026-06-05T15:37:48.478843"
+        },
+        {
+            "turn": 29,
+            "shooter": "player509",
+            "action": "FIRE",
+            "x": 6,
+            "y": 8,
+            "result": "HIT",
+            "timestamp": "2026-06-05T15:37:50.643847"
+        },
+        {
+            "turn": 30,
+            "shooter": "player507",
+            "action": "FIRE",
+            "x": 5,
+            "y": 4,
+            "result": "HIT",
+            "timestamp": "2026-06-05T15:37:52.798617"
+        },
+        {
+            "turn": 31,
+            "shooter": "player509",
+            "action": "FIRE",
+            "x": 9,
+            "y": 6,
+            "result": "MISS",
+            "timestamp": "2026-06-05T15:37:55.844306"
+        },
+        {
+            "turn": 32,
+            "shooter": "player507",
+            "action": "FIRE",
+            "x": 7,
+            "y": 5,
+            "result": "HIT",
+            "timestamp": "2026-06-05T15:37:58.740089"
+        },
+        {
+            "turn": 33,
+            "shooter": "player509",
+            "action": "FIRE",
+            "x": 9,
+            "y": 5,
+            "result": "HIT",
+            "timestamp": "2026-06-05T15:38:00.877489"
+        },
+        {
+            "turn": 34,
+            "shooter": "player507",
+            "action": "FIRE",
+            "x": 7,
+            "y": 4,
+            "result": "HIT",
+            "timestamp": "2026-06-05T15:38:02.790874"
+        },
+        {
+            "turn": 35,
+            "shooter": "player509",
+            "action": "FIRE",
+            "x": 9,
+            "y": 4,
+            "result": "MISS",
+            "timestamp": "2026-06-05T15:38:05.419602"
+        },
+        {
+            "turn": 36,
+            "shooter": "player507",
+            "action": "FIRE",
+            "x": 7,
+            "y": 6,
+            "result": "HIT",
+            "timestamp": "2026-06-05T15:38:08.499921"
+        }
+    ]
+}

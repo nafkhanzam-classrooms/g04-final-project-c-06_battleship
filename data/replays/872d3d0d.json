@@ -1,0 +1,28 @@
+{
+    "room_id": "872d3d0d",
+    "player_1": "Furaku",
+    "player_2": "Aqul",
+    "started_at": "2026-06-05T17:05:15.371636",
+    "finished_at": null,
+    "winner": null,
+    "events": [
+        {
+            "turn": 1,
+            "shooter": "Furaku",
+            "action": "FIRE",
+            "x": 7,
+            "y": 4,
+            "result": "MISS",
+            "timestamp": "2026-06-05T17:06:04.697737"
+        },
+        {
+            "turn": 2,
+            "shooter": "Aqul",
+            "action": "FIRE",
+            "x": 2,
+            "y": 1,
+            "result": "HIT",
+            "timestamp": "2026-06-05T17:06:08.611487"
+        }
+    ]
+}

@@ -1,0 +1,37 @@
+{
+    "room_id": "fff89e7f",
+    "player_1": "123",
+    "player_2": "234",
+    "started_at": "2026-06-06T17:21:18.453541",
+    "finished_at": "2026-06-06T17:22:24.121869",
+    "winner": "234",
+    "events": [
+        {
+            "turn": 1,
+            "shooter": "123",
+            "action": "FIRE",
+            "x": 3,
+            "y": 2,
+            "result": "HIT",
+            "timestamp": "2026-06-06T17:21:57.108091"
+        },
+        {
+            "turn": 2,
+            "shooter": "234",
+            "action": "FIRE",
+            "x": 4,
+            "y": 3,
+            "result": "HIT",
+            "timestamp": "2026-06-06T17:22:00.783134"
+        },
+        {
+            "turn": 3,
+            "shooter": "123",
+            "action": "FIRE",
+            "x": 3,
+            "y": 3,
+            "result": "HIT",
+            "timestamp": "2026-06-06T17:22:04.080105"
+        }
+    ]
+}
