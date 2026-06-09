@@ -113,7 +113,77 @@ Folder `tests/` berisi skrip pengujian protokol dan uji beban.
 
 ### Folder client/
 #### Penjelasan app.py
+File `app.py` pada folder `client/` berfungsi sebagai pusat aplikasi klien yang menginisialisasi Pygame, mendefinisikan seluruh variabel state global, membuat semua elemen UI, serta menghubungkan modul-modul klien menjadi satu program yang berjalan.
 
+---
+
+##### Mekanisme bind_module_functions
+
+```
+def bind_module_functions(module):
+    for name in dir(module):
+        value = getattr(module, name)
+        if callable(value):
+            value = type(value)(value.__code__, globals(), ...)
+            globals()[name] = value
+
+bind_module_functions(client_game_logic)
+bind_module_functions(client_screens)
+bind_module_functions(client_message_handler)
+bind_module_functions(client_event_handler)
+```
+
+Bagian ini digunakan untuk menyuntikkan semua fungsi dari modul-modul klien ke dalam namespace global `app.py`. Teknik ini memungkinkan fungsi di modul-modul terpisah seperti `game_logic`, `screens`, `message_handler`, dan `event_handler` dapat saling mengakses variabel state global yang didefinisikan di `app.py` tanpa perlu melewatkannya sebagai argumen.
+
+---
+
+##### Inisialisasi State dan UI
+
+```
+screen_state = "TITLE"
+placed_ships = []
+local_board = [[CELL_EMPTY ...]]
+enemy_board = [[CELL_EMPTY ...]]
+leaderboard_data = []
+replay_list = []
+is_spectator = False
+
+username_input = TextInput(...)
+login_button = Button(...)
+quick_play_button = Button(...)
+game_forfeit_button = Button(...)
+# ... dan puluhan elemen UI lainnya
+```
+
+Bagian ini digunakan untuk mendefinisikan seluruh variabel state permainan seperti state layar aktif, data papan, data sesi, dan data fitur, serta menginisialisasi semua objek UI yang digunakan di berbagai layar.
+
+---
+
+##### Inisialisasi dan Koneksi
+
+```
+client = NetworkClient()
+client.on_message = handle_server_message
+
+try:
+    client.connect()
+except ConnectionRefusedError:
+    print("Server belum jalan. Jalankan: python -m server.main")
+    pygame.quit()
+    sys.exit()
+
+run_loop()
+```
+
+Bagian ini digunakan untuk menghubungkan klien ke server, menetapkan callback penerimaan pesan ke fungsi `handle_server_message`, dan memulai game loop utama.
+
+---
+
+##### Ringkasan
+
+`app.py` pada folder `client/` berfungsi sebagai inti aplikasi klien yang menginisialisasi seluruh komponen Pygame, mendefinisikan state global, memuat modul-modul fungsional, dan menjalankan loop permainan.
+
+---
 #### Penejelasan assets.py
 
 #### Penejelasan audio.py
