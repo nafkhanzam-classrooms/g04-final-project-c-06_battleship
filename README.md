@@ -12,7 +12,60 @@ Link ditaruh di bawah ini
 ```
 
 ```
+---
+- [Struktur Directory](#strukturs-driectory)
+- [Folder client/]()
+    - [Penjelasan app.py]()
+    - [Penjelasan assets.py]()
+    - [Penejelasan audio.py]()
+    - [Penejelasan event_handler.py]()
+    - [Penejelasan game_logic.py]()
+    - [Penejelasan main.py]()
+    - [Penejelasan message_handler.py]()
+    - [Penejelasan network_client.py]()
+    - [Penejelasan screens.py]()
+    - [Penejelasan state.py]()
+- [Folder Server/]()
+    - [Penejelasan auth_service.py]()
+    - [Penejelasan client_handler.py]()
+    - [Penejelasan config.py]()
+    - [Penejelasan database.py]()
+    - [Penejelasan game_room.py]()
+    - [Penejelasan logger.py]()
+    - [Penejelasan main.py]()
+    - [Penejelasan matchmaking.py]()
+    - [Penejelasan ranking_service.py]()
+    - [Penejelasan replay_service.py]()
+    - [Penejelasan response_builder.py]()
+    - [Penejelasan room_manager.py]()
+    - [Penejelasan socket_server.py]()
 
+
+### Folder server/handlers
+#### Penjelasan auth_handler.py
+
+#### Penjelasan game_handler.py
+
+#### Penjelasan leaderboard_handler.py
+
+#### Penjelasan matchmaking_handler.py
+
+#### Penjelasan placement_handler.py
+
+#### Penjelasan replay_handler.py
+
+#### Penjelasan room_handler.py
+
+#### Penjelasan __init__.py
+
+### Folder shared/
+#### Penjelasan constants.py
+
+#### Penjelasan message_type.py
+
+#### Penjelasan serializer.py
+
+---
 ## Penjelasan Program
 ### Struktur Directory
 ```
