@@ -2673,35 +2673,62 @@ Fungsi `encode_message` digunakan untuk mengubah dictionary Python menjadi bytes
 ---
 
 ### Leader Board
+<img width="1596" height="940" alt="image" src="https://github.com/user-attachments/assets/5f6982cc-4f95-4bc5-abd6-da05421fc6c7" />
+
 ---
 
 ### My Stat
+<img width="1598" height="935" alt="image" src="https://github.com/user-attachments/assets/b8450219-dfc4-4a0a-a737-ac58091dd9cf" />
+
 ---
 
 ### Setting
+<img width="1597" height="932" alt="image" src="https://github.com/user-attachments/assets/18aeabab-6a31-4df8-9393-1b91782acd4c" />
+
+---
+
+### Pause Button
+<img width="1601" height="936" alt="image" src="https://github.com/user-attachments/assets/3116c20c-0b21-426b-9cb8-4d30ddcfd081" />
+
 ---
 
 ### Play
 ---
 #### As a Player
 ##### Preparation
+<img width="1602" height="931" alt="image" src="https://github.com/user-attachments/assets/b8cfdf95-4fa1-46af-9ca0-28ef58e8b6ee" />
+
 ---
 ##### In Gamplay
+<img width="1593" height="937" alt="image" src="https://github.com/user-attachments/assets/1e49cab1-c5f0-4ebe-8bfd-80803717109e" />
+
 ---
 
 #### As a Spectator
 ##### Preparation
+<img width="1603" height="941" alt="image" src="https://github.com/user-attachments/assets/69c44759-dc19-44a3-ace0-93588a0bf8cf" />
+
 ---
 ##### In Game
+<img width="1596" height="937" alt="image" src="https://github.com/user-attachments/assets/22dc6165-aba2-408b-be98-acfa858af2ae" />
+
 ---
 
 ### Win/Lose
 #### Win Screen
+<img width="1597" height="932" alt="image" src="https://github.com/user-attachments/assets/612c0486-3ebe-4cf3-80d1-821c45ad21da" />
+
 ---
 #### Lose Screen
+<img width="1592" height="941" alt="image" src="https://github.com/user-attachments/assets/ceec9b5b-0280-4a54-85a2-39fd10f21d8b" />
+
 ---
 #### Spectator Screen
+<img width="1595" height="935" alt="image" src="https://github.com/user-attachments/assets/1d3156e4-65d6-42c6-920c-62d1f0e921f4" />
+
 ---
 
 ### Replay
+<img width="1600" height="936" alt="image" src="https://github.com/user-attachments/assets/c7432d1b-1967-4943-900f-d89e6dc402b7" />
+
 
