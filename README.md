@@ -64,8 +64,6 @@ Link ditaruh di bawah ini
 
 * [Screenshot Hasil](#screenshot-hasil)
 
-* [Screenshot Hasil](#screenshot-hasil)
-
   * [Welcome Screen](#welcome-screen)
   * [Register/Login](#registerlogin)
   * [Main Menu](#main-menu)
