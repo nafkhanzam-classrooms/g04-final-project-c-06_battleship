@@ -2672,7 +2672,7 @@ Fungsi `encode_message` digunakan untuk mengubah dictionary Python menjadi bytes
 
 ---
 
-### Leader Board
+### Leaderboard
 <img width="1596" height="940" alt="image" src="https://github.com/user-attachments/assets/5f6982cc-4f95-4bc5-abd6-da05421fc6c7" />
 
 ---
