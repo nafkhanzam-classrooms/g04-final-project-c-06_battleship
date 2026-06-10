@@ -64,6 +64,21 @@ Link ditaruh di bawah ini
 
 * [Screenshot Hasil](#screenshot-hasil)
 
+* [Screenshot Hasil](#screenshot-hasil)
+
+  * [Welcome Screen](#welcome-screen)
+  * [Register/Login](#registerlogin)
+  * [Main Menu](#main-menu)
+  * [Quick Play](#quick-play)
+  * [Play/Room List](#playroom-list)
+  * [Leaderboard](#leaderboard)
+  * [My Stat](#my-stat)
+  * [Setting](#setting)
+  * [Pause Button](#pause-button)
+  * [Play](#play)
+  * [Win/Lose](#winlose)
+  * [Replay](#replay)
+
 ---
 ## Penjelasan Program
 ### Struktur Directory
