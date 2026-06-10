@@ -2647,3 +2647,61 @@ Fungsi `encode_message` digunakan untuk mengubah dictionary Python menjadi bytes
 
 
 ## Screenshot Hasil
+### Welcome Screen
+<img width="1601" height="936" alt="Welcome Screen" src="https://github.com/user-attachments/assets/77cf18d2-254d-4d17-9d88-943c356fd97a" />
+
+---
+
+### Regiser/Login 
+<img width="1592" height="938" alt="Register   Login" src="https://github.com/user-attachments/assets/7a714392-1a3c-4895-9b55-195f2a96ca97" />
+
+---
+
+### Main Menu
+<img width="1601" height="942" alt="Main Menu" src="https://github.com/user-attachments/assets/ae0b4b2e-11fe-4cc8-bd21-0c6a0968bf83" />
+
+---
+
+### Quick Play
+<img width="1596" height="935" alt="Quick Play" src="https://github.com/user-attachments/assets/c2caa053-1d48-446a-b3c3-10747bcfc49f" />
+
+---
+
+### Play/Room List
+<img width="1596" height="935" alt="Play Room" src="https://github.com/user-attachments/assets/619c9f4e-703b-4a2b-be61-c4d47419b23f" />
+
+---
+
+### Leader Board
+---
+
+### My Stat
+---
+
+### Setting
+---
+
+### Play
+---
+#### As a Player
+##### Preparation
+---
+##### In Gamplay
+---
+
+#### As a Spectator
+##### Preparation
+---
+##### In Game
+---
+
+### Win/Lose
+#### Win Screen
+---
+#### Lose Screen
+---
+#### Spectator Screen
+---
+
+### Replay
+
